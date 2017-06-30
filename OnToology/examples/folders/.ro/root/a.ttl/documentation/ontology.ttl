@@ -1,0 +1,128 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/wf4ever/ro#entryName
+<http://purl.org/wf4ever/ro#entryName> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/aggregates
+<http://www.openarchives.org/ore/terms/aggregates> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/isAggregatedBy
+<http://www.openarchives.org/ore/terms/isAggregatedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/isDescribedBy
+<http://www.openarchives.org/ore/terms/isDescribedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/proxyFor
+<http://www.openarchives.org/ore/terms/proxyFor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/proxyIn
+<http://www.openarchives.org/ore/terms/proxyIn> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/wf4ever/ro#Folder
+<http://purl.org/wf4ever/ro#Folder> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#FolderEntry
+<http://purl.org/wf4ever/ro#FolderEntry> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#ResearchObject
+<http://purl.org/wf4ever/ro#ResearchObject> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#Resource
+<http://purl.org/wf4ever/ro#Resource> rdf:type owl:Class .
+
+
+###  http://www.openarchives.org/ore/terms/AggregatedResource
+<http://www.openarchives.org/ore/terms/AggregatedResource> rdf:type owl:Class .
+
+
+###  http://www.openarchives.org/ore/terms/Aggregation
+<http://www.openarchives.org/ore/terms/Aggregation> rdf:type owl:Class .
+
+
+###  http://www.openarchives.org/ore/terms/Proxy
+<http://www.openarchives.org/ore/terms/Proxy> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  ../../.
+<../../.> rdf:type owl:NamedIndividual ,
+                   <http://purl.org/wf4ever/ro#ResearchObject> ,
+                   <http://www.openarchives.org/ore/terms/Aggregation> ;
+          <http://www.openarchives.org/ore/terms/isDescribedBy> <../../.ro/manifest.ttl> .
+
+
+###  ../../.ro/root
+<../../.ro/root> rdf:type owl:NamedIndividual ,
+                          <http://purl.org/wf4ever/ro#Folder> ,
+                          <http://www.openarchives.org/ore/terms/Aggregation> ;
+                 <http://www.openarchives.org/ore/terms/isDescribedBy> <../../.ro/root.ttl> .
+
+
+###  ../../a/
+<../../a/> rdf:type owl:NamedIndividual ,
+                    <http://purl.org/wf4ever/ro#Folder> ,
+                    <http://purl.org/wf4ever/ro#Resource> ,
+                    <http://www.openarchives.org/ore/terms/AggregatedResource> ,
+                    <http://www.openarchives.org/ore/terms/Aggregation> ;
+           <http://www.openarchives.org/ore/terms/aggregates> <../../a/file2.txt> ,
+                                                              <http://www.example.com/external.txt> ;
+           <http://www.openarchives.org/ore/terms/isAggregatedBy> <../../.> ,
+                                                                  <../../.ro/root> ;
+           <http://www.openarchives.org/ore/terms/isDescribedBy> <../../.ro/root/a.ttl> .
+
+
+###  ../../a/file2.txt
+<../../a/file2.txt> rdf:type owl:NamedIndividual ,
+                             <http://purl.org/wf4ever/ro#Resource> ,
+                             <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+                    <http://www.openarchives.org/ore/terms/isAggregatedBy> <../../.> .
+
+
+###  http://www.example.com/external.txt
+<http://www.example.com/external.txt> rdf:type owl:NamedIndividual ,
+                                               <http://purl.org/wf4ever/ro#Resource> ,
+                                               <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+                                      <http://www.openarchives.org/ore/terms/isAggregatedBy> <../../.> .
+
+
+_:genid2 rdf:type <http://purl.org/wf4ever/ro#FolderEntry> ,
+                  <http://www.openarchives.org/ore/terms/Proxy> ;
+         <http://purl.org/wf4ever/ro#entryName> "file2.txt"^^xsd:string ;
+         <http://www.openarchives.org/ore/terms/proxyFor> <../../a/file2.txt> ;
+         <http://www.openarchives.org/ore/terms/proxyIn> <../../a/> .
+
+_:genid3 rdf:type <http://purl.org/wf4ever/ro#FolderEntry> ,
+                   <http://www.openarchives.org/ore/terms/Proxy> ;
+          <http://purl.org/wf4ever/ro#entryName> "other.txt"^^xsd:string ;
+          <http://www.openarchives.org/ore/terms/proxyFor> <http://www.example.com/external.txt> ;
+          <http://www.openarchives.org/ore/terms/proxyIn> <../../a/> .
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

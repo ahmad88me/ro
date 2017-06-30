@@ -1,0 +1,37 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/" [ label = "prov:influenced" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" -> "http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77" [ label = "prov:influenced" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" -> "http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77" [ label = "prov:generated" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" -> "edb1c591a0ec7c026a4db061eb621799" [ label = "prov:qualifiedAssociation" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" -> "de70d0cf7d7d74652d6b6ccd8fc61762" [ label = "prov:wasAssociatedWith" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" -> "8e03c7d06d7aaeb956f887266f87931d" [ label = "prov:influenced" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle" -> "8e03c7d06d7aaeb956f887266f87931d" [ label = "prov:wasGeneratedBy" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/" -> "a8f9e0a2e09eae68e392c78e11ee7677" [ label = "prov:influenced" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/" -> "a8f9e0a2e09eae68e392c78e11ee7677" [ label = "prov:generated" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/" -> "edb1c591a0ec7c026a4db061eb621799" [ label = "prov:qualifiedAssociation" ];
+	"http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" [ label = "prov:wasInformedBy" ];
+	"http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77" -> "b6d91e782b19c9ff0e86aed241272da6" [ label = "prov:qualifiedGeneration" ];
+	"http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" [ label = "prov:wasGeneratedBy" ];
+	"http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77" -> "file:///home/stain/src/ro/mapping/prov-o/test/1/greeting.txt" [ label = "owl:sameAs" ];
+	"NULL" -> "de70d0cf7d7d74652d6b6ccd8fc61762" [ label = "prov:agent" ];
+	"NULL" -> "http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/out/greeting" [ label = "prov:hadRole" ];
+	"NULL" -> "8e03c7d06d7aaeb956f887266f87931d" [ label = "prov:influenced" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle" [ label = "prov:influenced" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" [ label = "prov:influenced" ];
+	"NULL" -> "de70d0cf7d7d74652d6b6ccd8fc61762" [ label = "prov:wasAssociatedWith" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/" [ label = "prov:wasGeneratedBy" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77" [ label = "prov:alternateOf" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle" [ label = "prov:generated" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/software/taverna-2.4.0" [ label = "prov:hadPlan" ];
+	"NULL" -> "http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/" [ label = "prov:hadPlan" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" [ label = "prov:activity" ];
+	"NULL" -> "http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/out/value" [ label = "prov:hadRole" ];
+	"NULL" -> "97dae60c01dbb3a6b5e7506af9360bcb" [ label = "prov:qualifiedGeneration" ];
+	"NULL" -> "9143115d93a2906d95e90651024a6989" [ label = "prov:qualifiedAssociation" ];
+	"NULL" -> "http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/" [ label = "prov:hadPlan" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/" [ label = "prov:wasInformedBy" ];
+	"NULL" -> "http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/" [ label = "prov:activity" ];
+
+}

@@ -1,0 +1,10 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://rawgit.com/wf4ever/ro/master/roterms.owl> a prov:Entity;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Stian Soiland-Reyes".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Graham Klyne".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Khalid Belhajjame".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2015-07-30T14:55:00Z";
+.

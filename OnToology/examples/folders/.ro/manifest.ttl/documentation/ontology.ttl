@@ -1,0 +1,167 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.openarchives.org/ore/terms/aggregates
+<http://www.openarchives.org/ore/terms/aggregates> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/isDescribedBy
+<http://www.openarchives.org/ore/terms/isDescribedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/proxyFor
+<http://www.openarchives.org/ore/terms/proxyFor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/proxyIn
+<http://www.openarchives.org/ore/terms/proxyIn> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/wf4ever/ro#Folder
+<http://purl.org/wf4ever/ro#Folder> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#ResearchObject
+<http://purl.org/wf4ever/ro#ResearchObject> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#Resource
+<http://purl.org/wf4ever/ro#Resource> rdf:type owl:Class .
+
+
+###  http://www.openarchives.org/ore/terms/Aggregation
+<http://www.openarchives.org/ore/terms/Aggregation> rdf:type owl:Class .
+
+
+###  http://www.openarchives.org/ore/terms/Proxy
+<http://www.openarchives.org/ore/terms/Proxy> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  ../file1.txt
+<../file1.txt> rdf:type owl:NamedIndividual ,
+                        <http://purl.org/wf4ever/ro#Resource> .
+
+
+###  ../.
+<../.> rdf:type owl:NamedIndividual ,
+                <http://purl.org/wf4ever/ro#ResearchObject> ,
+                <http://www.openarchives.org/ore/terms/Aggregation> ;
+       <http://www.openarchives.org/ore/terms/aggregates> <../file1.txt> ,
+                                                          <../.ro/root> ,
+                                                          <../a/> ,
+                                                          <../a/file2.txt> ,
+                                                          <../b/> ,
+                                                          <../b/file3.txt> ,
+                                                          <../b/c/> ,
+                                                          <../b/c/file4.txt> ,
+                                                          <http://www.example.com/external.txt> ,
+                                                          <http://www.example.org/another-ro/> ;
+       <http://www.openarchives.org/ore/terms/isDescribedBy> <../.ro/manifest.ttl> .
+
+
+###  ../.ro/root
+<../.ro/root> rdf:type owl:NamedIndividual ,
+                       <http://purl.org/wf4ever/ro#Folder> ;
+              <http://www.openarchives.org/ore/terms/isDescribedBy> <../.ro/root.ttl> .
+
+
+###  ../a/
+<../a/> rdf:type owl:NamedIndividual ,
+                 <http://purl.org/wf4ever/ro#Folder> ;
+        <http://www.openarchives.org/ore/terms/isDescribedBy> <../.ro/root/a.ttl> .
+
+
+###  ../a/file2.txt
+<../a/file2.txt> rdf:type owl:NamedIndividual ,
+                          <http://purl.org/wf4ever/ro#Resource> .
+
+
+###  ../b/
+<../b/> rdf:type owl:NamedIndividual ,
+                 <http://purl.org/wf4ever/ro#Folder> ;
+        <http://www.openarchives.org/ore/terms/isDescribedBy> <../.ro/root/b.ttl> .
+
+
+###  ../b/file3.txt
+<../b/file3.txt> rdf:type owl:NamedIndividual ,
+                          <http://purl.org/wf4ever/ro#Resource> .
+
+
+###  ../b/c/
+<../b/c/> rdf:type owl:NamedIndividual ,
+                   <http://purl.org/wf4ever/ro#Folder> ;
+          <http://www.openarchives.org/ore/terms/isDescribedBy> <../.ro/root/b/c.ttl> .
+
+
+###  ../b/c/file4.txt
+<../b/c/file4.txt> rdf:type owl:NamedIndividual ,
+                            <http://purl.org/wf4ever/ro#Resource> .
+
+
+###  http://www.example.com/external.txt
+<http://www.example.com/external.txt> rdf:type owl:NamedIndividual ,
+                                               <http://purl.org/wf4ever/ro#Resource> .
+
+
+###  http://www.example.org/another-ro/
+<http://www.example.org/another-ro/> rdf:type owl:NamedIndividual ,
+                                              <http://purl.org/wf4ever/ro#ResearchObject> ,
+                                              <http://purl.org/wf4ever/ro#Resource> ;
+                                     <http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.example.org/another-ro/.ro/manifest.ttl> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#proxy1
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy1> rdf:type owl:NamedIndividual ,
+                                                               <http://www.openarchives.org/ore/terms/Proxy> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyFor> <../.ro/root> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyIn> <../.> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#proxy10
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy10> rdf:type owl:NamedIndividual ,
+                                                                <http://www.openarchives.org/ore/terms/Proxy> ;
+                                                       <http://www.openarchives.org/ore/terms/proxyFor> <http://www.example.org/another-ro/> ;
+                                                       <http://www.openarchives.org/ore/terms/proxyIn> <../.> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#proxy2
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy2> rdf:type owl:NamedIndividual ,
+                                                               <http://www.openarchives.org/ore/terms/Proxy> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyFor> <../file1.txt> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyIn> <../.> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#proxy3
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy3> rdf:type owl:NamedIndividual ,
+                                                               <http://www.openarchives.org/ore/terms/Proxy> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyFor> <../a/> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyIn> <../.> .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#proxy4
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy4> rdf:type owl:NamedIndividual ,
+                                                               <http://www.openarchives.org/ore/terms/Proxy> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyFor> <../a/file2.txt> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyIn> <../.> .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

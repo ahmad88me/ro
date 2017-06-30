@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wfdesc="http://purl.org/wf4ever/wfdesc#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#hasDataLink -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/wf4ever/wfdesc#hasDataLink"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#hasInput -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/wf4ever/wfdesc#hasInput"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#hasOutput -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/wf4ever/wfdesc#hasOutput"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#hasSink -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/wf4ever/wfdesc#hasSink"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#hasSource -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/wf4ever/wfdesc#hasSource"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/wf4ever/wf4ever#WorkflowResearchObject -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/wf4ever#WorkflowResearchObject"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/wfdesc#Workflow -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/wfdesc#Workflow"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- ../a_workflow.t2flow -->
+
+
+    <NamedIndividual rdf:about="../a_workflow.t2flow">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-05-14T12:02:12Z</terms:created>
+        <terms:creator>
+            <rdf:Description rdf:nodeID="_:genid2">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco Roos</foaf:name>
+            </rdf:Description>
+        </terms:creator>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A workflow that directly outputs its only input</terms:description>
+        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A workflow</terms:title>
+        <wfdesc:hasDataLink>
+            <rdf:Description rdf:nodeID="_:genid3">
+                <wfdesc:hasSink rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#out1"/>
+                <wfdesc:hasSource rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#in1"/>
+            </rdf:Description>
+        </wfdesc:hasDataLink>
+        <wfdesc:hasInput rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#in1"/>
+        <wfdesc:hasOutput rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#out1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../. -->
+
+
+    <NamedIndividual rdf:about="../.">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/wf4ever#WorkflowResearchObject"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#in1">
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any value</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#out1">
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The value given to in1</terms:description>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

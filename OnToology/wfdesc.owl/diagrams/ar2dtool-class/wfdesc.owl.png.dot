@@ -1,0 +1,45 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "wfdesc:Workflow" "wfdesc:Artifact" "wfdesc:DataLink" "wfdesc:Input" "wfdesc:Parameter" "wfdesc:Output" "wfdesc:Process" "wfdesc:WorkflowDefinition" "-7f871804:15cf97f4f5c:-7ffc" "wfdesc:ProcessImplementation" "wfdesc:Configuration" ; /*classes style*/
+	"NULL" -> "-7f871804:15cf97f4f5c:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "wfdesc:Input" [ label = "rdf:first" ];
+	"NULL" -> "-7f871804:15cf97f4f5c:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "wfdesc:Configuration" [ label = "rdf:first" ];
+	"NULL" -> "-7f871804:15cf97f4f5c:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "wfdesc:Output" [ label = "rdf:first" ];
+	"wfdesc:Configuration" -> "wfdesc:Output" [ label = "owl:disjointWith" ];
+	"wfdesc:ProcessImplementation" -> "wfdesc:hasImplementation" [ label = "rdfs:seeAlso" ];
+	"wfdesc:Workflow" -> "wfdesc:WorkflowDefinition" [ label = "rdfs:seeAlso" ];
+	"wfdesc:WorkflowDefinition" -> "wfdesc:hasWorkflowDefinition" [ label = "rdfs:seeAlso" ];
+	"wfdesc:hasSubWorkflow" -> "wfdesc:hasSubProcess" [ label = "rdfs:subPropertyOf" ];
+	"wfdesc:Parameter" -> "-7f871804:15cf97f4f5c:-7ffc" [ label = "owl:equivalentClass" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0003-0454-7145" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0001-9842-9718" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/wfdesc" -> "https://rawgit.com/wf4ever/ro/master/wfdesc.owl" [ label = "owl:versionIRI" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0001-6938-0820" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0003-4289-4922" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/wfdesc" -> "https://rawgit.com/wf4ever/ro/master/metadata.owl" [ label = "owl:imports" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0002-0323-0093" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "dct:license" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0002-5872-3573" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://w3id.org/ro/" [ label = "rdfs:seeAlso" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0002-9260-0753" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://www.researchobject.org/" [ label = "dct:publisher" ];
+	"http://purl.org/wf4ever/wfdesc" -> "http://data.semanticweb.org/person/esteban-garcia-cuesta" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/wfdesc" -> "https://raw.github.com/wf4ever/ro/0.1.1/wfdesc.owl" [ label = "owl:backwardCompatibleWith" ];
+	"wfdesc:hasWorkflowDefinition" -> "wfdesc:hasImplementation" [ label = "rdfs:subPropertyOf" ];
+	"wfdesc:Parameter" -> "wfdesc:Artifact" [ label = "wfdesc:hasArtifact" ];
+	"wfdesc:Process" -> "wfdesc:Configuration" [ label = "wfdesc:hasConfiguration" ];
+	"wfdesc:Workflow" -> "wfdesc:Workflow" [ label = "wfdesc:hasSubWorkflow" ];
+	"wfdesc:Workflow" -> "wfdesc:WorkflowDefinition" [ label = "wfdesc:hasWorkflowDefinition" ];
+	"wfdesc:Workflow" -> "wfdesc:Process" [ label = "wfdesc:hasSubProcess" ];
+	"wfdesc:Process" -> "wfdesc:Output" [ label = "wfdesc:hasOutput" ];
+	"wfdesc:Process" -> "wfdesc:ProcessImplementation" [ label = "wfdesc:hasImplementation" ];
+	"wfdesc:Workflow" -> "wfdesc:DataLink" [ label = "wfdesc:hasDataLink" ];
+	"wfdesc:DataLink" -> "wfdesc:Output" [ label = "wfdesc:hasSource" ];
+	"wfdesc:DataLink" -> "wfdesc:Input" [ label = "wfdesc:hasSink" ];
+	"wfdesc:Process" -> "wfdesc:Input" [ label = "wfdesc:hasInput" ];
+
+}

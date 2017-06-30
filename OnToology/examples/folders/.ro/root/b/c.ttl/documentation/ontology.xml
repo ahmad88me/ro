@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:terms="http://www.openarchives.org/ore/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ro="http://purl.org/wf4ever/ro#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#entryName -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/wf4ever/ro#entryName"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/aggregates -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/aggregates"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/isAggregatedBy -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/isDescribedBy -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/isDescribedBy"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/proxyFor -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/proxyFor"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/proxyIn -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/proxyIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#Folder -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#Folder"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#FolderEntry -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#FolderEntry"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#ResearchObject -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#ResearchObject"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#Resource -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#Resource"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/AggregatedResource -->
+
+
+    <Class rdf:about="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/Aggregation -->
+
+
+    <Class rdf:about="http://www.openarchives.org/ore/terms/Aggregation"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/Proxy -->
+
+
+    <Class rdf:about="http://www.openarchives.org/ore/terms/Proxy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- ../../../. -->
+
+
+    <NamedIndividual rdf:about="../../../.">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <terms:isDescribedBy rdf:resource="../../../.ro/manifest.ttl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../../../b/ -->
+
+
+    <NamedIndividual rdf:about="../../../b/">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <terms:isDescribedBy rdf:resource="../../../.ro/root/b.ttl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../../../b/file4.txt -->
+
+
+    <NamedIndividual rdf:about="../../../b/file4.txt">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <terms:isAggregatedBy rdf:resource="../../../."/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../../../b/c/ -->
+
+
+    <NamedIndividual rdf:about="../../../b/c/">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <terms:aggregates rdf:resource="../../../b/c/file4.txt"/>
+        <terms:isAggregatedBy rdf:resource="../../../."/>
+        <terms:isAggregatedBy rdf:resource="../../../b/"/>
+        <terms:isDescribedBy rdf:resource="../../../.ro/root/b/c.ttl"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="_:genid2">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <ro:entryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file4.txt</ro:entryName>
+        <terms:proxyFor rdf:resource="../../../b/c/file4.txt"/>
+        <terms:proxyIn rdf:resource="../../../b/"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

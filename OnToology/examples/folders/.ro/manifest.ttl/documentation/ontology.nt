@@ -1,0 +1,105 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.openarchives.org/ore/terms/aggregates
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.openarchives.org/ore/terms/isDescribedBy
+<http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.openarchives.org/ore/terms/proxyFor
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.openarchives.org/ore/terms/proxyIn
+<http://www.openarchives.org/ore/terms/proxyIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/wf4ever/ro#Folder
+<http://purl.org/wf4ever/ro#Folder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/wf4ever/ro#ResearchObject
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/wf4ever/ro#Resource
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.openarchives.org/ore/terms/Aggregation
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.openarchives.org/ore/terms/Proxy
+<http://www.openarchives.org/ore/terms/Proxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# ../file1.txt
+# 
+# ../.
+# 
+# ../.ro/root
+# 
+# ../a/
+# 
+# ../a/file2.txt
+# 
+# ../b/
+# 
+# ../b/file3.txt
+# 
+# ../b/c/
+# 
+# ../b/c/file4.txt
+# 
+# http://www.example.com/external.txt
+<http://www.example.com/external.txt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.com/external.txt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#Resource> .
+# 
+# http://www.example.org/another-ro/
+<http://www.example.org/another-ro/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org/another-ro/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#ResearchObject> .
+<http://www.example.org/another-ro/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/wf4ever/ro#Resource> .
+<http://www.example.org/another-ro/> <http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.example.org/another-ro/.ro/manifest.ttl> .
+# 
+# http://www.semanticweb.org/owl/owlapi/turtle#proxy1
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy> .
+# 
+# http://www.semanticweb.org/owl/owlapi/turtle#proxy10
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy> .
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy10> <http://www.openarchives.org/ore/terms/proxyFor> <http://www.example.org/another-ro/> .
+# 
+# http://www.semanticweb.org/owl/owlapi/turtle#proxy2
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy> .
+# 
+# http://www.semanticweb.org/owl/owlapi/turtle#proxy3
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy> .
+# 
+# http://www.semanticweb.org/owl/owlapi/turtle#proxy4
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.openarchives.org/ore/terms/Proxy> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

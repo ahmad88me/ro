@@ -1,0 +1,99 @@
+<http://purl.org/wf4ever/roevo-wf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/wf4ever/roevo-wf> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/wf4ever/roevo-wf/0.1> .
+<http://purl.org/wf4ever/roevo-wf> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/wf4ever/roevo> .
+<http://purl.org/wf4ever/roevo-wf> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology extends roevo with a detailed taxonomy of changes for workflows. This taxonomy has been created based on an analysis of workflows in myExperiment." .
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/wf4ever/roevo-wf#newValue
+<http://purl.org/wf4ever/roevo-wf#newValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/wf4ever/roevo-wf#newValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/wf4ever/roevo-wf#ParameterChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#objectId
+<http://purl.org/wf4ever/roevo-wf#objectId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/wf4ever/roevo-wf#objectId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#oldValue
+<http://purl.org/wf4ever/roevo-wf#oldValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/wf4ever/roevo-wf#oldValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/wf4ever/roevo-wf#ParameterChange> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/wf4ever/roevo-wf#AddControlFlowBetweenProcessors
+<http://purl.org/wf4ever/roevo-wf#AddControlFlowBetweenProcessors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#AddControlFlowBetweenProcessors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#AddDataFlowBetweenProcessorPorts
+<http://purl.org/wf4ever/roevo-wf#AddDataFlowBetweenProcessorPorts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#AddDataFlowBetweenProcessorPorts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#AddProcessor
+<http://purl.org/wf4ever/roevo-wf#AddProcessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#AddProcessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#AddProcessorPort
+<http://purl.org/wf4ever/roevo-wf#AddProcessorPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#AddProcessorPort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#UpdateProcessor> .
+# 
+# http://purl.org/wf4ever/roevo-wf#AddWorkflowPort
+<http://purl.org/wf4ever/roevo-wf#AddWorkflowPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#AddWorkflowPort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#DeleteControlFlowBetweenProcessors
+<http://purl.org/wf4ever/roevo-wf#DeleteControlFlowBetweenProcessors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#DeleteControlFlowBetweenProcessors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#DeleteDataFlowBetweenProcessorPorts
+<http://purl.org/wf4ever/roevo-wf#DeleteDataFlowBetweenProcessorPorts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#DeleteDataFlowBetweenProcessorPorts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#DeleteProcessor
+<http://purl.org/wf4ever/roevo-wf#DeleteProcessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#DeleteProcessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#DeleteProcessorPort
+<http://purl.org/wf4ever/roevo-wf#DeleteProcessorPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#DeleteProcessorPort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#UpdateProcessor> .
+# 
+# http://purl.org/wf4ever/roevo-wf#DeleteWorkflowPort
+<http://purl.org/wf4ever/roevo-wf#DeleteWorkflowPort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#DeleteWorkflowPort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#ParameterChange
+<http://purl.org/wf4ever/roevo-wf#ParameterChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#ParameterChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowInstanceChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#UpdateProcessor
+<http://purl.org/wf4ever/roevo-wf#UpdateProcessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#UpdateProcessor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> .
+# 
+# http://purl.org/wf4ever/roevo-wf#UpdateProcessorAnnotation
+<http://purl.org/wf4ever/roevo-wf#UpdateProcessorAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#UpdateProcessorAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#UpdateProcessor> .
+# 
+# http://purl.org/wf4ever/roevo-wf#UpdateProcessorConfiguration
+<http://purl.org/wf4ever/roevo-wf#UpdateProcessorConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#UpdateProcessorConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo-wf#UpdateProcessor> .
+# 
+# http://purl.org/wf4ever/roevo-wf#WorkflowInstanceChange
+<http://purl.org/wf4ever/roevo-wf#WorkflowInstanceChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#WorkflowInstanceChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo#Modification> .
+# 
+# http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange
+<http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/roevo#Modification> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

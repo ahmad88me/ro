@@ -1,0 +1,31 @@
+{
+  "@context" : {
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "value" : {
+      "@id" : "http://purl.org/wf4ever/roevo-ann#value"
+    },
+    "Modification" : {
+      "@id" : "http://purl.org/wf4ever/roevo#Modification"
+    },
+    "DeleteTarget" : {
+      "@id" : "http://purl.org/wf4ever/roevo-ann#DeleteTarget"
+    },
+    "AnnotationChange" : {
+      "@id" : "http://purl.org/wf4ever/roevo-ann#AnnotationChange"
+    },
+    "DeleteStatement" : {
+      "@id" : "http://purl.org/wf4ever/roevo-ann#DeleteStatement"
+    },
+    "AddStatement" : {
+      "@id" : "http://purl.org/wf4ever/roevo-ann#AddStatement"
+    },
+    "UpdateStatement" : {
+      "@id" : "http://purl.org/wf4ever/roevo-ann#UpdateStatement"
+    },
+    "AddTarget" : {
+      "@id" : "http://purl.org/wf4ever/roevo-ann#AddTarget"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "roevo-wf:UpdateProcessorConfiguration" "roevo-wf:AddDataFlowBetweenProcessorPorts" "roevo-wf:DeleteProcessor" "roevo-wf:AddWorkflowPort" "roevo-wf:UpdateProcessor" "roevo-wf:DeleteWorkflowPort" "roevo-wf:DeleteDataFlowBetweenProcessorPorts" "roevo-wf:WorkflowTemplateChange" "roevo-wf:AddProcessorPort" "roevo-wf:AddProcessor" "roevo-wf:DeleteProcessorPort" "roevo-wf:WorkflowInstanceChange" "roevo-wf:AddControlFlowBetweenProcessors" "roevo-wf:ParameterChange" "roevo-wf:UpdateProcessorAnnotation" "roevo-wf:DeleteControlFlowBetweenProcessors" "roevo:VersionableResource" "roevo:Removal" "roevo:LiveRO" "roevo:ChangeSpecification" "roevo:Addition" "roevo:Modification" "roevo:SnapshotRO" "roevo:Change" "roevo:ArchivedRO" "prov:Entity" "ro:ResearchObject" "prov:Activity" ; /*classes style*/
+	"roevo-wf:WorkflowTemplateChange" -> "roevo:Modification" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:DeleteProcessorPort" -> "roevo-wf:UpdateProcessor" [ label = "rdfs:subClassOf" ];
+	"roevo:Modification" -> "roevo:Change" [ label = "rdfs:subClassOf" ];
+	"roevo:Removal" -> "roevo:Change" [ label = "rdfs:subClassOf" ];
+	"roevo:SnapshotRO" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roevo:SnapshotRO" -> "ro:ResearchObject" [ label = "rdfs:subClassOf" ];
+	"roevo:VersionableResource" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:DeleteControlFlowBetweenProcessors" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:AddControlFlowBetweenProcessors" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:UpdateProcessor" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+	"roevo:ArchivedRO" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roevo:ArchivedRO" -> "ro:ResearchObject" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:UpdateProcessorAnnotation" -> "roevo-wf:UpdateProcessor" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:AddProcessorPort" -> "roevo-wf:UpdateProcessor" [ label = "rdfs:subClassOf" ];
+	"roevo:Change" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:ParameterChange" -> "roevo-wf:WorkflowInstanceChange" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:DeleteProcessor" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+	"roevo:Addition" -> "roevo:Change" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:DeleteDataFlowBetweenProcessorPorts" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:WorkflowInstanceChange" -> "roevo:Modification" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:AddDataFlowBetweenProcessorPorts" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+	"roevo:LiveRO" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roevo:LiveRO" -> "ro:ResearchObject" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:UpdateProcessorConfiguration" -> "roevo-wf:UpdateProcessor" [ label = "rdfs:subClassOf" ];
+	"roevo:ChangeSpecification" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:AddWorkflowPort" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:AddProcessor" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+	"roevo-wf:DeleteWorkflowPort" -> "roevo-wf:WorkflowTemplateChange" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,34 @@
+{
+  "@context" : {
+    "hasOutput" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasOutput"
+    },
+    "hasDataLink" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasDataLink"
+    },
+    "hasSource" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasSource"
+    },
+    "hasSubProcess" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasSubProcess"
+    },
+    "Input" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Input"
+    },
+    "Workflow" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Workflow"
+    },
+    "Process" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Process"
+    },
+    "hasSink" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasSink"
+    },
+    "Output" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Output"
+    },
+    "DataLink" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#DataLink"
+    }
+  }
+}

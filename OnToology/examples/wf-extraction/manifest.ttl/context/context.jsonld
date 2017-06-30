@@ -1,0 +1,52 @@
+{
+  "@context" : {
+    "Annotation" : {
+      "@id" : "http://purl.org/wf4ever/ro#Annotation"
+    },
+    "Proxy" : {
+      "@id" : "http://purl.org/wf4ever/ro#Proxy"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "proxyFor" : {
+      "@id" : "http://www.openarchives.org/ore/terms/proxyFor"
+    },
+    "GraphAnnotation" : {
+      "@id" : "http://purl.org/ao/GraphAnnotation"
+    },
+    "body" : {
+      "@id" : "http://purl.org/ao/body"
+    },
+    "Graph" : {
+      "@id" : "http://www.w3.org/2004/03/trix/rdfg-1/Graph"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "annotatesResource" : {
+      "@id" : "http://purl.org/wf4ever/ro#annotatesResource"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "ResearchObject" : {
+      "@id" : "http://purl.org/wf4ever/ro#ResearchObject"
+    },
+    "Aggregation" : {
+      "@id" : "http://www.openarchives.org/ore/terms/Aggregation"
+    },
+    "proxyIn" : {
+      "@id" : "http://www.openarchives.org/ore/terms/proxyIn"
+    },
+    "aggregates" : {
+      "@id" : "http://www.openarchives.org/ore/terms/aggregates"
+    },
+    "Resource" : {
+      "@id" : "http://purl.org/wf4ever/ro#Resource"
+    }
+  }
+}

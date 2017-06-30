@@ -1,0 +1,55 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "foaf:Agent" "ro:ResearchObject" "ro:Manifest" "ro:FolderEntry" "ro:Folder" "6dd13c4c:15cf97e7b55:-7ff9" ; /*classes style*/
+	"ao:annotatesResource" -> "oa:hasTarget" [ label = "owl:equivalentProperty" ];
+	"http://purl.org/wf4ever/ro" -> "http://w3id.org/ro/" [ label = "rdfs:seeAlso" ];
+	"http://purl.org/wf4ever/ro" -> "http://orcid.org/0000-0002-0323-0093" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/ro" -> "https://raw.github.com/wf4ever/ro/0.1.1/ro.owl" [ label = "owl:backwardCompatibleWith" ];
+	"http://purl.org/wf4ever/ro" -> "http://orcid.org/0000-0002-9260-0753" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/ro" -> "http://orcid.org/0000-0003-0454-7145" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/ro" -> "https://w3id.org/ro/primer" [ label = "vann:usageNote" ];
+	"http://purl.org/wf4ever/ro" -> "http://data.semanticweb.org/person/esteban-garcia-cuesta" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/ro" -> "https://rawgit.com/wf4ever/ro/master/ore-owl.owl" [ label = "owl:imports" ];
+	"http://purl.org/wf4ever/ro" -> "http://orcid.org/0000-0002-5872-3573" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/ro" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "dct:license" ];
+	"http://purl.org/wf4ever/ro" -> "http://orcid.org/0000-0001-6938-0820" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/ro" -> "https://rawgit.com/wf4ever/ro/master/metadata.owl" [ label = "owl:imports" ];
+	"http://purl.org/wf4ever/ro" -> "https://rawgit.com/wf4ever/ro/master/ro.owl" [ label = "owl:versionIRI" ];
+	"http://purl.org/wf4ever/ro" -> "http://orcid.org/0000-0003-4289-4922" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/ro" -> "http://researchobject.org/" [ label = "dct:publisher" ];
+	"http://purl.org/wf4ever/ro" -> "http://orcid.org/0000-0001-9842-9718" [ label = "dct:creator" ];
+	"ao:body" -> "oa:hasBody" [ label = "owl:equivalentProperty" ];
+	"ro:annotatesAggregatedResource" -> "oa:hasTarget" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "ro:Folder" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "ore:AggregatedResource" [ label = "rdf:first" ];
+	"NULL" -> "ore:Proxy" [ label = "rdf:first" ];
+	"NULL" -> "foaf:Agent" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "6dd13c4c:15cf97e7b55:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "dct:creator" [ label = "owl:onProperty" ];
+	"NULL" -> "ro:entryName" [ label = "rdf:first" ];
+	"NULL" -> "oa:hasTarget" [ label = "owl:onProperty" ];
+	"NULL" -> "ro:ResearchObject" [ label = "rdf:first" ];
+	"NULL" -> "6dd13c4c:15cf97e7b55:-7fea" [ label = "owl:onProperty" ];
+	"NULL" -> "dct:created" [ label = "owl:onProperty" ];
+	"NULL" -> "ro:Manifest" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "ore:isDescribedBy" [ label = "owl:onProperty" ];
+	"NULL" -> "6dd13c4c:15cf97e7b55:-7ff9" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "xsd:dateTime" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "ore:proxyIn" [ label = "owl:onProperty" ];
+	"NULL" -> "ro:entryName" [ label = "owl:onProperty" ];
+	"NULL" -> "6dd13c4c:15cf97e7b55:-7ff8" [ label = "owl:unionOf" ];
+	"NULL" -> "ore:describes" [ label = "owl:onProperty" ];
+	"NULL" -> "ro:ResearchObject" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "ore:isAggregatedBy" [ label = "owl:onProperty" ];
+	"NULL" -> "6dd13c4c:15cf97e7b55:-7ff1" [ label = "rdf:rest" ];
+	"NULL" -> "6dd13c4c:15cf97e7b55:-7ff7" [ label = "rdf:rest" ];
+	"NULL" -> "ore:proxyIn" [ label = "rdf:first" ];
+	"ro:FolderEntry" -> "6dd13c4c:15cf97e7b55:-7ff2" [ label = "owl:hasKey" ];
+	"ro:rootFolder" -> "ore:aggregates" [ label = "rdfs:subPropertyOf" ];
+	"ro:ResearchObject" -> "ro:Folder" [ label = "ro:rootFolder" ];
+	"ro:FolderEntry" -> "xsd:string" [ label = "ro:entryName" ];
+
+}

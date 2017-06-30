@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:terms="http://www.openarchives.org/ore/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/aggregates -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/aggregates"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/isDescribedBy -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/isDescribedBy"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/proxyFor -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/proxyFor"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/proxyIn -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/proxyIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#Folder -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#Folder"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#ResearchObject -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#ResearchObject"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#Resource -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#Resource"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/Aggregation -->
+
+
+    <Class rdf:about="http://www.openarchives.org/ore/terms/Aggregation"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/Proxy -->
+
+
+    <Class rdf:about="http://www.openarchives.org/ore/terms/Proxy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- ../file1.txt -->
+
+
+    <NamedIndividual rdf:about="../file1.txt">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../. -->
+
+
+    <NamedIndividual rdf:about="../.">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <terms:aggregates rdf:resource="../file1.txt"/>
+        <terms:aggregates rdf:resource="../.ro/root"/>
+        <terms:aggregates rdf:resource="../a/"/>
+        <terms:aggregates rdf:resource="../a/file2.txt"/>
+        <terms:aggregates rdf:resource="../b/"/>
+        <terms:aggregates rdf:resource="../b/file3.txt"/>
+        <terms:aggregates rdf:resource="../b/c/"/>
+        <terms:aggregates rdf:resource="../b/c/file4.txt"/>
+        <terms:aggregates rdf:resource="http://www.example.com/external.txt"/>
+        <terms:aggregates rdf:resource="http://www.example.org/another-ro/"/>
+        <terms:isDescribedBy rdf:resource="../.ro/manifest.ttl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../.ro/root -->
+
+
+    <NamedIndividual rdf:about="../.ro/root">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
+        <terms:isDescribedBy rdf:resource="../.ro/root.ttl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../a/ -->
+
+
+    <NamedIndividual rdf:about="../a/">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
+        <terms:isDescribedBy rdf:resource="../.ro/root/a.ttl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../a/file2.txt -->
+
+
+    <NamedIndividual rdf:about="../a/file2.txt">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../b/ -->
+
+
+    <NamedIndividual rdf:about="../b/">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
+        <terms:isDescribedBy rdf:resource="../.ro/root/b.ttl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../b/file3.txt -->
+
+
+    <NamedIndividual rdf:about="../b/file3.txt">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../b/c/ -->
+
+
+    <NamedIndividual rdf:about="../b/c/">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
+        <terms:isDescribedBy rdf:resource="../.ro/root/b/c.ttl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../b/c/file4.txt -->
+
+
+    <NamedIndividual rdf:about="../b/c/file4.txt">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/external.txt -->
+
+
+    <NamedIndividual rdf:about="http://www.example.com/external.txt">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/another-ro/ -->
+
+
+    <NamedIndividual rdf:about="http://www.example.org/another-ro/">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+        <terms:isDescribedBy rdf:resource="http://www.example.org/another-ro/.ro/manifest.ttl"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#proxy1 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#proxy1">
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <terms:proxyFor rdf:resource="../.ro/root"/>
+        <terms:proxyIn rdf:resource="../."/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#proxy10 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#proxy10">
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <terms:proxyFor rdf:resource="http://www.example.org/another-ro/"/>
+        <terms:proxyIn rdf:resource="../."/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#proxy2 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#proxy2">
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <terms:proxyFor rdf:resource="../file1.txt"/>
+        <terms:proxyIn rdf:resource="../."/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#proxy3 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#proxy3">
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <terms:proxyFor rdf:resource="../a/"/>
+        <terms:proxyIn rdf:resource="../."/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#proxy4 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#proxy4">
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
+        <terms:proxyFor rdf:resource="../a/file2.txt"/>
+        <terms:proxyIn rdf:resource="../."/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

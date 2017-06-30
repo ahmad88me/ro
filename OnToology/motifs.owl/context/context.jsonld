@@ -1,0 +1,93 @@
+{
+  "@context" : {
+    "DataMovement" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#DataMovement"
+    },
+    "HumanInteraction" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#HumanInteraction"
+    },
+    "CompositeWorkflow" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#CompositeWorkflow"
+    },
+    "DataOrganization" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#DataOrganization"
+    },
+    "WorkflowOverloading" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#WorkflowOverloading"
+    },
+    "DataMotif" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#DataMotif"
+    },
+    "DataPreparation" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#DataPreparation"
+    },
+    "InternalMacro" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#InternalMacro"
+    },
+    "InputAugmentation" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#InputAugmentation"
+    },
+    "OutputSplitting" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#OutputSplitting"
+    },
+    "hasWorkflowMotif" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#hasWorkflowMotif",
+      "@type" : "@id"
+    },
+    "Filtering" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#Filtering"
+    },
+    "DataAnalysis" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#DataAnalysis"
+    },
+    "Grouping" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#Grouping"
+    },
+    "AsynchronousInvocation" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#AsynchronousInvocation"
+    },
+    "ComputationalStep" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#ComputationalStep"
+    },
+    "hasDataMotif" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#hasDataMotif",
+      "@type" : "@id"
+    },
+    "DataRetrieval" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#DataRetrieval"
+    },
+    "FormatTransformation" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#FormatTransformation"
+    },
+    "AtomicWorkflow" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#AtomicWorkflow"
+    },
+    "SynchronousInvocaton" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#SynchronousInvocaton"
+    },
+    "WorkflowMotif" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#WorkflowMotif"
+    },
+    "InterWorkflowMotif" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#InterWorkflowMotif"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "IntraWorkflowMotif" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#IntraWorkflowMotif"
+    },
+    "Sorting" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#Sorting"
+    },
+    "DataCleaning" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#DataCleaning"
+    },
+    "DataVisualization" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#DataVisualization"
+    },
+    "Merging" : {
+      "@id" : "http://purl.org/wf4ever/motifs.owl#Merging"
+    }
+  }
+}

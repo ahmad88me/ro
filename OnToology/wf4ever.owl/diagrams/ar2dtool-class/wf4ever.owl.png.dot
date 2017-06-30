@@ -1,0 +1,54 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "wf4ever:FileParameter" "wf4ever:WebService" "wf4ever:File" "wf4ever:Script" "wf4ever:BeanshellScript" "wf4ever:CommandLineTool" "wf4ever:SOAPService" "wf4ever:RScript" "64420a07:15cf97f0d72:-7ff8" "wf4ever:PythonScript" "wf4ever:WorkflowResearchObject" ; /*classes style*/
+	"wf4ever:RScript" -> "https://www.r-project.org/" [ label = "rdfs:seeAlso" ];
+	"wf4ever:BeanshellScript" -> "https://github.com/beanshell/beanshell" [ label = "rdfs:seeAlso" ];
+	"wf4ever:rootURI" -> "wf4ever:serviceURI" [ label = "rdfs:subPropertyOf" ];
+	"wf4ever:WorkflowResearchObject" -> "64420a07:15cf97f0d72:-7ff8" [ label = "owl:equivalentClass" ];
+	"wf4ever:filePath" -> "wf4ever:parameterFilePath" [ label = "rdfs:seeAlso" ];
+	"wf4ever:File" -> "wf4ever:filePath" [ label = "rdfs:seeAlso" ];
+	"wf4ever:PythonScript" -> "https://www.python.org/" [ label = "rdfs:seeAlso" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://orcid.org/0000-0002-5872-3573" [ label = "terms:creator" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://data.semanticweb.org/person/esteban-garcia-cuesta" [ label = "terms:creator" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://orcid.org/0000-0003-0454-7145" [ label = "terms:creator" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://researchobject.org/" [ label = "terms:publisher" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://orcid.org/0000-0003-4289-4922" [ label = "terms:creator" ];
+	"http://purl.org/wf4ever/wf4ever" -> "https://rawgit.com/wf4ever/ro/master/wfdesc.owl" [ label = "owl:imports" ];
+	"http://purl.org/wf4ever/wf4ever" -> "https://raw.github.com/wf4ever/ro/0.1.1/wf4ever.owl" [ label = "owl:backwardCompatibleWith" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://orcid.org/0000-0002-9260-0753" [ label = "terms:creator" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "terms:license" ];
+	"http://purl.org/wf4ever/wf4ever" -> "https://w3id.org/ro/primer" [ label = "vann:usageNote" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://orcid.org/0000-0002-0323-0093" [ label = "terms:creator" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://orcid.org/0000-0001-6938-0820" [ label = "terms:creator" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://orcid.org/0000-0001-9842-9718" [ label = "terms:creator" ];
+	"http://purl.org/wf4ever/wf4ever" -> "https://raw.github.com/wf4ever/ro/master/wf4ever.owl" [ label = "owl:versionIRI" ];
+	"http://purl.org/wf4ever/wf4ever" -> "http://w3id.org/ro/" [ label = "rdfs:seeAlso" ];
+	"http://purl.org/wf4ever/wf4ever" -> "https://rawgit.com/wf4ever/ro/master/wfprov.owl" [ label = "owl:imports" ];
+	"http://purl.org/wf4ever/wf4ever" -> "https://rawgit.com/wf4ever/ro/master/metadata.owl" [ label = "owl:imports" ];
+	"http://purl.org/wf4ever/wf4ever" -> "https://rawgit.com/wf4ever/ro/master/ro.owl" [ label = "owl:imports" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "64420a07:15cf97f0d72:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "wfdesc:Workflow" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "wf4ever:wsdlPortName" [ label = "rdf:first" ];
+	"NULL" -> "wf4ever:wsdlURI" [ label = "rdf:first" ];
+	"NULL" -> "ro:ResearchObject" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "wf4ever:wsdlOperationName" [ label = "rdf:first" ];
+	"NULL" -> "64420a07:15cf97f0d72:-7ff7" [ label = "owl:intersectionOf" ];
+	"NULL" -> "http://www.openarchives.org/ore/terms/aggregates" [ label = "owl:onProperty" ];
+	"NULL" -> "wf4ever:parameterFilePath" [ label = "owl:onProperty" ];
+	"wf4ever:SOAPService" -> "64420a07:15cf97f0d72:-7ff9" [ label = "owl:hasKey" ];
+	"wf4ever:SOAPService" -> "64420a07:15cf97f0d72:-7ffa" [ label = "owl:hasKey" ];
+	"wf4ever:SOAPService" -> "64420a07:15cf97f0d72:-7ffb" [ label = "owl:hasKey" ];
+	"wf4ever:wsdlURI" -> "wf4ever:serviceURI" [ label = "rdfs:subPropertyOf" ];
+	"wf4ever:SOAPService" -> "owl:Thing" [ label = "wf4ever:wsdlURI" ];
+	"wf4ever:Script" -> "xsd:string" [ label = "wf4ever:script" ];
+	"wf4ever:CommandLineTool" -> "xsd:string" [ label = "wf4ever:command" ];
+	"wf4ever:SOAPService" -> "owl:Thing" [ label = "wf4ever:wsdlPortName" ];
+	"wf4ever:File" -> "xsd:string" [ label = "wf4ever:filePath" ];
+	"wf4ever:FileParameter" -> "xsd:string" [ label = "wf4ever:parameterFilePath" ];
+	"wf4ever:SOAPService" -> "owl:Thing" [ label = "wf4ever:wsdlOperationName" ];
+	"wf4ever:WebService" -> "xsd:anyURI" [ label = "wf4ever:serviceURI" ];
+
+}

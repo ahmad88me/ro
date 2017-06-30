@@ -1,0 +1,37 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "dcat:Dataset" "wfdesc:Workflow" "co:Collection" "wfdesc:Artifact" "foaf:Agent" "wfdesc:Parameter" "roterms:OptionalInput" "cnt:Content" "wfprov:Artifact" "skos:Concept" "roterms:WorkflowValue" ; /*classes style*/
+	"roterms:OptionalInput" -> "roterms:defaultValue" [ label = "rdfs:seeAlso" ];
+	"roterms:" -> "https://rawgit.com/wf4ever/ro/master/roterms.owl" [ label = "owl:versionIRI" ];
+	"roterms:" -> "http://orcid.org/0000-0001-9842-9718" [ label = "dcterms:creator" ];
+	"roterms:" -> "https://cdn.rawgit.com/wf4ever/ro/roterms-0.3.1/roterms.owl" [ label = "owl:backwardCompatibleWith" ];
+	"roterms:" -> "https://cdn.rawgit.com/wf4ever/ro/roterms-0.3.0/roterms.owl" [ label = "owl:backwardCompatibleWith" ];
+	"roterms:" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "dcterms:license" ];
+	"roterms:" -> "https://cdn.rawgit.com/wf4ever/ro/roterms-0.2.0/roterms.owl" [ label = "owl:backwardCompatibleWith" ];
+	"roterms:" -> "http://orcid.org/0000-0001-6938-0820" [ label = "dcterms:contributor" ];
+	"roterms:" -> "http://orcid.org/0000-0002-0323-0093" [ label = "dcterms:contributor" ];
+	"roterms:" -> "https://w3id.org/ro/primer" [ label = "vann:usageNote" ];
+	"roterms:" -> "http://researchobject.org/" [ label = "dcterms:publisher" ];
+	"roterms:WorkflowValue" -> "wfprov:Artifact" [ label = "rdfs:seeAlso" ];
+	"roterms:WorkflowValue" -> "http://www.w3.org/TR/Content-in-RDF10/#bytesProperty" [ label = "rdfs:seeAlso" ];
+	"roterms:WorkflowValue" -> "http://www.w3.org/TR/Content-in-RDF10/#charsProperty" [ label = "rdfs:seeAlso" ];
+	"roterms:WorkflowValue" -> "cnt:Content" [ label = "rdfs:seeAlso" ];
+	"roterms:WorkflowValue" -> "co:Collection" [ label = "rdfs:seeAlso" ];
+	"roterms:WorkflowValue" -> "http://purl.org/co" [ label = "rdfs:seeAlso" ];
+	"roterms:defaultValue" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"roterms:requiresDataset" -> "dcterms:requires" [ label = "rdfs:subPropertyOf" ];
+	"roterms:requiresHardware" -> "dcterms:requires" [ label = "rdfs:subPropertyOf" ];
+	"roterms:exampleValue" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"roterms:requiresSoftware" -> "dcterms:requires" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "dcat:Dataset" [ label = "roterms:requiresDataset" ];
+	"wfdesc:Workflow" -> "wfdesc:Workflow" [ label = "roterms:previousWorkflow" ];
+	"wfdesc:Artifact" -> "skos:Concept" [ label = "roterms:ofSemanticType" ];
+	"wfdesc:Parameter" -> "roterms:WorkflowValue" [ label = "roterms:exampleValue" ];
+	"wfdesc:Parameter" -> "roterms:WorkflowValue" [ label = "roterms:defaultValue" ];
+	"wfdesc:Workflow" -> "wfdesc:Workflow" [ label = "roterms:subsequentWorkflow" ];
+	"owl:Thing" -> "skos:Concept" [ label = "roterms:performsTask" ];
+	"owl:Thing" -> "foaf:Agent" [ label = "roterms:technicalContact" ];
+	"wfprov:Artifact" -> "rdfs:Literal" [ label = "roterms:sampleSize" ];
+
+}

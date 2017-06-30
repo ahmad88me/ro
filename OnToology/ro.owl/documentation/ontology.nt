@@ -1,0 +1,246 @@
+<http://purl.org/wf4ever/ro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/wf4ever/ro> <http://www.w3.org/2002/07/owl#versionIRI> <https://rawgit.com/wf4ever/ro/master/ro.owl> .
+<http://purl.org/wf4ever/ro> <http://www.w3.org/2002/07/owl#imports> <https://rawgit.com/wf4ever/ro/master/metadata.owl> .
+<http://purl.org/wf4ever/ro> <http://www.w3.org/2002/07/owl#imports> <https://rawgit.com/wf4ever/ro/master/ore-owl.owl> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo" .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/creator> "Esteban Garc\u00EDa Cuesta" .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/creator> "Graham Klyne" .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/creator> "Khalid Belhajjame" .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho" .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/creator> "Raul Palma" .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/creator> "Sean Bechhofer" .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/creator> "Stian Soiland-Reyes" .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/description> "This ontology shows how OA and ORE ontologies can be used together to define a ResearchObject."@en .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/rights> "This ontology is distributed under Creative Commons Attribution 4.0 License - http://creativecommons.org/licenses/by/4.0"@en .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/elements/1.1/title> "Research Object ontology"@en .
+<http://purl.org/wf4ever/ro> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ro" .
+<http://purl.org/wf4ever/ro> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/wf4ever/ro#" .
+<http://purl.org/wf4ever/ro> <http://purl.org/vocab/vann/usageNote> <https://w3id.org/ro/primer> .
+<http://purl.org/wf4ever/ro> <http://www.w3.org/2000/01/rdf-schema#label> "Research Object ontology"@en .
+<http://purl.org/wf4ever/ro> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://w3id.org/ro/> .
+<http://purl.org/wf4ever/ro> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://raw.github.com/wf4ever/ro/0.1.1/ro.owl> .
+<http://purl.org/wf4ever/ro> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0-SNAPSHOT" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ao/annotatesResource
+<http://purl.org/ao/annotatesResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ao/annotatesResource> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.w3.org/ns/oa#hasTarget> .
+<http://purl.org/ao/annotatesResource> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is deprecated. Use oa:hasTarget instead." .
+<http://purl.org/ao/annotatesResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ao/> .
+<http://purl.org/ao/annotatesResource> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://purl.org/ao/body
+<http://purl.org/ao/body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ao/body> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.w3.org/ns/oa#hasBody> .
+<http://purl.org/ao/body> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is deprecated. Use oa:hasBody instead." .
+<http://purl.org/ao/body> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/ao/> .
+<http://purl.org/ao/body> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# http://purl.org/wf4ever/ro#annotatesAggregatedResource
+<http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/oa#hasTarget> .
+<http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is deprecated. Use oa:hasTarget instead." .
+<http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+<http://purl.org/wf4ever/ro#annotatesAggregatedResource> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://purl.org/wf4ever/ro#rootFolder
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.openarchives.org/ore/terms/aggregates> .
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/wf4ever/ro#ResearchObject> .
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/wf4ever/ro#Folder> .
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "The suggested root ro:Folder for the ro:ResearchObject. This folder should not be aggregated within other ro:Folders and can be seen as the top level folder for other ro:Folders in this RO.\n\nThis folder structure, if stated, is the RO creator's preferred view of organizing the RO resources. Note that the content of any folder directly or indirectly below the ro:rootFolder (including subfolders) MUST also be aggregated by the ro:ResearchObject itself."@en .
+<http://purl.org/wf4ever/ro#rootFolder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+# 
+# http://www.w3.org/ns/oa#hasBody
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+# 
+# http://www.w3.org/ns/oa#hasTarget
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/wf4ever/ro#entryName
+<http://purl.org/wf4ever/ro#entryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/wf4ever/ro#entryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/wf4ever/ro#entryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/wf4ever/ro#FolderEntry> .
+<http://purl.org/wf4ever/ro#entryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/wf4ever/ro#entryName> <http://www.w3.org/2000/01/rdf-schema#comment> "This functional property specifies the name of a ro:FolderEntry within an ro:Folder.\n\nThis name must be case-sensitively unique within the ro:Folder, similar to a filename in a directory.\n\nTODO: Need a functional property to specify the top level folder structure of an {{ro:ResearchObject}}?\n"@en .
+<http://purl.org/wf4ever/ro#entryName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/wf4ever/ro#AggregatedAnnotation
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.openarchives.org/ore/terms/AggregatedResource> .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/oa#Annotation> .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/creator> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.openarchives.org/ore/terms/isAggregatedBy> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/wf4ever/ro#ResearchObject> .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/oa#hasTarget> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/wf4ever/ro#ResearchObject> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.openarchives.org/ore/terms/AggregatedResource> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.openarchives.org/ore/terms/Proxy> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/created> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#comment> "An annotation aggregated within an ro:ResearchObject.\n\nInstances of this class are used to annotated resources aggregated within the aggregating research object, proxies of these resources, or the research object itself. In other words, if :ro is the ro:ResearchObject this annotation has been ore:isAggregatedBy, then the annotation should have at least one oa:hasTarget which is an ore:AggregatedResource which is ore:isAggregatedBy :ro, or the annotated resource is an ore:Proxy which ore:proxyIn :ro, or the annotated resource is :ro.\n\nIt is possible for the annotation to also annotate non-aggregated resources, but as above, at least one of them needs to be part of the RO or the RO itself.\n\nFor semantic annotations, the oa:hasBody SHOULD point to an trig:Graph which contains the actual annotation."@en .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+<http://purl.org/wf4ever/ro#AggregatedAnnotation> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregated Annotation"@en .
+# 
+# http://purl.org/wf4ever/ro#Folder
+<http://purl.org/wf4ever/ro#Folder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/ro#Folder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/wf4ever/ro#Resource> .
+<http://purl.org/wf4ever/ro#Folder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://purl.org/wf4ever/ro#Folder> <http://www.w3.org/2000/01/rdf-schema#comment> "An ro:Folder is a special kind of ore:Aggregation where every ro:AggregatedResource must have a ro:FolderEntry proxy with a unique ro:entryName within that folder.\n\nNote that all resources which are aggregated within an (potentially nested) ro:Folder SHOULD also be aggregated by the same ro:ResearchObject this ro:Folder is aggregated within.\n\nSuch folders can be nested and (optionally) used to organize the resources of the research object into a file-like structure. All such resources should also be aggregated by the ro:ResearchObject\n          "@en .
+<http://purl.org/wf4ever/ro#Folder> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+<http://purl.org/wf4ever/ro#Folder> <http://www.w3.org/2000/01/rdf-schema#label> "Folder"@en .
+# 
+# http://purl.org/wf4ever/ro#FolderEntry
+<http://purl.org/wf4ever/ro#FolderEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/ro#FolderEntry> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.openarchives.org/ore/terms/proxyIn> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/wf4ever/ro#Folder> .
+<http://purl.org/wf4ever/ro#FolderEntry> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/wf4ever/ro#entryName> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/wf4ever/ro#FolderEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.openarchives.org/ore/terms/Proxy> .
+<http://purl.org/wf4ever/ro#FolderEntry> <http://www.w3.org/2002/07/owl#hasKey> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.openarchives.org/ore/terms/proxyIn> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/wf4ever/ro#entryName> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/wf4ever/ro#FolderEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "An ro:FolderEntry is any ore:Proxy instance that associates a resources aggregated within an ro:Folder with a ro:entryName. This name is (case-sensitive) unique within a given folder."@en .
+<http://purl.org/wf4ever/ro#FolderEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+<http://purl.org/wf4ever/ro#FolderEntry> <http://www.w3.org/2000/01/rdf-schema#label> "Folder Entry"@en .
+# 
+# http://purl.org/wf4ever/ro#Manifest
+<http://purl.org/wf4ever/ro#Manifest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/ro#Manifest> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.openarchives.org/ore/terms/describes> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/wf4ever/ro#ResearchObject> .
+<http://purl.org/wf4ever/ro#Manifest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.openarchives.org/ore/terms/ResourceMap> .
+<http://purl.org/wf4ever/ro#Manifest> <http://www.w3.org/2000/01/rdf-schema#comment> "The ro:Manifest is used to describe an ro:ResearchObject. This identifies the resource for the manifest which lists all the aggregations of the research object, typically called \".ro/manifest.rdf\" relative to the research object this manifest ore:describes."@en .
+<http://purl.org/wf4ever/ro#Manifest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+<http://purl.org/wf4ever/ro#Manifest> <http://www.w3.org/2000/01/rdf-schema#label> "Manifest"@en .
+# 
+# http://purl.org/wf4ever/ro#ResearchObject
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.openarchives.org/ore/terms/isDescribedBy> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/wf4ever/ro#Manifest> .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/creator> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/terms/created> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#comment> "A research object aggregates a number of resources. A resource can be a workflow, web service, document, data item, data set, workflow run, software or a research object."@en .
+<http://purl.org/wf4ever/ro#ResearchObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+# 
+# http://purl.org/wf4ever/ro#Resource
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.openarchives.org/ore/terms/AggregatedResource> .
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.openarchives.org/ore/terms/isAggregatedBy> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/wf4ever/ro#ResearchObject> .
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.openarchives.org/ore/terms/proxyFor> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.openarchives.org/ore/terms/proxyIn> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/wf4ever/ro#ResearchObject> .
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/2000/01/rdf-schema#comment> "An ro:Resource is an ore:AggregatedResource which ore:isAggregatedBy an ro:ResearchObject.\n\nThis specialisation requires that there exists an ore:Proxy which is ore:proxyFor this resource, and which is ore:proxyIn the same ro:ResearchObject the resource ore:isAggregatedBy. Any annotations on such a proxy will descrive the ro:Resource within that particular ro:ResearchObject, in particular dct:creator and dct:created on the proxy will specify who added the resource to the aggregation at what time.\n\nNote that annotations (ro:Annotation) can be added to both the ro:Resource and the ore:Proxy - depending on if the annotation is seen to be globally true (such as the provenance of how the resource was created) or locally true within the Research Object (such as the the resource playing the role of a wf4ever:Dataset).\n\nNot all resources aggregated by an ro:ResearchObject are ro:Resource instances, in particular ro:Annotations will also be aggregated, but are not required to also be ro:Resources (needing their own ore:Proxy).\n\nAggregated resources MAY also be organised in (potentially nested) ro:Folders to reflect a file-system like structure. Note that any such resources SHOULD also be aggregated in the \"mother\" ro:ResearchObject.\n"@en .
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/wf4ever/ro> .
+<http://purl.org/wf4ever/ro#Resource> <http://www.w3.org/2000/01/rdf-schema#label> "Resource"@en .
+# 
+# http://www.w3.org/ns/oa#Annotation
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/oa#> .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/wf4ever/ro
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/creator> <http://data.semanticweb.org/person/esteban-garcia-cuesta> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-6938-0820> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-9842-9718> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0002-0323-0093> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0002-5872-3573> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0002-9260-0753> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0003-0454-7145> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0003-4289-4922> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/publisher> <http://researchobject.org/> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/issued> "2016-01-28T15:46:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/wf4ever/ro> <http://purl.org/dc/terms/modified> "2016-01-28T15:46:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

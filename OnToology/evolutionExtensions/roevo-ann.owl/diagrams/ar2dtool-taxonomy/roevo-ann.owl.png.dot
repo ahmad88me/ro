@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "roevo-ann:UpdateStatement" "roevo-ann:DeleteTarget" "roevo-ann:DeleteStatement" "roevo-ann:AnnotationChange" "roevo-ann:AddTarget" "roevo-ann:AddStatement" "roevo:VersionableResource" "roevo:Removal" "roevo:LiveRO" "roevo:ChangeSpecification" "roevo:Addition" "roevo:Modification" "roevo:SnapshotRO" "roevo:Change" "roevo:ArchivedRO" "prov:Entity" "ro:ResearchObject" "prov:Activity" ; /*classes style*/
+	"roevo:VersionableResource" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roevo-ann:DeleteStatement" -> "roevo-ann:AnnotationChange" [ label = "rdfs:subClassOf" ];
+	"roevo-ann:DeleteTarget" -> "roevo-ann:AnnotationChange" [ label = "rdfs:subClassOf" ];
+	"roevo:ArchivedRO" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roevo:ArchivedRO" -> "ro:ResearchObject" [ label = "rdfs:subClassOf" ];
+	"roevo-ann:AddTarget" -> "roevo-ann:AnnotationChange" [ label = "rdfs:subClassOf" ];
+	"roevo:Modification" -> "roevo:Change" [ label = "rdfs:subClassOf" ];
+	"roevo:Removal" -> "roevo:Change" [ label = "rdfs:subClassOf" ];
+	"roevo:ChangeSpecification" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"roevo-ann:AddStatement" -> "roevo-ann:AnnotationChange" [ label = "rdfs:subClassOf" ];
+	"roevo:LiveRO" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roevo:LiveRO" -> "ro:ResearchObject" [ label = "rdfs:subClassOf" ];
+	"roevo:Change" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"roevo-ann:AnnotationChange" -> "roevo:Modification" [ label = "rdfs:subClassOf" ];
+	"roevo:SnapshotRO" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roevo:SnapshotRO" -> "ro:ResearchObject" [ label = "rdfs:subClassOf" ];
+	"roevo-ann:UpdateStatement" -> "roevo-ann:AnnotationChange" [ label = "rdfs:subClassOf" ];
+	"roevo:Addition" -> "roevo:Change" [ label = "rdfs:subClassOf" ];
+
+}

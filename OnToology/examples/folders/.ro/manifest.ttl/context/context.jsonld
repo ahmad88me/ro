@@ -1,0 +1,31 @@
+{
+  "@context" : {
+    "proxyIn" : {
+      "@id" : "http://www.openarchives.org/ore/terms/proxyIn"
+    },
+    "proxyFor" : {
+      "@id" : "http://www.openarchives.org/ore/terms/proxyFor"
+    },
+    "aggregates" : {
+      "@id" : "http://www.openarchives.org/ore/terms/aggregates"
+    },
+    "isDescribedBy" : {
+      "@id" : "http://www.openarchives.org/ore/terms/isDescribedBy"
+    },
+    "Resource" : {
+      "@id" : "http://purl.org/wf4ever/ro#Resource"
+    },
+    "Proxy" : {
+      "@id" : "http://www.openarchives.org/ore/terms/Proxy"
+    },
+    "Aggregation" : {
+      "@id" : "http://www.openarchives.org/ore/terms/Aggregation"
+    },
+    "ResearchObject" : {
+      "@id" : "http://purl.org/wf4ever/ro#ResearchObject"
+    },
+    "Folder" : {
+      "@id" : "http://purl.org/wf4ever/ro#Folder"
+    }
+  }
+}

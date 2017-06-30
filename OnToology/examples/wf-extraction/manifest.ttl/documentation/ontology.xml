@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:terms="http://www.openarchives.org/ore/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms1="http://purl.org/dc/terms/"
+     xmlns:ro="http://purl.org/wf4ever/ro#"
+     xmlns:ao="http://purl.org/ao/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/ao/body -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/ao/body"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#annotatesResource -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/wf4ever/ro#annotatesResource"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/aggregates -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/aggregates"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/proxyFor -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/proxyFor"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/proxyIn -->
+
+
+    <AnnotationProperty rdf:about="http://www.openarchives.org/ore/terms/proxyIn"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/ao/GraphAnnotation -->
+
+
+    <Class rdf:about="http://purl.org/ao/GraphAnnotation"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#Annotation -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#Annotation"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#Proxy -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#Proxy"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#ResearchObject -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#ResearchObject"/>
+    
+
+
+    <!-- http://purl.org/wf4ever/ro#Resource -->
+
+
+    <Class rdf:about="http://purl.org/wf4ever/ro#Resource"/>
+    
+
+
+    <!-- http://www.openarchives.org/ore/terms/Aggregation -->
+
+
+    <Class rdf:about="http://www.openarchives.org/ore/terms/Aggregation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/03/trix/rdfg-1/Graph -->
+
+
+    <Class rdf:about="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- ../a_workflow.t2flow -->
+
+
+    <NamedIndividual rdf:about="../a_workflow.t2flow">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../. -->
+
+
+    <NamedIndividual rdf:about="../.">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        <terms1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-12-02T15:01:10Z</terms1:created>
+        <terms1:creator>
+            <rdf:Description rdf:nodeID="_:genid2">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stian Soiland-Reyes</foaf:name>
+            </rdf:Description>
+        </terms1:creator>
+        <terms:aggregates rdf:resource="../a_workflow.t2flow"/>
+        <terms:aggregates rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#ann1"/>
+    </NamedIndividual>
+    
+
+
+    <!-- ../.ro/ann1 -->
+
+
+    <NamedIndividual rdf:about="../.ro/ann1">
+        <rdf:type rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
+        <terms1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-05-14T12:02:12Z</terms1:created>
+        <terms1:creator>
+            <rdf:Description rdf:nodeID="_:genid3">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marco Roos</foaf:name>
+            </rdf:Description>
+        </terms1:creator>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#ann1 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#ann1">
+        <rdf:type rdf:resource="http://purl.org/ao/GraphAnnotation"/>
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Annotation"/>
+        <ao:body rdf:resource="../.ro/ann1"/>
+        <terms1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-12-02T15:02:13Z</terms1:created>
+        <terms1:creator>
+            <rdf:Description rdf:nodeID="_:genid4">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+                <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t2flow workflow annotation extractor</foaf:name>
+            </rdf:Description>
+        </terms1:creator>
+        <ro:annotatesResource rdf:resource="../a_workflow.t2flow"/>
+        <ro:annotatesResource rdf:resource="../."/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/owl/owlapi/turtle#proxy1 -->
+
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#proxy1">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Proxy"/>
+        <terms1:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-12-02T15:02:10Z</terms1:created>
+        <terms1:creator>
+            <rdf:Description rdf:nodeID="_:genid5">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stian Soiland-Reyes</foaf:name>
+            </rdf:Description>
+        </terms1:creator>
+        <terms:proxyFor rdf:resource="../a_workflow.t2flow"/>
+        <terms:proxyIn rdf:resource="../."/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+

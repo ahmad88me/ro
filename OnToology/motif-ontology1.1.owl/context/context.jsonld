@@ -1,0 +1,118 @@
+{
+  "@context" : {
+    "StructuredDataPreparation" : {
+      "@id" : "http://purl.org/net/wf-motifs#StructuredDataPreparation"
+    },
+    "DataMovement" : {
+      "@id" : "http://purl.org/net/wf-motifs#DataMovement"
+    },
+    "Sort" : {
+      "@id" : "http://purl.org/net/wf-motifs#Sort"
+    },
+    "HumanInteraction" : {
+      "@id" : "http://purl.org/net/wf-motifs#HumanInteraction"
+    },
+    "CompositeWorkflow" : {
+      "@id" : "http://purl.org/net/wf-motifs#CompositeWorkflow"
+    },
+    "DataCreation" : {
+      "@id" : "http://purl.org/net/wf-motifsl#DataCreation"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Motif" : {
+      "@id" : "http://purl.org/net/wf-motifs#Motif"
+    },
+    "Filter" : {
+      "@id" : "http://purl.org/net/wf-motifsl#Filter"
+    },
+    "OperationMotif" : {
+      "@id" : "http://purl.org/net/wf-motifs#OperationMotif"
+    },
+    "DataPreparation" : {
+      "@id" : "http://purl.org/net/wf-motifs#DataPreparation"
+    },
+    "InternalMacro" : {
+      "@id" : "http://purl.org/net/wf-motifs#InternalMacro"
+    },
+    "InputAugmentation" : {
+      "@id" : "http://purl.org/net/wf-motifs#InputAugmentation"
+    },
+    "implementsOperationMotif" : {
+      "@id" : "http://purl.org/net/wf-motifs#implementsOperationMotif",
+      "@type" : "@id"
+    },
+    "UnstructuredDataPreparation" : {
+      "@id" : "http://purl.org/net/wf-motifs#UnstructuredDataPreparation"
+    },
+    "implementsMotif" : {
+      "@id" : "http://purl.org/net/wf-motifs#implementsMotif",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "implementsWorkflowMotif" : {
+      "@id" : "http://purl.org/net/wf-motifs#implementsWorkflowMotif",
+      "@type" : "@id"
+    },
+    "DataAnalysis" : {
+      "@id" : "http://purl.org/net/wf-motifs#DataAnalysis"
+    },
+    "Merge" : {
+      "@id" : "http://purl.org/net/wf-motifs#Merge"
+    },
+    "AsynchronousInvocation" : {
+      "@id" : "http://purl.org/net/wf-motifs#AsynchronousInvocation"
+    },
+    "ComputationalStep" : {
+      "@id" : "http://purl.org/net/wf-motifs#ComputationalStep"
+    },
+    "DataRetrieval" : {
+      "@id" : "http://purl.org/net/wf-motifs#DataRetrieval"
+    },
+    "FormatTransformation" : {
+      "@id" : "http://purl.org/net/wf-motifs#FormatTransformation"
+    },
+    "AtomicWorkflow" : {
+      "@id" : "http://purl.org/net/wf-motifs#AtomicWorkflow"
+    },
+    "SynchronousInvocaton" : {
+      "@id" : "http://purl.org/net/wf-motifs#SynchronousInvocaton"
+    },
+    "WorkflowMotif" : {
+      "@id" : "http://purl.org/net/wf-motifs#WorkflowMotif"
+    },
+    "WorkflowOverload" : {
+      "@id" : "http://purl.org/net/wf-motifs#WorkflowOverload"
+    },
+    "InterWorkflowMotif" : {
+      "@id" : "http://purl.org/net/wf-motifs#InterWorkflowMotif"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Split" : {
+      "@id" : "http://purl.org/net/wf-motifsl#Split"
+    },
+    "Group" : {
+      "@id" : "http://purl.org/net/wf-motifs#Group"
+    },
+    "IntraWorkflowMotif" : {
+      "@id" : "http://purl.org/net/wf-motifs#IntraWorkflowMotif"
+    },
+    "Join" : {
+      "@id" : "http://purl.org/net/wf-motifs#Join"
+    },
+    "DataCleaning" : {
+      "@id" : "http://purl.org/net/wf-motifs#DataCleaning"
+    },
+    "OutputExtraction" : {
+      "@id" : "http://purl.org/net/wf-motifs#OutputExtraction"
+    },
+    "DataVisualization" : {
+      "@id" : "http://purl.org/net/wf-motifs#DataVisualization"
+    }
+  }
+}

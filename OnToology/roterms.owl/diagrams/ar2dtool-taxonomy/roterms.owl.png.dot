@@ -1,0 +1,21 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "co:Collection" "roterms:Sketch" "roterms:ResultGenerationRun" "roterms:Conclusion" "wfdesc:Input" "wfdesc:Parameter" "roterms:OptionalInput" "cnt:Content" "wfprov:WorkflowRun" "wfprov:Artifact" "roterms:ExampleRun" "roterms:Result" "roterms:Paper" "roterms:Hypothesis" "prov:Entity" "roterms:ProspectiveRun" "roterms:WorkflowValue" "roterms:ResearchQuestion" ; /*classes style*/
+	"roterms:OptionalInput" -> "wfdesc:Input" [ label = "rdfs:subClassOf" ];
+	"roterms:Result" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roterms:Hypothesis" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roterms:ResultGenerationRun" -> "wfprov:WorkflowRun" [ label = "rdfs:subClassOf" ];
+	"roterms:ProspectiveRun" -> "wfprov:WorkflowRun" [ label = "rdfs:subClassOf" ];
+	"roterms:WorkflowValue" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roterms:ResearchQuestion" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"roterms:Conclusion" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"cnt:Content" -> "roterms:WorkflowValue" [ label = "rdfs:subClassOf" ];
+	"roterms:Paper" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"wfprov:Artifact" -> "roterms:WorkflowValue" [ label = "rdfs:subClassOf" ];
+	"roterms:ExampleRun" -> "wfprov:WorkflowRun" [ label = "rdfs:subClassOf" ];
+	"roterms:Sketch" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"co:Collection" -> "roterms:WorkflowValue" [ label = "rdfs:subClassOf" ];
+	"wfdesc:Input" -> "wfdesc:Parameter" [ label = "rdfs:subClassOf" ];
+
+}

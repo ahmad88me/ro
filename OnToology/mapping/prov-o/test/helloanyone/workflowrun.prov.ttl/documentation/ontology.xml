@@ -1,0 +1,694 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:prov="http://www.w3.org/ns/prov#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#activity -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#agent -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#alternateOf -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#alternateOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#endedAtTime -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#endedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#entity -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#entity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#generated -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#generated"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadPlan -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadPlan"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#hadRole -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#hadRole"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#influenced -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#influenced"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedAssociation -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#qualifiedAssociation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedGeneration -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#qualifiedGeneration"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#qualifiedUsage -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#qualifiedUsage"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#startedAtTime -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#startedAtTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#used -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#used"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasInformedBy -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasInformedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Activity -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Activity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Association -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Association"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Bundle -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Bundle"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Entity -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Entity"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Generation -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Generation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Plan -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Plan"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Role -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Role"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Usage -->
+
+
+    <Class rdf:about="http://www.w3.org/ns/prov#Usage"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- file:/home/stain/src/ro/mapping/prov-o/test/2/greeting.txt -->
+
+
+    <NamedIndividual rdf:about="file:/home/stain/src/ro/mapping/prov-o/test/2/greeting.txt">
+        <sameAs rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"/>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/stain/src/ro/mapping/prov-o/test/2/name.txt -->
+
+
+    <NamedIndividual rdf:about="file:/home/stain/src/ro/mapping/prov-o/test/2/name.txt">
+        <sameAs rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/ -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/ -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1 -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2 -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/ -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <prov:qualifiedGeneration>
+            <rdf:Description rdf:nodeID="_:genid2">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+                <prov:activity rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                <prov:hadRole rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting"/>
+            </rdf:Description>
+        </prov:qualifiedGeneration>
+        <prov:wasGeneratedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027 -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3 -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"/>
+        <prov:qualifiedGeneration>
+            <rdf:Description rdf:nodeID="_:genid3">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+                <prov:activity rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/"/>
+                <prov:hadRole rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value"/>
+            </rdf:Description>
+        </prov:qualifiedGeneration>
+        <prov:wasGeneratedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/ -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:33:45.435+01:00</prov:endedAtTime>
+        <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"/>
+        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"/>
+        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"/>
+        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/"/>
+        <prov:influenced>
+            <rdf:Description rdf:nodeID="_:genid4">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.718+01:00</prov:endedAtTime>
+                <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                <prov:qualifiedAssociation>
+                    <rdf:Description rdf:nodeID="_:genid5">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                        <prov:agent>
+                            <rdf:Description rdf:nodeID="_:genid6">
+                                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                                <prov:influenced/>
+                            </rdf:Description>
+                        </prov:agent>
+                        <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2011/software/taverna-2.4.0"/>
+                    </rdf:Description>
+                </prov:qualifiedAssociation>
+                <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.181+01:00</prov:startedAtTime>
+                <prov:wasAssociatedWith>
+                    <rdf:Description rdf:nodeID="_:genid6">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                        <prov:influenced/>
+                    </rdf:Description>
+                </prov:wasAssociatedWith>
+                <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+            </rdf:Description>
+        </prov:influenced>
+        <prov:qualifiedAssociation>
+            <rdf:Description rdf:nodeID="_:genid7">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                <prov:agent>
+                    <rdf:Description rdf:nodeID="_:genid6">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                        <prov:influenced>
+                            <rdf:Description rdf:nodeID="_:genid4">
+                                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                                <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.718+01:00</prov:endedAtTime>
+                                <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                                <prov:qualifiedAssociation>
+                                    <rdf:Description rdf:nodeID="_:genid5">
+                                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                                        <prov:agent/>
+                                        <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2011/software/taverna-2.4.0"/>
+                                    </rdf:Description>
+                                </prov:qualifiedAssociation>
+                                <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.181+01:00</prov:startedAtTime>
+                                <prov:wasAssociatedWith/>
+                                <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                            </rdf:Description>
+                        </prov:influenced>
+                    </rdf:Description>
+                </prov:agent>
+                <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/"/>
+            </rdf:Description>
+        </prov:qualifiedAssociation>
+        <prov:qualifiedUsage>
+            <rdf:Description rdf:nodeID="_:genid8">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+                <prov:entity rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"/>
+                <prov:hadRole rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name"/>
+            </rdf:Description>
+        </prov:qualifiedUsage>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:33:41.608+01:00</prov:startedAtTime>
+        <prov:used rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"/>
+        <prov:wasAssociatedWith>
+            <rdf:Description rdf:nodeID="_:genid6">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                <prov:influenced>
+                    <rdf:Description rdf:nodeID="_:genid4">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.718+01:00</prov:endedAtTime>
+                        <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                        <prov:qualifiedAssociation>
+                            <rdf:Description rdf:nodeID="_:genid5">
+                                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                                <prov:agent/>
+                                <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2011/software/taverna-2.4.0"/>
+                            </rdf:Description>
+                        </prov:qualifiedAssociation>
+                        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.181+01:00</prov:startedAtTime>
+                        <prov:wasAssociatedWith/>
+                        <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                    </rdf:Description>
+                </prov:influenced>
+            </rdf:Description>
+        </prov:wasAssociatedWith>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Bundle"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <prov:wasGeneratedBy>
+            <rdf:Description rdf:nodeID="_:genid9">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.718+01:00</prov:endedAtTime>
+                <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                <prov:qualifiedAssociation>
+                    <rdf:Description rdf:nodeID="_:genid10">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                        <prov:agent>
+                            <rdf:Description rdf:nodeID="_:genid11">
+                                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                                <prov:influenced/>
+                            </rdf:Description>
+                        </prov:agent>
+                        <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2011/software/taverna-2.4.0"/>
+                    </rdf:Description>
+                </prov:qualifiedAssociation>
+                <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.181+01:00</prov:startedAtTime>
+                <prov:wasAssociatedWith>
+                    <rdf:Description rdf:nodeID="_:genid11">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                        <prov:influenced/>
+                    </rdf:Description>
+                </prov:wasAssociatedWith>
+                <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+            </rdf:Description>
+        </prov:wasGeneratedBy>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/ -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:33:45.380+01:00</prov:endedAtTime>
+        <prov:generated>
+            <rdf:Description rdf:nodeID="_:genid12">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                <prov:alternateOf rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"/>
+                <prov:qualifiedGeneration>
+                    <rdf:Description rdf:nodeID="_:genid13">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+                        <prov:activity rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"/>
+                        <prov:hadRole rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output"/>
+                    </rdf:Description>
+                </prov:qualifiedGeneration>
+                <prov:wasGeneratedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"/>
+            </rdf:Description>
+        </prov:generated>
+        <prov:influenced>
+            <rdf:Description rdf:nodeID="_:genid12">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+                <prov:alternateOf rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"/>
+                <prov:qualifiedGeneration>
+                    <rdf:Description rdf:nodeID="_:genid13">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Generation"/>
+                        <prov:activity rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"/>
+                        <prov:hadRole rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output"/>
+                    </rdf:Description>
+                </prov:qualifiedGeneration>
+                <prov:wasGeneratedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"/>
+            </rdf:Description>
+        </prov:influenced>
+        <prov:qualifiedAssociation>
+            <rdf:Description rdf:nodeID="_:genid14">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                <prov:agent>
+                    <rdf:Description rdf:nodeID="_:genid15">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                        <prov:influenced>
+                            <rdf:Description rdf:nodeID="_:genid16">
+                                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                                <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.718+01:00</prov:endedAtTime>
+                                <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                                <prov:qualifiedAssociation>
+                                    <rdf:Description rdf:nodeID="_:genid17">
+                                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                                        <prov:agent/>
+                                        <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2011/software/taverna-2.4.0"/>
+                                    </rdf:Description>
+                                </prov:qualifiedAssociation>
+                                <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.181+01:00</prov:startedAtTime>
+                                <prov:wasAssociatedWith/>
+                                <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                            </rdf:Description>
+                        </prov:influenced>
+                    </rdf:Description>
+                </prov:agent>
+                <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/"/>
+            </rdf:Description>
+        </prov:qualifiedAssociation>
+        <prov:qualifiedUsage>
+            <rdf:Description rdf:nodeID="_:genid18">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+                <prov:entity rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"/>
+                <prov:hadRole rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2"/>
+            </rdf:Description>
+        </prov:qualifiedUsage>
+        <prov:qualifiedUsage>
+            <rdf:Description rdf:nodeID="_:genid19">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Usage"/>
+                <prov:entity rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3"/>
+                <prov:hadRole rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1"/>
+            </rdf:Description>
+        </prov:qualifiedUsage>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:33:45.236+01:00</prov:startedAtTime>
+        <prov:used rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"/>
+        <prov:used rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3"/>
+        <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/ -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:33:45.152+01:00</prov:endedAtTime>
+        <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3"/>
+        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3"/>
+        <prov:qualifiedAssociation>
+            <rdf:Description rdf:nodeID="_:genid20">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                <prov:agent>
+                    <rdf:Description rdf:nodeID="_:genid21">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                        <prov:influenced>
+                            <rdf:Description rdf:nodeID="_:genid22">
+                                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                                <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.718+01:00</prov:endedAtTime>
+                                <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                                <prov:qualifiedAssociation>
+                                    <rdf:Description rdf:nodeID="_:genid23">
+                                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                                        <prov:agent/>
+                                        <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2011/software/taverna-2.4.0"/>
+                                    </rdf:Description>
+                                </prov:qualifiedAssociation>
+                                <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.181+01:00</prov:startedAtTime>
+                                <prov:wasAssociatedWith/>
+                                <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                            </rdf:Description>
+                        </prov:influenced>
+                    </rdf:Description>
+                </prov:agent>
+                <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/"/>
+            </rdf:Description>
+        </prov:qualifiedAssociation>
+        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:33:42.463+01:00</prov:startedAtTime>
+        <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://ns.taverna.org.uk/2011/software/taverna-2.4.0 -->
+
+
+    <NamedIndividual rdf:about="http://ns.taverna.org.uk/2011/software/taverna-2.4.0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Plan"/>
+    </NamedIndividual>
+    <rdf:Description rdf:nodeID="_:genid24">
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+        <prov:agent>
+            <rdf:Description rdf:nodeID="_:genid25">
+                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+                <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                <prov:influenced>
+                    <rdf:Description rdf:nodeID="_:genid26">
+                        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+                        <prov:endedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.718+01:00</prov:endedAtTime>
+                        <prov:generated rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                        <prov:influenced rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"/>
+                        <prov:qualifiedAssociation>
+                            <rdf:Description rdf:nodeID="_:genid27">
+                                <rdf:type rdf:resource="http://www.w3.org/ns/prov#Association"/>
+                                <prov:agent/>
+                                <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2011/software/taverna-2.4.0"/>
+                            </rdf:Description>
+                        </prov:qualifiedAssociation>
+                        <prov:startedAtTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-07-16T10:34:05.181+01:00</prov:startedAtTime>
+                        <prov:wasAssociatedWith/>
+                        <prov:wasInformedBy rdf:resource="http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"/>
+                    </rdf:Description>
+                </prov:influenced>
+            </rdf:Description>
+        </prov:agent>
+        <prov:hadPlan rdf:resource="http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+
+
