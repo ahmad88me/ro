@@ -1,0 +1,40 @@
+{
+  "@context" : {
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "hasOutput" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasOutput"
+    },
+    "WorkflowResearchObject" : {
+      "@id" : "http://purl.org/wf4ever/wf4ever#WorkflowResearchObject"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "hasDataLink" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasDataLink"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "hasSource" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasSource"
+    },
+    "hasInput" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasInput"
+    },
+    "Workflow" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Workflow"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "hasSink" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#hasSink"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    }
+  }
+}

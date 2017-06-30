@@ -1,0 +1,26 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "ore:ResourceMap" "ore:Proxy" "ore:Aggregation" "ore:AggregatedResource" ; /*classes style*/
+	"http://purl.org/wf4ever/ore-owl" -> "http://www.openarchives.org/ore/1.0/primer" [ label = "vann:usageNote" ];
+	"http://purl.org/wf4ever/ore-owl" -> "http://creativecommons.org/licenses/by-sa/3.0/" [ label = "dct:license" ];
+	"http://purl.org/wf4ever/ore-owl" -> "https://rawgit.com/wf4ever/ro/master/metadata.owl" [ label = "owl:imports" ];
+	"http://purl.org/wf4ever/ore-owl" -> "https://www.openarchives.org/ore/" [ label = "dct:creator" ];
+	"http://purl.org/wf4ever/ore-owl" -> "ore:" [ label = "owl:backwardCompatibleWith" ];
+	"http://purl.org/wf4ever/ore-owl" -> "https://rawgit.com/wf4ever/ro/master/ore-owl.owl" [ label = "owl:versionIRI" ];
+	"http://purl.org/wf4ever/ore-owl" -> "http://orcid.org/0000-0001-9842-9718" [ label = "dct:contributor" ];
+	"http://purl.org/wf4ever/ore-owl" -> "http://researchobject.org/" [ label = "dct:publisher" ];
+	"http://purl.org/wf4ever/ore-owl" -> "ore:" [ label = "owl:priorVersion" ];
+	"http://purl.org/wf4ever/ore-owl" -> "http://www.openarchives.org/ore/toc" [ label = "rdfs:seeAlso" ];
+	"ore:isAggregatedBy" -> "dct:isPartOf" [ label = "rdfs:subPropertyOf" ];
+	"ore:aggregates" -> "dct:hasPart" [ label = "rdfs:subPropertyOf" ];
+	"ore:ResourceMap" -> "ore:Aggregation" [ label = "ore:describes" ];
+	"ore:Proxy" -> "ore:Proxy" [ label = "ore:lineage" ];
+	"ore:AggregatedResource" -> "ore:Aggregation" [ label = "ore:isAggregatedBy" ];
+	"ore:Proxy" -> "ore:Aggregation" [ label = "ore:proxyIn" ];
+	"ore:Proxy" -> "ore:AggregatedResource" [ label = "ore:proxyFor" ];
+	"ore:Aggregation" -> "owl:Thing" [ label = "ore:similarTo" ];
+	"ore:Aggregation" -> "ore:AggregatedResource" [ label = "ore:aggregates" ];
+	"ore:Aggregation" -> "ore:ResourceMap" [ label = "ore:isDescribedBy" ];
+
+}

@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"file:///b/c/" -> "file:///b/c/file4.txt" [ label = "ore:aggregates" ];
+	"file:///b/c/" -> "file:///.ro/root/b/c.ttl" [ label = "ore:isDescribedBy" ];
+	"file:///b/c/" -> "file:///b/" [ label = "ore:isAggregatedBy" ];
+	"file:///b/c/" -> "file:///" [ label = "ore:isAggregatedBy" ];
+	"file:///b/" -> "file:///.ro/root/b.ttl" [ label = "ore:isDescribedBy" ];
+	"NULL" -> "file:///b/" [ label = "ore:proxyIn" ];
+	"NULL" -> "file:///b/c/file4.txt" [ label = "ore:proxyFor" ];
+	"file:///" -> "file:///.ro/manifest.ttl" [ label = "ore:isDescribedBy" ];
+	"file:///b/file4.txt" -> "file:///" [ label = "ore:isAggregatedBy" ];
+
+}

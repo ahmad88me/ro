@@ -1,0 +1,42 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "wfprov:WorkflowRun" "wfprov:WorkflowEngine" "wfprov:ProcessRun" "wfprov:Artifact" "prov:Influence" "prov:End" "prov:Agent" "prov:Derivation" "prov:Role" "prov:Quotation" "prov:Collection" "prov:InstantaneousEvent" "prov:Delegation" "prov:Invalidation" "prov:Bundle" "prov:Usage" "prov:SoftwareAgent" "prov:Attribution" "prov:PrimarySource" "prov:ActivityInfluence" "prov:Organization" "prov:EmptyCollection" "prov:Entity" "prov:Revision" "prov:Communication" "prov:Association" "prov:Start" "prov:Plan" "prov:EntityInfluence" "prov:Activity" "prov:AgentInfluence" "prov:Generation" "prov:Person" ; /*classes style*/
+	"prov:Revision" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"wfprov:ProcessRun" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"wfdesc:Input" -> "prov:Role" [ label = "rdfs:subClassOf" ];
+	"prov:Association" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"wfprov:WorkflowEngine" -> "foaf:Agent" [ label = "rdfs:subClassOf" ];
+	"wfprov:WorkflowEngine" -> "prov:SoftwareAgent" [ label = "rdfs:subClassOf" ];
+	"prov:EmptyCollection" -> "prov:Collection" [ label = "rdfs:subClassOf" ];
+	"prov:Derivation" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Plan" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"wfdesc:Workflow" -> "prov:Plan" [ label = "rdfs:subClassOf" ];
+	"prov:Attribution" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Bundle" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Communication" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:EntityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:PrimarySource" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"wfprov:WorkflowRun" -> "wfprov:ProcessRun" [ label = "rdfs:subClassOf" ];
+	"prov:SoftwareAgent" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:Person" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:AgentInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"wfdesc:Output" -> "prov:Role" [ label = "rdfs:subClassOf" ];
+	"prov:Quotation" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:Collection" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Organization" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:ActivityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:Delegation" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"wfprov:Artifact" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+
+}

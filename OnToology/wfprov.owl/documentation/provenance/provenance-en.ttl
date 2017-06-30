@@ -1,0 +1,15 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://rawgit.com/wf4ever/ro/master/wfprov.owl> a prov:Entity;
+	 dc:title "wfprov Workflow Execution Provenance ontology";
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Daniel Garijo".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Esteban García Cuesta".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Graham Klyne".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Khalid Belhajjame".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Oscar Corcho".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Raul Palma".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Sean Bechhofer".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Stian Soiland-Reyes".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.

@@ -1,0 +1,19 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "wf4ever:FileParameter" "wf4ever:WebService" "wf4ever:RESTService" "wf4ever:File" "wf4ever:Script" "wf4ever:BeanshellScript" "wf4ever:CommandLineTool" "wf4ever:Document" "wf4ever:Dataset" "wf4ever:SOAPService" "wf4ever:RScript" "wf4ever:PythonScript" "wf4ever:Image" ; /*classes style*/
+	"wf4ever:FileParameter" -> "wfdesc:Parameter" [ label = "rdfs:subClassOf" ];
+	"wf4ever:BeanshellScript" -> "wf4ever:Script" [ label = "rdfs:subClassOf" ];
+	"wf4ever:Image" -> "wfprov:Artifact" [ label = "rdfs:subClassOf" ];
+	"wf4ever:CommandLineTool" -> "wfdesc:ProcessImplementation" [ label = "rdfs:subClassOf" ];
+	"wf4ever:WebService" -> "wfdesc:ProcessImplementation" [ label = "rdfs:subClassOf" ];
+	"wf4ever:Document" -> "wfprov:Artifact" [ label = "rdfs:subClassOf" ];
+	"wf4ever:RESTService" -> "wf4ever:WebService" [ label = "rdfs:subClassOf" ];
+	"wf4ever:Script" -> "wfdesc:ProcessImplementation" [ label = "rdfs:subClassOf" ];
+	"wf4ever:Dataset" -> "wfprov:Artifact" [ label = "rdfs:subClassOf" ];
+	"wf4ever:File" -> "wfprov:Artifact" [ label = "rdfs:subClassOf" ];
+	"wf4ever:PythonScript" -> "wf4ever:Script" [ label = "rdfs:subClassOf" ];
+	"wf4ever:SOAPService" -> "wf4ever:WebService" [ label = "rdfs:subClassOf" ];
+	"wf4ever:RScript" -> "wf4ever:Script" [ label = "rdfs:subClassOf" ];
+
+}

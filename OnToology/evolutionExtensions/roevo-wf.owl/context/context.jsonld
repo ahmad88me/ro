@@ -1,0 +1,67 @@
+{
+  "@context" : {
+    "DeleteControlFlowBetweenProcessors" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteControlFlowBetweenProcessors"
+    },
+    "UpdateProcessorConfiguration" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessorConfiguration"
+    },
+    "objectId" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#objectId"
+    },
+    "WorkflowInstanceChange" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowInstanceChange"
+    },
+    "Modification" : {
+      "@id" : "http://purl.org/wf4ever/roevo#Modification"
+    },
+    "AddProcessor" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#AddProcessor"
+    },
+    "UpdateProcessor" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessor"
+    },
+    "WorkflowTemplateChange" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+    },
+    "ParameterChange" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#ParameterChange"
+    },
+    "AddWorkflowPort" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#AddWorkflowPort"
+    },
+    "DeleteProcessor" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteProcessor"
+    },
+    "newValue" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#newValue"
+    },
+    "DeleteProcessorPort" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteProcessorPort"
+    },
+    "oldValue" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#oldValue"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "AddProcessorPort" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#AddProcessorPort"
+    },
+    "DeleteWorkflowPort" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteWorkflowPort"
+    },
+    "DeleteDataFlowBetweenProcessorPorts" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteDataFlowBetweenProcessorPorts"
+    },
+    "AddControlFlowBetweenProcessors" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#AddControlFlowBetweenProcessors"
+    },
+    "AddDataFlowBetweenProcessorPorts" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#AddDataFlowBetweenProcessorPorts"
+    },
+    "UpdateProcessorAnnotation" : {
+      "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessorAnnotation"
+    }
+  }
+}

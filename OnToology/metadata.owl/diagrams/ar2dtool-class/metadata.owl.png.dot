@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://w3id.org/ro/metadata" -> "https://rawgit.com/wf4ever/ro/master/metadata.owl" [ label = "owl:versionIRI" ];
+	"https://w3id.org/ro/metadata" -> "http://researchobject.org/" [ label = "dct:publisher" ];
+	"https://w3id.org/ro/metadata" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "dct:license" ];
+	"https://w3id.org/ro/metadata" -> "http://orcid.org/0000-0001-9842-9718" [ label = "dct:creator" ];
+	"https://w3id.org/ro/metadata" -> "http://w3id.org/ro/" [ label = "rdfs:seeAlso" ];
+
+}

@@ -1,0 +1,600 @@
+<h2  id="crossreference" class="list">Cross reference for The OAI ORE terms vocabulary classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The OAI ORE terms vocabulary.
+<div id="classes">
+   <h3 id="classes" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/AggregatedResource"
+            title="http://www.openarchives.org/ore/terms/AggregatedResource">Aggregated Resource</a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/Aggregation"
+            title="http://www.openarchives.org/ore/terms/Aggregation">Aggregation</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/dcmitype/Collection" title="http://purl.org/dc/dcmitype/Collection">
+            <span>collection</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.w3.org/2004/03/trix/rdfg-1/Graph" title="http://www.w3.org/2004/03/trix/rdfg-1/Graph">
+            <span>graph</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/Proxy" title="http://www.openarchives.org/ore/terms/Proxy">Proxy</a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/ResourceMap"
+            title="http://www.openarchives.org/ore/terms/ResourceMap">Resource Map</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/AggregatedResource">
+      <h3>Aggregated Resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/AggregatedResource</p>
+      <div class="comment">
+         <span class="markdown">A resource which is included in an Aggregation. Note that asserting that a resource is a member of the class of Aggregated Resources does not imply anything other than that it is aggregated by at least one Aggregation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/isAggregatedBy"
+               title="http://www.openarchives.org/ore/terms/isAggregatedBy">Is Aggregated By</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/aggregates" title="http://www.openarchives.org/ore/terms/aggregates">Aggregates</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.openarchives.org/ore/terms/proxyFor" title="http://www.openarchives.org/ore/terms/proxyFor">Proxy For</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/Aggregation">
+      <h3>Aggregation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/Aggregation</p>
+      <div class="comment">
+         <span class="markdown">A set of related resources (Aggregated Resources), grouped together such that the set can be treated as a single resource. This is the entity described within the ORE interoperability framework by a Resource Map.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://purl.org/dc/dcmitype/Collection" title="http://purl.org/dc/dcmitype/Collection">collection</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/aggregates" title="http://www.openarchives.org/ore/terms/aggregates">Aggregates</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.openarchives.org/ore/terms/isDescribedBy"
+               title="http://www.openarchives.org/ore/terms/isDescribedBy">Is Described By</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.openarchives.org/ore/terms/similarTo" title="http://www.openarchives.org/ore/terms/similarTo">Similar To</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/describes" title="http://www.openarchives.org/ore/terms/describes">Describes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.openarchives.org/ore/terms/isAggregatedBy"
+               title="http://www.openarchives.org/ore/terms/isAggregatedBy">Is Aggregated By</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.openarchives.org/ore/terms/proxyIn" title="http://www.openarchives.org/ore/terms/proxyIn">Proxy In</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/dc/dcmitype/Collection">
+      <h3>collection<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/dcmitype/Collection</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/dcmitype/">http://purl.org/dc/dcmitype/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/Aggregation"
+               title="http://www.openarchives.org/ore/terms/Aggregation">Aggregation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.w3.org/2004/03/trix/rdfg-1/Graph">
+      <h3>graph<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.w3.org/2004/03/trix/rdfg-1/Graph</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.w3.org/2004/03/trix/rdfg-1/">http://www.w3.org/2004/03/trix/rdfg-1/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/ResourceMap"
+               title="http://www.openarchives.org/ore/terms/ResourceMap">Resource Map</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/Proxy">
+      <h3>Proxy<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/Proxy</p>
+      <div class="comment">
+         <span class="markdown">A Proxy represents an Aggregated Resource as it exists in a specific Aggregation. All assertions made about an entity are globally true, not only within the context of the Aggregation. As such, in order to make assertions which are only true of a resource as it exists in an Aggregation, a Proxy object is required. For example, one might want to cite an article as it appears in a specific journal, or assign aggregation-specific metadata to a Resource.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/lineage" title="http://www.openarchives.org/ore/terms/lineage">Lineage</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.openarchives.org/ore/terms/proxyFor" title="http://www.openarchives.org/ore/terms/proxyFor">Proxy For</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://www.openarchives.org/ore/terms/proxyIn" title="http://www.openarchives.org/ore/terms/proxyIn">Proxy In</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/lineage" title="http://www.openarchives.org/ore/terms/lineage">Lineage</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/ResourceMap">
+      <h3>Resource Map<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/ResourceMap</p>
+      <div class="comment">
+         <span class="markdown">A description of an Aggregation according to the OAI-ORE data model. Resource Maps are serialised to a machine readable format according to the implementation guidelines.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/2004/03/trix/rdfg-1/Graph" title="http://www.w3.org/2004/03/trix/rdfg-1/Graph">graph</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/describes" title="http://www.openarchives.org/ore/terms/describes">Describes</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.openarchives.org/ore/terms/isDescribedBy"
+               title="http://www.openarchives.org/ore/terms/isDescribedBy">Is Described By</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/aggregates" title="http://www.openarchives.org/ore/terms/aggregates">Aggregates</a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/describes" title="http://www.openarchives.org/ore/terms/describes">Describes</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/hasPart" title="http://purl.org/dc/terms/hasPart">
+            <span>has part</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/isAggregatedBy"
+            title="http://www.openarchives.org/ore/terms/isAggregatedBy">Is Aggregated By</a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/isDescribedBy"
+            title="http://www.openarchives.org/ore/terms/isDescribedBy">Is Described By</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">
+            <span>is part of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/lineage" title="http://www.openarchives.org/ore/terms/lineage">Lineage</a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/proxyFor" title="http://www.openarchives.org/ore/terms/proxyFor">Proxy For</a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/proxyIn" title="http://www.openarchives.org/ore/terms/proxyIn">Proxy In</a>
+      </li>
+      <li>
+         <a href="#http://www.openarchives.org/ore/terms/similarTo" title="http://www.openarchives.org/ore/terms/similarTo">Similar To</a>
+      </li>
+   </ul>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/aggregates">
+      <h3>Aggregates<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/aggregates</p>
+      <div class="comment">
+         <span class="markdown">Aggregations, by definition, aggregate resources. The ore:aggregates relationship expresses that the object resource is a member of the set of Aggregated Resources of the subject (the Aggregation). This relationship between the Aggregation and its Aggregated Resources is thus more specific than a simple part/whole relationship, as expressed by dcterms:hasPart for example.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/hasPart" title="http://purl.org/dc/terms/hasPart">has part</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Aggregation"
+                  title="http://www.openarchives.org/ore/terms/Aggregation">Aggregation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/AggregatedResource"
+                  title="http://www.openarchives.org/ore/terms/AggregatedResource">Aggregated Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/isAggregatedBy"
+                  title="http://www.openarchives.org/ore/terms/isAggregatedBy">Is Aggregated By</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/describes">
+      <h3>Describes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/describes</p>
+      <div class="comment">
+         <span class="markdown">This relationship asserts that the subject (a Resource Map) describes the object (an Aggregation).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/ResourceMap"
+                  title="http://www.openarchives.org/ore/terms/ResourceMap">Resource Map</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Aggregation"
+                  title="http://www.openarchives.org/ore/terms/Aggregation">Aggregation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/isDescribedBy"
+                  title="http://www.openarchives.org/ore/terms/isDescribedBy">Is Described By</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/hasPart">
+      <h3>has part<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/hasPart</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/aggregates" title="http://www.openarchives.org/ore/terms/aggregates">Aggregates</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/isAggregatedBy">
+      <h3>Is Aggregated By<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/isAggregatedBy</p>
+      <div class="comment">
+         <span class="markdown">The inverse relationship of ore:aggregates, ore:isAggregatedBy asserts that an Aggregated Resource is aggregated by an Aggregation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#http://purl.org/dc/terms/isPartOf" title="http://purl.org/dc/terms/isPartOf">is part of</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/AggregatedResource"
+                  title="http://www.openarchives.org/ore/terms/AggregatedResource">Aggregated Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Aggregation"
+                  title="http://www.openarchives.org/ore/terms/Aggregation">Aggregation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/aggregates" title="http://www.openarchives.org/ore/terms/aggregates">Aggregates</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/isDescribedBy">
+      <h3>Is Described By<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/isDescribedBy</p>
+      <div class="comment">
+         <span class="markdown">The inverse relationship of ore:describes, in this case the object of the relationship is the Resource Map and the subject is the Aggregation which it describes.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Aggregation"
+                  title="http://www.openarchives.org/ore/terms/Aggregation">Aggregation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/ResourceMap"
+                  title="http://www.openarchives.org/ore/terms/ResourceMap">Resource Map</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/describes" title="http://www.openarchives.org/ore/terms/describes">Describes</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/dc/terms/isPartOf">
+      <h3>is part of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/dc/terms/isPartOf</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/isAggregatedBy"
+                  title="http://www.openarchives.org/ore/terms/isAggregatedBy">Is Aggregated By</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/lineage">
+      <h3>Lineage<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/lineage</p>
+      <div class="comment">
+         <span class="markdown">ore:lineage is a relationship between two Proxy objects, both of which MUST have the same Resource for which they are proxies. The meaning is that the Resource for which the subject of the relationship is a Proxy was discovered in the Aggregation in which the object Proxy's resource is aggregated.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Proxy" title="http://www.openarchives.org/ore/terms/Proxy">Proxy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Proxy" title="http://www.openarchives.org/ore/terms/Proxy">Proxy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/proxyFor">
+      <h3>Proxy For<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/proxyFor</p>
+      <div class="comment">
+         <span class="markdown">Proxy objects are used to represent a Resource as it is aggregated in a particular Aggregation. The ore:proxyFor relationship is used to link the proxy to the Aggregated Resource it is a proxy for. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregated Resource.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Proxy" title="http://www.openarchives.org/ore/terms/Proxy">Proxy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/AggregatedResource"
+                  title="http://www.openarchives.org/ore/terms/AggregatedResource">Aggregated Resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/proxyIn">
+      <h3>Proxy In<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/proxyIn</p>
+      <div class="comment">
+         <span class="markdown">Proxy objects must link to the Aggregation in which the resource being proxied is aggregated. The ore:proxyIn relationship is used for this purpose. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Proxy" title="http://www.openarchives.org/ore/terms/Proxy">Proxy</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Aggregation"
+                  title="http://www.openarchives.org/ore/terms/Aggregation">Aggregation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.openarchives.org/ore/terms/similarTo">
+      <h3>Similar To<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.openarchives.org/ore/terms/similarTo</p>
+      <div class="comment">
+         <span class="markdown">The subject of this relationship MUST be an Aggregation.  This Aggregation should be considered an expression within the ORE context of the object of the relationship, as it is broadly equivalent to the resource. For example, the Aggregation may consist of the resources which, together, make up a journal article which has a DOI assigned to it. The Aggregation is not the article to which the DOI was assigned, but is a representation of it in some manner.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://www.openarchives.org/ore/terms/">http://www.openarchives.org/ore/terms/</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.openarchives.org/ore/terms/Aggregation"
+                  title="http://www.openarchives.org/ore/terms/Aggregation">Aggregation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

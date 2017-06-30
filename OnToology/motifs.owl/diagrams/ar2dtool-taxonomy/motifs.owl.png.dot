@@ -1,0 +1,30 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "motifs:DataPreparation" "motifs:DataOrganization" "motifs:WorkflowMotif" "motifs:InputAugmentation" "motifs:ComputationalStep" "motifs:DataVisualization" "motifs:DataRetrieval" "motifs:InterWorkflowMotif" "motifs:FormatTransformation" "motifs:Sorting" "motifs:DataCleaning" "motifs:Grouping" "motifs:DataAnalysis" "motifs:DataMotif" "motifs:DataMovement" "motifs:SynchronousInvocaton" "motifs:HumanInteraction" "motifs:AsynchronousInvocation" "motifs:AtomicWorkflow" "motifs:CompositeWorkflow" "motifs:IntraWorkflowMotif" "motifs:InternalMacro" "motifs:WorkflowOverloading" "motifs:OutputSplitting" "motifs:Merging" "motifs:Filtering" ; /*classes style*/
+	"motifs:SynchronousInvocaton" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:Sorting" -> "motifs:DataOrganization" [ label = "rdfs:subClassOf" ];
+	"motifs:IntraWorkflowMotif" -> "motifs:WorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:DataRetrieval" -> "motifs:DataMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:Grouping" -> "motifs:DataOrganization" [ label = "rdfs:subClassOf" ];
+	"motifs:DataCleaning" -> "motifs:DataMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:Merging" -> "motifs:DataOrganization" [ label = "rdfs:subClassOf" ];
+	"motifs:AtomicWorkflow" -> "motifs:InterWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:WorkflowOverloading" -> "motifs:InterWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:DataAnalysis" -> "motifs:DataMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:ComputationalStep" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:InterWorkflowMotif" -> "motifs:WorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:DataOrganization" -> "motifs:DataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:AsynchronousInvocation" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:Filtering" -> "motifs:DataOrganization" [ label = "rdfs:subClassOf" ];
+	"motifs:OutputSplitting" -> "motifs:DataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:InputAugmentation" -> "motifs:DataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:DataVisualization" -> "motifs:DataMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:FormatTransformation" -> "motifs:DataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:DataMovement" -> "motifs:DataMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:HumanInteraction" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:InternalMacro" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:CompositeWorkflow" -> "motifs:InterWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:DataPreparation" -> "motifs:DataMotif" [ label = "rdfs:subClassOf" ];
+
+}

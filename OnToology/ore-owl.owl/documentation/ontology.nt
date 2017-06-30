@@ -1,0 +1,162 @@
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2002/07/owl#versionIRI> <https://rawgit.com/wf4ever/ro/master/ore-owl.owl> .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2002/07/owl#imports> <https://rawgit.com/wf4ever/ro/master/metadata.owl> .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ore" .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.openarchives.org/ore/terms/" .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/vocab/vann/usageNote> <http://www.openarchives.org/ore/1.0/primer> .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an OWL-ified version of the OAI-ORE 1.0 ontology. It was downloaded as application/rdf+xml from http://www.openarchives.org/ore/terms/ on 2011-11-17, converted with cwm 1.197 to N3, then edited with vim and Protege to:\n  Make all properties Object Properties instead of rdf:Properties (avoids them becoming Annotation Properties in OWL)\n  All classes are owl:Class instead of just rdfs:Class\n  These properties are made functional: ore:describes, ore:proxyFor, ore:proxyIn\n  Only one of the owl:inverseOf directions stated for ore:aggregates--ore:isAggregatedBy and ore:describes--ore:isDescribedBy\n  <http://purl.org/wf4ever/ore-owl> is an owl:Ontology and has a owl:priorVersion <http://www.openarchives.org/ore/terms/> "@en .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2000/01/rdf-schema#comment> "The set of terms provided by the OAI ORE initiative" .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2000/01/rdf-schema#label> "The OAI ORE terms vocabulary" .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.openarchives.org/ore/toc> .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <http://www.openarchives.org/ore/terms/> .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2002/07/owl#priorVersion> <http://www.openarchives.org/ore/terms/> .
+<http://purl.org/wf4ever/ore-owl> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0-owl" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/hasPart
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/hasPart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+# 
+# http://www.openarchives.org/ore/terms/aggregates
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/hasPart> .
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.openarchives.org/ore/terms/isAggregatedBy> .
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.openarchives.org/ore/terms/AggregatedResource> .
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/2000/01/rdf-schema#comment> "Aggregations, by definition, aggregate resources. The ore:aggregates relationship expresses that the object resource is a member of the set of Aggregated Resources of the subject (the Aggregation). This relationship between the Aggregation and its Aggregated Resources is thus more specific than a simple part/whole relationship, as expressed by dcterms:hasPart for example." .
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/aggregates> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregates" .
+# 
+# http://www.openarchives.org/ore/terms/describes
+<http://www.openarchives.org/ore/terms/describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/describes> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.openarchives.org/ore/terms/isDescribedBy> .
+<http://www.openarchives.org/ore/terms/describes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.openarchives.org/ore/terms/describes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/ResourceMap> .
+<http://www.openarchives.org/ore/terms/describes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://www.openarchives.org/ore/terms/describes> <http://www.w3.org/2000/01/rdf-schema#comment> "This relationship asserts that the subject (a Resource Map) describes the object (an Aggregation)." .
+<http://www.openarchives.org/ore/terms/describes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/describes> <http://www.w3.org/2000/01/rdf-schema#label> "Describes" .
+# 
+# http://www.openarchives.org/ore/terms/isAggregatedBy
+<http://www.openarchives.org/ore/terms/isAggregatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/isAggregatedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/isPartOf> .
+<http://www.openarchives.org/ore/terms/isAggregatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/AggregatedResource> .
+<http://www.openarchives.org/ore/terms/isAggregatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://www.openarchives.org/ore/terms/isAggregatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The inverse relationship of ore:aggregates, ore:isAggregatedBy asserts that an Aggregated Resource is aggregated by an Aggregation." .
+<http://www.openarchives.org/ore/terms/isAggregatedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/isAggregatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Is Aggregated By" .
+# 
+# http://www.openarchives.org/ore/terms/isDescribedBy
+<http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.openarchives.org/ore/terms/ResourceMap> .
+<http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The inverse relationship of ore:describes, in this case the object of the relationship is the Resource Map and the subject is the Aggregation which it describes." .
+<http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/isDescribedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Is Described By" .
+# 
+# http://www.openarchives.org/ore/terms/lineage
+<http://www.openarchives.org/ore/terms/lineage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/lineage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/Proxy> .
+<http://www.openarchives.org/ore/terms/lineage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.openarchives.org/ore/terms/Proxy> .
+<http://www.openarchives.org/ore/terms/lineage> <http://www.w3.org/2000/01/rdf-schema#comment> "ore:lineage is a relationship between two Proxy objects, both of which MUST have the same Resource for which they are proxies. The meaning is that the Resource for which the subject of the relationship is a Proxy was discovered in the Aggregation in which the object Proxy's resource is aggregated." .
+<http://www.openarchives.org/ore/terms/lineage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/lineage> <http://www.w3.org/2000/01/rdf-schema#label> "Lineage" .
+# 
+# http://www.openarchives.org/ore/terms/proxyFor
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/Proxy> .
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.openarchives.org/ore/terms/AggregatedResource> .
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Proxy objects are used to represent a Resource as it is aggregated in a particular Aggregation. The ore:proxyFor relationship is used to link the proxy to the Aggregated Resource it is a proxy for. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregated Resource." .
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/proxyFor> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy For" .
+# 
+# http://www.openarchives.org/ore/terms/proxyIn
+<http://www.openarchives.org/ore/terms/proxyIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/proxyIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.openarchives.org/ore/terms/proxyIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/Proxy> .
+<http://www.openarchives.org/ore/terms/proxyIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://www.openarchives.org/ore/terms/proxyIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Proxy objects must link to the Aggregation in which the resource being proxied is aggregated. The ore:proxyIn relationship is used for this purpose. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregation." .
+<http://www.openarchives.org/ore/terms/proxyIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/proxyIn> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy In" .
+# 
+# http://www.openarchives.org/ore/terms/similarTo
+<http://www.openarchives.org/ore/terms/similarTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.openarchives.org/ore/terms/similarTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.openarchives.org/ore/terms/Aggregation> .
+<http://www.openarchives.org/ore/terms/similarTo> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of this relationship MUST be an Aggregation.  This Aggregation should be considered an expression within the ORE context of the object of the relationship, as it is broadly equivalent to the resource. For example, the Aggregation may consist of the resources which, together, make up a journal article which has a DOI assigned to it. The Aggregation is not the article to which the DOI was assigned, but is a representation of it in some manner." .
+<http://www.openarchives.org/ore/terms/similarTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/similarTo> <http://www.w3.org/2000/01/rdf-schema#label> "Similar To" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/dcmitype/Collection
+<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/dc/dcmitype/Collection> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/dcmitype/> .
+# 
+# http://www.openarchives.org/ore/terms/AggregatedResource
+<http://www.openarchives.org/ore/terms/AggregatedResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.openarchives.org/ore/terms/AggregatedResource> <http://www.w3.org/2000/01/rdf-schema#comment> "A resource which is included in an Aggregation. Note that asserting that a resource is a member of the class of Aggregated Resources does not imply anything other than that it is aggregated by at least one Aggregation." .
+<http://www.openarchives.org/ore/terms/AggregatedResource> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/AggregatedResource> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregated Resource" .
+# 
+# http://www.openarchives.org/ore/terms/Aggregation
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/dcmitype/Collection> .
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/2000/01/rdf-schema#comment> "A set of related resources (Aggregated Resources), grouped together such that the set can be treated as a single resource. This is the entity described within the ORE interoperability framework by a Resource Map." .
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/Aggregation> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregation" .
+# 
+# http://www.openarchives.org/ore/terms/Proxy
+<http://www.openarchives.org/ore/terms/Proxy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.openarchives.org/ore/terms/Proxy> <http://www.w3.org/2000/01/rdf-schema#comment> "A Proxy represents an Aggregated Resource as it exists in a specific Aggregation. All assertions made about an entity are globally true, not only within the context of the Aggregation. As such, in order to make assertions which are only true of a resource as it exists in an Aggregation, a Proxy object is required. For example, one might want to cite an article as it appears in a specific journal, or assign aggregation-specific metadata to a Resource." .
+<http://www.openarchives.org/ore/terms/Proxy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/Proxy> <http://www.w3.org/2000/01/rdf-schema#label> "Proxy" .
+# 
+# http://www.openarchives.org/ore/terms/ResourceMap
+<http://www.openarchives.org/ore/terms/ResourceMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.openarchives.org/ore/terms/ResourceMap> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/03/trix/rdfg-1/Graph> .
+<http://www.openarchives.org/ore/terms/ResourceMap> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of an Aggregation according to the OAI-ORE data model. Resource Maps are serialised to a machine readable format according to the implementation guidelines." .
+<http://www.openarchives.org/ore/terms/ResourceMap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.openarchives.org/ore/terms/> .
+<http://www.openarchives.org/ore/terms/ResourceMap> <http://www.w3.org/2000/01/rdf-schema#label> "Resource Map" .
+# 
+# http://www.w3.org/2004/03/trix/rdfg-1/Graph
+<http://www.w3.org/2004/03/trix/rdfg-1/Graph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/03/trix/rdfg-1/Graph> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2004/03/trix/rdfg-1/> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/wf4ever/ore-owl
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/dc/terms/contributor> <http://orcid.org/0000-0001-9842-9718> .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/dc/terms/creator> <https://www.openarchives.org/ore/> .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/3.0/> .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/dc/terms/publisher> <http://researchobject.org/> .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/dc/terms/issued> "2016-01-28T13:35:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/dc/terms/modified> "2016-01-28T13:35:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/wf4ever/ore-owl> <http://purl.org/dc/terms/title> "The OAI ORE terms vocabulary in OWL" .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

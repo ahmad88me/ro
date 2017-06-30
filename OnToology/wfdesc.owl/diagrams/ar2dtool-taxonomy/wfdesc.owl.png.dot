@@ -1,0 +1,12 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "wfdesc:Workflow" "wfdesc:Input" "wfdesc:Parameter" "wfdesc:Output" "wfdesc:WorkflowInstance" "wfdesc:Process" "wfdesc:WorkflowDefinition" "wfdesc:ProcessImplementation" "wfdesc:Configuration" ; /*classes style*/
+	"wfdesc:Workflow" -> "wfdesc:Process" [ label = "rdfs:subClassOf" ];
+	"wfdesc:Configuration" -> "wfdesc:Parameter" [ label = "rdfs:subClassOf" ];
+	"wfdesc:Output" -> "wfdesc:Parameter" [ label = "rdfs:subClassOf" ];
+	"wfdesc:WorkflowInstance" -> "wfdesc:Workflow" [ label = "rdfs:subClassOf" ];
+	"wfdesc:WorkflowDefinition" -> "wfdesc:ProcessImplementation" [ label = "rdfs:subClassOf" ];
+	"wfdesc:Input" -> "wfdesc:Parameter" [ label = "rdfs:subClassOf" ];
+
+}

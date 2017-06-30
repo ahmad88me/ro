@@ -1,0 +1,147 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/wf4ever/wfdesc#hasDataLink
+<http://purl.org/wf4ever/wfdesc#hasDataLink> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/wf4ever/wfdesc#hasInput
+<http://purl.org/wf4ever/wfdesc#hasInput> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/wf4ever/wfdesc#hasOutput
+<http://purl.org/wf4ever/wfdesc#hasOutput> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/wf4ever/wfdesc#hasSink
+<http://purl.org/wf4ever/wfdesc#hasSink> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/wf4ever/wfdesc#hasSource
+<http://purl.org/wf4ever/wfdesc#hasSource> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/wf4ever/wfdesc#hasSubProcess
+<http://purl.org/wf4ever/wfdesc#hasSubProcess> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/wf4ever/wfdesc#DataLink
+<http://purl.org/wf4ever/wfdesc#DataLink> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/wfdesc#Input
+<http://purl.org/wf4ever/wfdesc#Input> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/wfdesc#Output
+<http://purl.org/wf4ever/wfdesc#Output> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/wfdesc#Process
+<http://purl.org/wf4ever/wfdesc#Process> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/wfdesc#Workflow
+<http://purl.org/wf4ever/wfdesc#Workflow> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/> rdf:type owl:NamedIndividual ,
+                                                                                                                    <http://purl.org/wf4ever/wfdesc#Process> ,
+                                                                                                                    <http://purl.org/wf4ever/wfdesc#Workflow> ;
+                                                                                                           <http://purl.org/wf4ever/wfdesc#hasDataLink> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=in/name&to=processor/Concatenate_two_strings/in/string2> ,
+                                                                                                                                                        <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=processor/Concatenate_two_strings/out/output&to=out/greeting> ,
+                                                                                                                                                        <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=processor/hello/out/value&to=processor/Concatenate_two_strings/in/string1> ;
+                                                                                                           <http://purl.org/wf4ever/wfdesc#hasInput> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name> ;
+                                                                                                           <http://purl.org/wf4ever/wfdesc#hasOutput> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting> ;
+                                                                                                           <http://purl.org/wf4ever/wfdesc#hasSubProcess> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/> ,
+                                                                                                                                                          <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=in/name&to=processor/Concatenate_two_strings/in/string2
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=in/name&to=processor/Concatenate_two_strings/in/string2> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                         <http://purl.org/wf4ever/wfdesc#DataLink> ;
+                                                                                                                                                                                <http://purl.org/wf4ever/wfdesc#hasSink> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2> ;
+                                                                                                                                                                                <http://purl.org/wf4ever/wfdesc#hasSource> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=processor/Concatenate_two_strings/out/output&to=out/greeting
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=processor/Concatenate_two_strings/out/output&to=out/greeting> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                              <http://purl.org/wf4ever/wfdesc#DataLink> ;
+                                                                                                                                                                                     <http://purl.org/wf4ever/wfdesc#hasSink> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting> ;
+                                                                                                                                                                                     <http://purl.org/wf4ever/wfdesc#hasSource> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=processor/hello/out/value&to=processor/Concatenate_two_strings/in/string1
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/datalink?from=processor/hello/out/value&to=processor/Concatenate_two_strings/in/string1> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                                           <http://purl.org/wf4ever/wfdesc#DataLink> ;
+                                                                                                                                                                                                  <http://purl.org/wf4ever/wfdesc#hasSink> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1> ;
+                                                                                                                                                                                                  <http://purl.org/wf4ever/wfdesc#hasSource> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name> rdf:type owl:NamedIndividual ,
+                                                                                                                           <http://purl.org/wf4ever/wfdesc#Input> ,
+                                                                                                                           <http://purl.org/wf4ever/wfdesc#Output> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting> rdf:type owl:NamedIndividual ,
+                                                                                                                                <http://purl.org/wf4ever/wfdesc#Input> ,
+                                                                                                                                <http://purl.org/wf4ever/wfdesc#Output> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/> rdf:type owl:NamedIndividual ,
+                                                                                                                                                      <http://purl.org/wf4ever/wfdesc#Process> ;
+                                                                                                                                             <http://purl.org/wf4ever/wfdesc#hasInput> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1> ,
+                                                                                                                                                                                       <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2> ;
+                                                                                                                                             <http://purl.org/wf4ever/wfdesc#hasOutput> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                <http://purl.org/wf4ever/wfdesc#Input> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                <http://purl.org/wf4ever/wfdesc#Input> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                <http://purl.org/wf4ever/wfdesc#Output> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/> rdf:type owl:NamedIndividual ,
+                                                                                                                                    <http://purl.org/wf4ever/wfdesc#Process> ;
+                                                                                                                           <http://purl.org/wf4ever/wfdesc#hasOutput> <http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value> .
+
+
+###  http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value
+<http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value> rdf:type owl:NamedIndividual ,
+                                                                                                                                             <http://purl.org/wf4ever/wfdesc#Output> .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

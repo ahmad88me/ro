@@ -1,0 +1,70 @@
+{
+  "@context" : {
+    "wasGeneratedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+    },
+    "endedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#endedAtTime"
+    },
+    "agent" : {
+      "@id" : "http://www.w3.org/ns/prov#agent"
+    },
+    "hadPlan" : {
+      "@id" : "http://www.w3.org/ns/prov#hadPlan"
+    },
+    "activity" : {
+      "@id" : "http://www.w3.org/ns/prov#activity"
+    },
+    "startedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#startedAtTime"
+    },
+    "Bundle" : {
+      "@id" : "http://www.w3.org/ns/prov#Bundle"
+    },
+    "Activity" : {
+      "@id" : "http://www.w3.org/ns/prov#Activity"
+    },
+    "Generation" : {
+      "@id" : "http://www.w3.org/ns/prov#Generation"
+    },
+    "Agent" : {
+      "@id" : "http://www.w3.org/ns/prov#Agent"
+    },
+    "Role" : {
+      "@id" : "http://www.w3.org/ns/prov#Role"
+    },
+    "qualifiedAssociation" : {
+      "@id" : "http://www.w3.org/ns/prov#qualifiedAssociation"
+    },
+    "hadRole" : {
+      "@id" : "http://www.w3.org/ns/prov#hadRole"
+    },
+    "Plan" : {
+      "@id" : "http://www.w3.org/ns/prov#Plan"
+    },
+    "qualifiedGeneration" : {
+      "@id" : "http://www.w3.org/ns/prov#qualifiedGeneration"
+    },
+    "wasAssociatedWith" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    },
+    "wasInformedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasInformedBy"
+    },
+    "Association" : {
+      "@id" : "http://www.w3.org/ns/prov#Association"
+    },
+    "influenced" : {
+      "@id" : "http://www.w3.org/ns/prov#influenced"
+    },
+    "alternateOf" : {
+      "@id" : "http://www.w3.org/ns/prov#alternateOf"
+    },
+    "generated" : {
+      "@id" : "http://www.w3.org/ns/prov#generated"
+    }
+  }
+}

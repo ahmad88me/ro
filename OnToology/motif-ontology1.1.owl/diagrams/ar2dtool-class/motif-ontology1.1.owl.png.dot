@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "motifs:WorkflowMotif" "motifs:Motif" "motifs:OperationMotif" ; /*classes style*/
+	"motifs:implementsWorkflowMotif" -> "motifs:implementsMotif" [ label = "rdfs:subPropertyOf" ];
+	"motifs:implementsOperationMotif" -> "motifs:implementsMotif" [ label = "rdfs:subPropertyOf" ];
+	"owl:Thing" -> "motifs:WorkflowMotif" [ label = "motifs:implementsWorkflowMotif" ];
+	"owl:Thing" -> "motifs:OperationMotif" [ label = "motifs:implementsOperationMotif" ];
+	"owl:Thing" -> "motifs:Motif" [ label = "motifs:implementsMotif" ];
+
+}

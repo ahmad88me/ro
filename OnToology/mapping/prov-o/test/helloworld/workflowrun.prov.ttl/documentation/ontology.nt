@@ -1,0 +1,228 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/prov#activity
+<http://www.w3.org/ns/prov#activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#agent
+<http://www.w3.org/ns/prov#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#alternateOf
+<http://www.w3.org/ns/prov#alternateOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#endedAtTime
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#hadPlan
+<http://www.w3.org/ns/prov#hadPlan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#hadRole
+<http://www.w3.org/ns/prov#hadRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#influenced
+<http://www.w3.org/ns/prov#influenced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#qualifiedAssociation
+<http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#qualifiedGeneration
+<http://www.w3.org/ns/prov#qualifiedGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#startedAtTime
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#wasInformedBy
+<http://www.w3.org/ns/prov#wasInformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Association
+<http://www.w3.org/ns/prov#Association> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Bundle
+<http://www.w3.org/ns/prov#Bundle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Generation
+<http://www.w3.org/ns/prov#Generation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Plan
+<http://www.w3.org/ns/prov#Plan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/prov#Role
+<http://www.w3.org/ns/prov#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# file:/home/stain/src/ro/mapping/prov-o/test/1/greeting.txt
+<file:/home/stain/src/ro/mapping/prov-o/test/1/greeting.txt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<file:/home/stain/src/ro/mapping/prov-o/test/1/greeting.txt> <http://www.w3.org/2002/07/owl#sameAs> <http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77> .
+<http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/
+<http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Plan> .
+# 
+# http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/out/greeting
+<http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/out/greeting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/out/greeting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Role> .
+# 
+# http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/
+<http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Plan> .
+# 
+# http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/out/value
+<http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/out/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/out/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Role> .
+# 
+# http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77
+<http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77> <http://www.w3.org/ns/prov#qualifiedGeneration> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Generation> .
+_:genid2 <http://www.w3.org/ns/prov#activity> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+_:genid2 <http://www.w3.org/ns/prov#hadRole> <http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/out/greeting> .
+<http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77> <http://www.w3.org/ns/prov#wasGeneratedBy> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+# 
+# http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/ns/prov#endedAtTime> "2012-07-16T10:33:50.153+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/ns/prov#generated> <http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/ns/prov#influenced> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+_:genid3 <http://www.w3.org/ns/prov#endedAtTime> "2012-07-16T10:34:05.171+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid3 <http://www.w3.org/ns/prov#generated> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> .
+_:genid3 <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> .
+_:genid3 <http://www.w3.org/ns/prov#qualifiedAssociation> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid4 <http://www.w3.org/ns/prov#agent> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+_:genid5 <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+_:genid5 <http://www.w3.org/ns/prov#influenced> _:genid3 .
+_:genid4 <http://www.w3.org/ns/prov#hadPlan> <http://ns.taverna.org.uk/2011/software/taverna-2.4.0> .
+_:genid3 <http://www.w3.org/ns/prov#startedAtTime> "2012-07-16T10:34:00.059+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid3 <http://www.w3.org/ns/prov#wasAssociatedWith> _:genid5 .
+_:genid3 <http://www.w3.org/ns/prov#wasInformedBy> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/ns/prov#qualifiedAssociation> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid6 <http://www.w3.org/ns/prov#agent> _:genid5 .
+_:genid6 <http://www.w3.org/ns/prov#hadPlan> <http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/ns/prov#startedAtTime> "2012-07-16T10:33:49.926+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> <http://www.w3.org/ns/prov#wasAssociatedWith> _:genid5 .
+# 
+# http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Bundle> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> <http://www.w3.org/ns/prov#wasGeneratedBy> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+_:genid7 <http://www.w3.org/ns/prov#endedAtTime> "2012-07-16T10:34:05.171+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid7 <http://www.w3.org/ns/prov#generated> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> .
+_:genid7 <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> .
+_:genid7 <http://www.w3.org/ns/prov#qualifiedAssociation> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid8 <http://www.w3.org/ns/prov#agent> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+_:genid9 <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+_:genid9 <http://www.w3.org/ns/prov#influenced> _:genid7 .
+_:genid8 <http://www.w3.org/ns/prov#hadPlan> <http://ns.taverna.org.uk/2011/software/taverna-2.4.0> .
+_:genid7 <http://www.w3.org/ns/prov#startedAtTime> "2012-07-16T10:34:00.059+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid7 <http://www.w3.org/ns/prov#wasAssociatedWith> _:genid9 .
+_:genid7 <http://www.w3.org/ns/prov#wasInformedBy> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+# 
+# http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> <http://www.w3.org/ns/prov#endedAtTime> "2012-07-16T10:33:50.040+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> <http://www.w3.org/ns/prov#generated> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+_:genid10 <http://www.w3.org/ns/prov#alternateOf> <http://ns.taverna.org.uk/2011/data/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/ref/7e110220-01fc-46c2-b605-338171ba2e77> .
+_:genid10 <http://www.w3.org/ns/prov#qualifiedGeneration> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Generation> .
+_:genid11 <http://www.w3.org/ns/prov#activity> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> .
+_:genid11 <http://www.w3.org/ns/prov#hadRole> <http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/out/value> .
+_:genid10 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> <http://www.w3.org/ns/prov#influenced> _:genid10 .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> <http://www.w3.org/ns/prov#qualifiedAssociation> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid12 <http://www.w3.org/ns/prov#agent> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+_:genid13 <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+_:genid13 <http://www.w3.org/ns/prov#influenced> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+_:genid14 <http://www.w3.org/ns/prov#endedAtTime> "2012-07-16T10:34:05.171+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid14 <http://www.w3.org/ns/prov#generated> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> .
+_:genid14 <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> .
+_:genid14 <http://www.w3.org/ns/prov#qualifiedAssociation> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid15 <http://www.w3.org/ns/prov#agent> _:genid13 .
+_:genid15 <http://www.w3.org/ns/prov#hadPlan> <http://ns.taverna.org.uk/2011/software/taverna-2.4.0> .
+_:genid14 <http://www.w3.org/ns/prov#startedAtTime> "2012-07-16T10:34:00.059+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid14 <http://www.w3.org/ns/prov#wasAssociatedWith> _:genid13 .
+_:genid14 <http://www.w3.org/ns/prov#wasInformedBy> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+_:genid12 <http://www.w3.org/ns/prov#hadPlan> <http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> <http://www.w3.org/ns/prov#startedAtTime> "2012-07-16T10:33:49.997+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/process/43d4da46-4b79-4301-a774-e5fda960a899/> <http://www.w3.org/ns/prov#wasInformedBy> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+# 
+# http://ns.taverna.org.uk/2011/software/taverna-2.4.0
+<http://ns.taverna.org.uk/2011/software/taverna-2.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://ns.taverna.org.uk/2011/software/taverna-2.4.0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Plan> .
+# 
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid16 <http://www.w3.org/ns/prov#agent> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+_:genid17 <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+_:genid17 <http://www.w3.org/ns/prov#influenced> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+_:genid18 <http://www.w3.org/ns/prov#endedAtTime> "2012-07-16T10:34:05.171+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid18 <http://www.w3.org/ns/prov#generated> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> .
+_:genid18 <http://www.w3.org/ns/prov#influenced> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/bundle> .
+_:genid18 <http://www.w3.org/ns/prov#qualifiedAssociation> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Association> .
+_:genid19 <http://www.w3.org/ns/prov#agent> _:genid17 .
+_:genid19 <http://www.w3.org/ns/prov#hadPlan> <http://ns.taverna.org.uk/2011/software/taverna-2.4.0> .
+_:genid18 <http://www.w3.org/ns/prov#startedAtTime> "2012-07-16T10:34:00.059+01:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid18 <http://www.w3.org/ns/prov#wasAssociatedWith> _:genid17 .
+_:genid18 <http://www.w3.org/ns/prov#wasInformedBy> <http://ns.taverna.org.uk/2011/run/26810cf6-d690-453c-bc21-6ec3eb8dcb2a/> .
+_:genid16 <http://www.w3.org/ns/prov#hadPlan> <http://ns.taverna.org.uk/2010/workflowBundle/8781d5f4-d0ba-48a8-a1d1-14281bd8a917/workflow/Hello_World/processor/hello/> .
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

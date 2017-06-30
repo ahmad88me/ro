@@ -1,0 +1,145 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/ao/body
+<http://purl.org/ao/body> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/wf4ever/ro#annotatesResource
+<http://purl.org/wf4ever/ro#annotatesResource> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/aggregates
+<http://www.openarchives.org/ore/terms/aggregates> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/proxyFor
+<http://www.openarchives.org/ore/terms/proxyFor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.openarchives.org/ore/terms/proxyIn
+<http://www.openarchives.org/ore/terms/proxyIn> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/ao/GraphAnnotation
+<http://purl.org/ao/GraphAnnotation> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#Annotation
+<http://purl.org/wf4ever/ro#Annotation> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#Proxy
+<http://purl.org/wf4ever/ro#Proxy> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#ResearchObject
+<http://purl.org/wf4ever/ro#ResearchObject> rdf:type owl:Class .
+
+
+###  http://purl.org/wf4ever/ro#Resource
+<http://purl.org/wf4ever/ro#Resource> rdf:type owl:Class .
+
+
+###  http://www.openarchives.org/ore/terms/Aggregation
+<http://www.openarchives.org/ore/terms/Aggregation> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/03/trix/rdfg-1/Graph
+<http://www.w3.org/2004/03/trix/rdfg-1/Graph> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  ../a_workflow.t2flow
+<../a_workflow.t2flow> rdf:type owl:NamedIndividual ,
+                                <http://purl.org/wf4ever/ro#Resource> .
+
+
+###  ../.
+<../.> rdf:type owl:NamedIndividual ,
+                <http://purl.org/wf4ever/ro#ResearchObject> ,
+                <http://www.openarchives.org/ore/terms/Aggregation> ;
+       <http://purl.org/dc/terms/created> "2011-12-02T15:01:10Z"^^xsd:dateTime ;
+       <http://purl.org/dc/terms/creator> _:genid2 ;
+       <http://www.openarchives.org/ore/terms/aggregates> <../a_workflow.t2flow> ,
+                                                          <http://www.semanticweb.org/owl/owlapi/turtle#ann1> .
+
+_:genid2 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Stian Soiland-Reyes"^^xsd:string .
+
+
+###  ../.ro/ann1
+<../.ro/ann1> rdf:type owl:NamedIndividual ,
+                       <http://www.w3.org/2004/03/trix/rdfg-1/Graph> ;
+              <http://purl.org/dc/terms/created> "2010-05-14T12:02:12Z"^^xsd:dateTime ;
+              <http://purl.org/dc/terms/creator> _:genid3 .
+
+_:genid3 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Marco Roos"^^xsd:string .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ann1
+<http://www.semanticweb.org/owl/owlapi/turtle#ann1> rdf:type owl:NamedIndividual ,
+                                                             <http://purl.org/ao/GraphAnnotation> ,
+                                                             <http://purl.org/wf4ever/ro#Annotation> ;
+                                                    <http://purl.org/ao/body> <../.ro/ann1> ;
+                                                    <http://purl.org/dc/terms/created> "2011-12-02T15:02:13Z"^^xsd:dateTime ;
+                                                    <http://purl.org/dc/terms/creator> _:genid4 ;
+                                                    <http://purl.org/wf4ever/ro#annotatesResource> <../a_workflow.t2flow> ,
+                                                                                                   <../.> .
+
+_:genid4 rdf:type <http://xmlns.com/foaf/0.1/Agent> ;
+          <http://xmlns.com/foaf/0.1/name> "t2flow workflow annotation extractor"^^xsd:string .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#proxy1
+<http://www.semanticweb.org/owl/owlapi/turtle#proxy1> rdf:type owl:NamedIndividual ,
+                                                               <http://purl.org/wf4ever/ro#Proxy> ;
+                                                      <http://purl.org/dc/terms/created> "2011-12-02T15:02:10Z"^^xsd:dateTime ;
+                                                      <http://purl.org/dc/terms/creator> _:genid5 ;
+                                                      <http://www.openarchives.org/ore/terms/proxyFor> <../a_workflow.t2flow> ;
+                                                      <http://www.openarchives.org/ore/terms/proxyIn> <../.> .
+
+_:genid5 rdf:type <http://xmlns.com/foaf/0.1/Person> ;
+          <http://xmlns.com/foaf/0.1/name> "Stian Soiland-Reyes"^^xsd:string .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

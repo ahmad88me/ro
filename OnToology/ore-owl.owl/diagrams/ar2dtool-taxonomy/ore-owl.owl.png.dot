@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://www.w3.org/2004/03/trix/rdfg-1/Graph" "ore:ResourceMap" "ore:Aggregation" "http://purl.org/dc/dcmitype/Collection" ; /*classes style*/
+	"ore:Aggregation" -> "http://purl.org/dc/dcmitype/Collection" [ label = "rdfs:subClassOf" ];
+	"ore:ResourceMap" -> "http://www.w3.org/2004/03/trix/rdfg-1/Graph" [ label = "rdfs:subClassOf" ];
+
+}

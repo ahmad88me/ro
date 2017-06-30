@@ -1,0 +1,252 @@
+@prefix : <http://purl.org/wf4ever/wfprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.org/wf4ever/wfprov> .
+
+<http://purl.org/wf4ever/wfprov> rdf:type owl:Ontology ;
+                                  owl:versionIRI <https://rawgit.com/wf4ever/ro/master/wfprov.owl> ;
+                                  owl:imports <http://www.w3.org/ns/prov-o#> ,
+                                              <https://rawgit.com/wf4ever/ro/master/metadata.owl> ,
+                                              <https://rawgit.com/wf4ever/ro/master/wfdesc.owl> ;
+                                  <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"^^xsd:string ,
+                                                                            "Esteban García Cuesta"^^xsd:string ,
+                                                                            "Graham Klyne"^^xsd:string ,
+                                                                            "Khalid Belhajjame"^^xsd:string ,
+                                                                            "Oscar Corcho"^^xsd:string ,
+                                                                            "Raul Palma"^^xsd:string ,
+                                                                            "Sean Bechhofer"^^xsd:string ,
+                                                                            "Stian Soiland-Reyes"^^xsd:string ;
+                                  <http://purl.org/dc/elements/1.1/description> """The wfprov ontology shows how to express minimal provenance information about the execution of a workflow described using the wf ontology.
+
+Here the concern is mainly the provenance which affects the research object, so in particular how some ro:Resource's might have been generated or used by the execution of a wfdesc:Workflow.
+
+The main class here is a wfprov:WorkflowRun which shows how wfprov:Artifact instances (the data) wfprov:wasOutputFrom a wfprov:ProcessRun for generated artifacts, or wfprov:usedInput for consumed artifacts. The WorkflowRun is also a ProcessRun, and so the overall inputs and outputs of thw workflow execution can be described in the same manner.
+
+These provenance details are linked to the corresponding wfdesc descriptions using wfdesc:describedbyProcess, wfdesc:describedByWorkflow and wfdesc:describedByParameter.
+
+
+This ontology can be further linked to more specific provenance ontologies like OPM-V or W3C PROV-O, but this should be done separately."""@en ;
+                                  <http://purl.org/dc/elements/1.1/rights> "This ontology is distributed under Creative Commons Attribution 4.0 License - http://creativecommons.org/licenses/by/4.0"@en ;
+                                  <http://purl.org/dc/elements/1.1/title> "wfprov Workflow Execution Provenance ontology"@en ;
+                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "wfdesc"^^xsd:string ;
+                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/wf4ever/wfdesc#"^^xsd:string ;
+                                  rdfs:label "wfprov Workflow Execution Provenance ontology"@en ;
+                                  rdfs:seeAlso <http://purl.org/wf4ever/ro> ,
+                                               <http://w3id.org/ro/> ;
+                                  owl:backwardCompatibleWith <https://raw.github.com/wf4ever/ro/0.1.1/wfdesc.owl> ;
+                                  owl:versionInfo "1.0.0-SNAPSHOT"^^xsd:string .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/wf4ever/wfprov#describedByParameter
+:describedByParameter rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Artifact ;
+                      rdfs:range <http://purl.org/wf4ever/wfdesc#Parameter> ;
+                      rdfs:comment "This object property is used to associate a wfprov:Artifact to the wfdesc:Parameter description."@en ;
+                      rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+                      rdfs:label "described by parameter"@en .
+
+
+###  http://purl.org/wf4ever/wfprov#describedByProcess
+:describedByProcess rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ProcessRun ;
+                    rdfs:range <http://purl.org/wf4ever/wfdesc#Process> ;
+                    rdfs:comment "This object property associate a wfprov:Processrun to its wfdesc:Process description ."@en ;
+                    rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+                    rdfs:label "described by process"@en .
+
+
+###  http://purl.org/wf4ever/wfprov#describedByWorkflow
+:describedByWorkflow rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :describedByProcess ;
+                     rdfs:domain :WorkflowRun ;
+                     rdfs:range <http://purl.org/wf4ever/wfdesc#Workflow> ;
+                     rdfs:comment "This property associates a wfprov:WorkflowRun to its corresponding wfdesc:Workflow description."@en ;
+                     rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+                     rdfs:label "described by workflow"@en .
+
+
+###  http://purl.org/wf4ever/wfprov#interactedWith
+:interactedWith rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                rdfs:domain :ProcessRun ;
+                rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+                rdfs:comment """An Agent the ProcessRun interacted with, for instance to consult, inform or to delegate making a decission.
+
+The communication artifacts of this interaction is not normally considered inputs and outputs of the process run, so for instance a wfprov:ProcessRun :receiveEmail which has wfprov:usedInput :anEmail would not be considered wfprov:interactedWith the user who sent the email, although it could be that the overall wfprov:WorkflowRun in this case was considered to be interacting with the user.
+"""@en ;
+                rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+                rdfs:label "interacted with"@en .
+
+
+###  http://purl.org/wf4ever/wfprov#usedInput
+:usedInput rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
+           rdfs:domain :ProcessRun ;
+           rdfs:range :Artifact ;
+           rdfs:comment "This property specifies that a wfprov:ProcessRun used an wfprov:Artifact as an input"@en ;
+           rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+           rdfs:label "used input"@en .
+
+
+###  http://purl.org/wf4ever/wfprov#wasEnactedBy
+:wasEnactedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+              rdfs:domain :ProcessRun ;
+              rdfs:range :WorkflowEngine ;
+              rdfs:comment "wfprov:wasEnactedBy associates a wfprov:ProcessRun with a wfprov:WorkflowEngine, specifying that the execution of the process was enacted by the engine."@en ;
+              rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+              rdfs:label "was enacted by"@en .
+
+
+###  http://purl.org/wf4ever/wfprov#wasInitiatedBy
+:wasInitiatedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain :WorkflowRun ;
+                rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+                rdfs:comment """The agent who decided to run the workflow, for example \"Fred initiated the workflow run\".
+
+Note that an wfprov:WorkflowEngine starting nested workflows should normally instead be indicated with wfprov:wasEnactedBy, and a nested wfprov:WorkflowRun run as part of a wfprov:WorkflowRun is indicated with wfprov:wasPartOfWorkflowRun."""@en ;
+                rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+                rdfs:label "was initiated by"@en ;
+                rdfs:seeAlso :wasEnactedBy ,
+                             :wasPartOfWorkflowRun .
+
+
+###  http://purl.org/wf4ever/wfprov#wasOutputFrom
+:wasOutputFrom rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+               rdfs:domain :Artifact ;
+               rdfs:range :ProcessRun ;
+               rdfs:comment "This property specifies that a wfprov:Artifact was generated as an output from a wfprov:ProcessRun"@en ;
+               rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+               rdfs:label "was output from"@en .
+
+
+###  http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun
+:wasPartOfWorkflowRun rdf:type owl:ObjectProperty ;
+                      rdfs:domain :ProcessRun ;
+                      rdfs:range :WorkflowRun ;
+                      rdfs:comment "This property specifies that a wfprov:ProcessRun was executed as part of a wfprov:WorkflowRun. This typically corresponds to wfdesc:hasSubProcess in the workflow description."@en ;
+                      rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+                      rdfs:label "was part of workflow run"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/wf4ever/wfprov#durationInSeconds
+:durationInSeconds rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :WorkflowRun ;
+                   rdfs:range xsd:double ;
+                   rdfs:comment "How long it took to run the workflow (in seconds)"^^xsd:string ;
+                   rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+                   rdfs:label "duration in seconds"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/wf4ever/wfdesc#Input
+<http://purl.org/wf4ever/wfdesc#Input> rdfs:subClassOf <http://www.w3.org/ns/prov#Role> ;
+                                       rdfs:isDefinedBy <http://purl.org/wf4ever/wfdesc> .
+
+
+###  http://purl.org/wf4ever/wfdesc#Output
+<http://purl.org/wf4ever/wfdesc#Output> rdfs:subClassOf <http://www.w3.org/ns/prov#Role> ;
+                                        rdfs:isDefinedBy <http://purl.org/wf4ever/wfdesc> .
+
+
+###  http://purl.org/wf4ever/wfdesc#Workflow
+<http://purl.org/wf4ever/wfdesc#Workflow> rdfs:subClassOf <http://www.w3.org/ns/prov#Plan> ;
+                                          rdfs:isDefinedBy <http://purl.org/wf4ever/wfdesc> .
+
+
+###  http://purl.org/wf4ever/wfprov#Artifact
+:Artifact rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+          rdfs:comment "An artifact is a data value or item which wfprov:wasOutputFrom of a wfprov:ProcessRun or that the process run used as input (wfprov:usedInput).  Such an artifact might also be a ro:Resource if it has been aggregated in the ro:ResearchObject (typically if the artifact was used or generated by a wfprov:WorkflowRun) - but this might always not be the case for intermediate values from wfprov:ProcessRun."@en ;
+          rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+          rdfs:seeAlso <http://purl.org/wf4ever/ro#ResearchObject> ,
+                       <http://purl.org/wf4ever/ro#Resource> ,
+                       :ProcessRun ,
+                       :usedInput ,
+                       :wasOutputFrom ,
+                       :workflowRun .
+
+
+###  http://purl.org/wf4ever/wfprov#ProcessRun
+:ProcessRun rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.w3.org/ns/prov#endedAtTime> ;
+                              owl:someValuesFrom xsd:dateTimeStamp
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.w3.org/ns/prov#startedAtTime> ;
+                              owl:someValuesFrom xsd:dateTimeStamp
+                            ] ;
+            rdfs:comment "A process run is a particular execution of a wfdesc:Process description (wfprov:describedByProcess), which can wfprov:usedInput some wfprov:Artifact instances, and produce new artifacts (wfprov:wasOutputFrom). A wfprov:WorkflowRun is a specialisation of this class."@en ;
+            rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+            rdfs:label "Process Run"@en ;
+            rdfs:seeAlso <http://purl.org/wf4ever/wfdesc#Process> ,
+                         :Artifact ,
+                         :WorkflowRun ,
+                         :describedByProcess ,
+                         :usedInput ,
+                         :wasOutputFrom .
+
+
+###  http://purl.org/wf4ever/wfprov#WorkflowEngine
+:WorkflowEngine rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#SoftwareAgent> ,
+                                <http://xmlns.com/foaf/0.1/Agent> ;
+                rdfs:comment "A workflow engine is an foaf:Agent that is responsible for enacting a workflow definition (which could be described in a wfdesc:Workflow). The result of workflow enactment gives rise to a wfprov:WorkflowRun."@en ;
+                rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+                rdfs:label "Workflow Engine"@en ;
+                rdfs:seeAlso <http://purl.org/wf4ever/wfdesc#Workflow> ,
+                             :WorkflowRun .
+
+
+###  http://purl.org/wf4ever/wfprov#WorkflowRun
+:WorkflowRun rdf:type owl:Class ;
+             rdfs:subClassOf :ProcessRun ;
+             rdfs:comment "A workflow run is a wfprov:ProcessRun which have been enacted by a wfprov:WorkflowEngine, according to a workflow definition (which could be wfdesc:describedByWorkflow a wfdesc:Workflow). Such a process typically contains several subprocesses (wfprov:wasPartOfWorkflowRun) corresponding to wfdesc:Process descriptions"@en ;
+             rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> ;
+             rdfs:label "Workflow Run"@en ;
+             rdfs:seeAlso <http://purl.org/wf4ever/wfdesc#Process> ,
+                          <http://purl.org/wf4ever/wfdesc#Workflow> ,
+                          :WorkflowEngine .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.org/wf4ever/wfprov
+<http://purl.org/wf4ever/wfprov> rdf:type owl:NamedIndividual ;
+                                 <http://purl.org/dc/terms/creator> <http://data.semanticweb.org/person/esteban-garcia-cuesta> ,
+                                                                    <http://orcid.org/0000-0001-6938-0820> ,
+                                                                    <http://orcid.org/0000-0001-9842-9718> ,
+                                                                    <http://orcid.org/0000-0002-0323-0093> ,
+                                                                    <http://orcid.org/0000-0002-5872-3573> ,
+                                                                    <http://orcid.org/0000-0002-9260-0753> ,
+                                                                    <http://orcid.org/0000-0003-0454-7145> ,
+                                                                    <http://orcid.org/0000-0003-4289-4922> ;
+                                 <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
+                                 <http://purl.org/dc/terms/publisher> <http://www.researchobject.org/> ;
+                                 <http://purl.org/dc/terms/issued> "2016-01-28T15:35:00Z"^^xsd:dateTime ;
+                                 <http://purl.org/dc/terms/modified> "2016-01-28T15:35:00Z"^^xsd:dateTime .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

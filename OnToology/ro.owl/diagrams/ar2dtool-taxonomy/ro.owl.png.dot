@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "oa:Annotation" "ro:Resource" "ro:ResearchObject" "ro:Manifest" "ro:FolderEntry" "ro:Folder" "ro:AggregatedAnnotation" ; /*classes style*/
+	"ro:Manifest" -> "ore:ResourceMap" [ label = "rdfs:subClassOf" ];
+	"ro:AggregatedAnnotation" -> "oa:Annotation" [ label = "rdfs:subClassOf" ];
+	"ro:AggregatedAnnotation" -> "ore:AggregatedResource" [ label = "rdfs:subClassOf" ];
+	"ro:Folder" -> "ore:Aggregation" [ label = "rdfs:subClassOf" ];
+	"ro:Folder" -> "ro:Resource" [ label = "rdfs:subClassOf" ];
+	"ro:Resource" -> "ore:AggregatedResource" [ label = "rdfs:subClassOf" ];
+	"ro:ResearchObject" -> "ore:Aggregation" [ label = "rdfs:subClassOf" ];
+	"ro:FolderEntry" -> "ore:Proxy" [ label = "rdfs:subClassOf" ];
+
+}

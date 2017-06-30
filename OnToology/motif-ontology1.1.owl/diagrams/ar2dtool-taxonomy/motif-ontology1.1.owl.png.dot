@@ -1,0 +1,36 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "motifs:HumanInteraction" "http://purl.org/net/wf-motifsl#Filter" "http://purl.org/net/wf-motifsl#DataCreation" "motifs:DataCleaning" "motifs:CompositeWorkflow" "motifs:Group" "motifs:DataRetrieval" "motifs:DataAnalysis" "motifs:OutputExtraction" "motifs:IntraWorkflowMotif" "motifs:InputAugmentation" "motifs:WorkflowMotif" "motifs:SynchronousInvocaton" "motifs:AtomicWorkflow" "motifs:DataPreparation" "motifs:Motif" "motifs:OperationMotif" "motifs:DataMovement" "motifs:Sort" "motifs:ComputationalStep" "motifs:Join" "motifs:FormatTransformation" "motifs:InterWorkflowMotif" "http://purl.org/net/wf-motifsl#Split" "motifs:UnstructuredDataPreparation" "motifs:InternalMacro" "motifs:Merge" "motifs:AsynchronousInvocation" "motifs:WorkflowOverload" "motifs:DataVisualization" "motifs:StructuredDataPreparation" ; /*classes style*/
+	"motifs:CompositeWorkflow" -> "motifs:InterWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:Group" -> "motifs:StructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:WorkflowMotif" -> "motifs:Motif" [ label = "rdfs:subClassOf" ];
+	"motifs:OutputExtraction" -> "motifs:UnstructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:DataMovement" -> "motifs:OperationMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:Merge" -> "motifs:UnstructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:SynchronousInvocaton" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:FormatTransformation" -> "motifs:UnstructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/net/wf-motifsl#DataCreation" -> "motifs:OperationMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:WorkflowOverload" -> "motifs:InterWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:AsynchronousInvocation" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:ComputationalStep" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:Sort" -> "motifs:StructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:IntraWorkflowMotif" -> "motifs:WorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:DataCleaning" -> "motifs:OperationMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:AtomicWorkflow" -> "motifs:InterWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:InternalMacro" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:Join" -> "motifs:StructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:OperationMotif" -> "motifs:Motif" [ label = "rdfs:subClassOf" ];
+	"motifs:StructuredDataPreparation" -> "motifs:DataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:DataAnalysis" -> "http://purl.org/net/wf-motifsl#DataCreation" [ label = "rdfs:subClassOf" ];
+	"motifs:InterWorkflowMotif" -> "motifs:WorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:InputAugmentation" -> "motifs:UnstructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:DataRetrieval" -> "http://purl.org/net/wf-motifsl#DataCreation" [ label = "rdfs:subClassOf" ];
+	"motifs:DataVisualization" -> "http://purl.org/net/wf-motifsl#DataCreation" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/net/wf-motifsl#Filter" -> "motifs:StructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:DataPreparation" -> "motifs:OperationMotif" [ label = "rdfs:subClassOf" ];
+	"http://purl.org/net/wf-motifsl#Split" -> "motifs:UnstructuredDataPreparation" [ label = "rdfs:subClassOf" ];
+	"motifs:HumanInteraction" -> "motifs:IntraWorkflowMotif" [ label = "rdfs:subClassOf" ];
+	"motifs:UnstructuredDataPreparation" -> "motifs:DataPreparation" [ label = "rdfs:subClassOf" ];
+
+}
