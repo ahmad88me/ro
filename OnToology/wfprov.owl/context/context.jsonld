@@ -1,0 +1,160 @@
+{
+  "@context" : {
+    "wasGeneratedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "endedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#endedAtTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "interactedWith" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#interactedWith",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "wasPartOfWorkflowRun" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#wasPartOfWorkflowRun",
+      "@type" : "@id"
+    },
+    "startedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#startedAtTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "SoftwareAgent" : {
+      "@id" : "http://www.w3.org/ns/prov#SoftwareAgent"
+    },
+    "describedByWorkflow" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#describedByWorkflow",
+      "@type" : "@id"
+    },
+    "Activity" : {
+      "@id" : "http://www.w3.org/ns/prov#Activity"
+    },
+    "used" : {
+      "@id" : "http://www.w3.org/ns/prov#used",
+      "@type" : "@id"
+    },
+    "Artifact" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#Artifact"
+    },
+    "WorkflowRun" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#WorkflowRun"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "describedByParameter" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#describedByParameter",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "Role" : {
+      "@id" : "http://www.w3.org/ns/prov#Role"
+    },
+    "ProcessRun" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#ProcessRun"
+    },
+    "WorkflowEngine" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#WorkflowEngine"
+    },
+    "wasInitiatedBy" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#wasInitiatedBy",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "wasOutputFrom" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#wasOutputFrom",
+      "@type" : "@id"
+    },
+    "backwardCompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+    },
+    "Input" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Input"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "describedByProcess" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#describedByProcess",
+      "@type" : "@id"
+    },
+    "Plan" : {
+      "@id" : "http://www.w3.org/ns/prov#Plan"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Parameter" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Parameter"
+    },
+    "Workflow" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Workflow"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "wasAssociatedWith" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+      "@type" : "@id"
+    },
+    "durationInSeconds" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#durationInSeconds",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    },
+    "Process" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Process"
+    },
+    "Output" : {
+      "@id" : "http://purl.org/wf4ever/wfdesc#Output"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "usedInput" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#usedInput",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "wasEnactedBy" : {
+      "@id" : "http://purl.org/wf4ever/wfprov#wasEnactedBy",
+      "@type" : "@id"
+    }
+  }
+}
