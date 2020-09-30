@@ -1,0 +1,55 @@
+[ {
+  "@id" : "http://purl.org/wf4ever/roevo-ann",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology extends roevo with a detailed taxonomy of changes for annotations. "
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-ann/0.1"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-ann#AddStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-ann#AnnotationChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-ann#AddTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-ann#AnnotationChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-ann#AnnotationChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo#Modification"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-ann#DeleteStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-ann#AnnotationChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-ann#DeleteTarget",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-ann#AnnotationChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-ann#UpdateStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-ann#AnnotationChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-ann#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-ann#AnnotationChange"
+  } ]
+} ]

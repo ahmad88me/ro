@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/wf4ever/wfprov#"
      xml:base="http://purl.org/wf4ever/wfprov"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/wf4ever/wfprov">
         <owl:versionIRI rdf:resource="https://rawgit.com/wf4ever/ro/master/wfprov.owl"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/metadata.owl"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/wfdesc.owl"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel Garijo</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esteban García Cuesta</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graham Klyne</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khalid Belhajjame</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raul Palma</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sean Bechhofer</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stian Soiland-Reyes</dc:creator>
+        <dc:creator>Daniel Garijo</dc:creator>
+        <dc:creator>Esteban García Cuesta</dc:creator>
+        <dc:creator>Graham Klyne</dc:creator>
+        <dc:creator>Khalid Belhajjame</dc:creator>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator>Raul Palma</dc:creator>
+        <dc:creator>Sean Bechhofer</dc:creator>
+        <dc:creator>Stian Soiland-Reyes</dc:creator>
         <dc:description xml:lang="en">The wfprov ontology shows how to express minimal provenance information about the execution of a workflow described using the wf ontology.
 
 Here the concern is mainly the provenance which affects the research object, so in particular how some ro:Resource&apos;s might have been generated or used by the execution of a wfdesc:Workflow.
@@ -35,13 +35,13 @@ These provenance details are linked to the corresponding wfdesc descriptions usi
 This ontology can be further linked to more specific provenance ontologies like OPM-V or W3C PROV-O, but this should be done separately.</dc:description>
         <dc:rights xml:lang="en">This ontology is distributed under Creative Commons Attribution 4.0 License - http://creativecommons.org/licenses/by/4.0</dc:rights>
         <dc:title xml:lang="en">wfprov Workflow Execution Provenance ontology</dc:title>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wfdesc</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/wf4ever/wfdesc#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>wfdesc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/wf4ever/wfdesc#</vann:preferredNamespaceUri>
         <rdfs:label xml:lang="en">wfprov Workflow Execution Provenance ontology</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://purl.org/wf4ever/ro"/>
         <rdfs:seeAlso rdf:resource="http://w3id.org/ro/"/>
         <owl:backwardCompatibleWith rdf:resource="https://raw.github.com/wf4ever/ro/0.1.1/wfdesc.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0-SNAPSHOT</owl:versionInfo>
+        <owl:versionInfo>1.0.0-SNAPSHOT</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -205,7 +205,7 @@ Note that an wfprov:WorkflowEngine starting nested workflows should normally ins
     <owl:DatatypeProperty rdf:about="http://purl.org/wf4ever/wfprov#durationInSeconds">
         <rdfs:domain rdf:resource="http://purl.org/wf4ever/wfprov#WorkflowRun"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">How long it took to run the workflow (in seconds)</rdfs:comment>
+        <rdfs:comment>How long it took to run the workflow (in seconds)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/wf4ever/wfprov"/>
         <rdfs:label xml:lang="en">duration in seconds</rdfs:label>
     </owl:DatatypeProperty>
@@ -371,6 +371,6 @@ Note that an wfprov:WorkflowEngine starting nested workflows should normally ins
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 

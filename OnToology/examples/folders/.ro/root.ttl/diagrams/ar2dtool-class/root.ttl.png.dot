@@ -1,20 +1,20 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-	"file:///home/b/" -> "file:///home/.ro/root/b.ttl" [ label = "ore:isDescribedBy" ];
-	"file:///home/b/" -> "file:///home/" [ label = "ore:isAggregatedBy" ];
-	"file:///home/" -> "file:///home/.ro/manifest.ttl" [ label = "ore:isDescribedBy" ];
-	"file:///home/file1.txt" -> "file:///home/" [ label = "ore:isAggregatedBy" ];
-	"file:///home/a/" -> "file:///home/.ro/root/a.ttl" [ label = "ore:isDescribedBy" ];
-	"file:///home/a/" -> "file:///home/" [ label = "ore:isAggregatedBy" ];
-	"NULL" -> "file:///home/file1.txt" [ label = "ore:proxyFor" ];
-	"NULL" -> "file:///home/b/" [ label = "ore:proxyFor" ];
-	"NULL" -> "file:///home/.ro/root" [ label = "ore:proxyIn" ];
-	"NULL" -> "file:///home/a/" [ label = "ore:proxyFor" ];
-	"file:///home/.ro/root" -> "file:///home/b/" [ label = "ore:aggregates" ];
-	"file:///home/.ro/root" -> "file:///home/a/" [ label = "ore:aggregates" ];
-	"file:///home/.ro/root" -> "file:///home/file1.txt" [ label = "ore:aggregates" ];
-	"file:///home/.ro/root" -> "file:///home/.ro/root.ttl" [ label = "ore:isDescribedBy" ];
-	"file:///home/.ro/root" -> "file:///home/" [ label = "ore:isAggregatedBy" ];
+	"file:///home/ahmad/a/" -> "file:///home/ahmad/.ro/root/a.ttl" [ label = "ore:isDescribedBy" ];
+	"file:///home/ahmad/a/" -> "file:///home/ahmad/" [ label = "ore:isAggregatedBy" ];
+	"file:///home/ahmad/file1.txt" -> "file:///home/ahmad/" [ label = "ore:isAggregatedBy" ];
+	"file:///home/ahmad/.ro/root" -> "file:///home/ahmad/b/" [ label = "ore:aggregates" ];
+	"file:///home/ahmad/.ro/root" -> "file:///home/ahmad/a/" [ label = "ore:aggregates" ];
+	"file:///home/ahmad/.ro/root" -> "file:///home/ahmad/file1.txt" [ label = "ore:aggregates" ];
+	"file:///home/ahmad/.ro/root" -> "file:///home/ahmad/.ro/root.ttl" [ label = "ore:isDescribedBy" ];
+	"file:///home/ahmad/.ro/root" -> "file:///home/ahmad/" [ label = "ore:isAggregatedBy" ];
+	"file:///home/ahmad/b/" -> "file:///home/ahmad/.ro/root/b.ttl" [ label = "ore:isDescribedBy" ];
+	"file:///home/ahmad/b/" -> "file:///home/ahmad/" [ label = "ore:isAggregatedBy" ];
+	"NULL" -> "file:///home/ahmad/a/" [ label = "ore:proxyFor" ];
+	"NULL" -> "file:///home/ahmad/b/" [ label = "ore:proxyFor" ];
+	"NULL" -> "file:///home/ahmad/.ro/root" [ label = "ore:proxyIn" ];
+	"NULL" -> "file:///home/ahmad/file1.txt" [ label = "ore:proxyFor" ];
+	"file:///home/ahmad/" -> "file:///home/ahmad/.ro/manifest.ttl" [ label = "ore:isDescribedBy" ];
 
 }

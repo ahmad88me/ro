@@ -1,0 +1,117 @@
+{
+  "@context" : {
+    "Proxy" : {
+      "@id" : "http://www.openarchives.org/ore/terms/Proxy"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "proxyFor" : {
+      "@id" : "http://www.openarchives.org/ore/terms/proxyFor",
+      "@type" : "@id"
+    },
+    "lineage" : {
+      "@id" : "http://www.openarchives.org/ore/terms/lineage",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "describes" : {
+      "@id" : "http://www.openarchives.org/ore/terms/describes",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "usageNote" : {
+      "@id" : "http://purl.org/vocab/vann/usageNote"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "AggregatedResource" : {
+      "@id" : "http://www.openarchives.org/ore/terms/AggregatedResource"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isPartOf" : {
+      "@id" : "http://purl.org/dc/terms/isPartOf",
+      "@type" : "@id"
+    },
+    "hasPart" : {
+      "@id" : "http://purl.org/dc/terms/hasPart",
+      "@type" : "@id"
+    },
+    "ResourceMap" : {
+      "@id" : "http://www.openarchives.org/ore/terms/ResourceMap"
+    },
+    "similarTo" : {
+      "@id" : "http://www.openarchives.org/ore/terms/similarTo",
+      "@type" : "@id"
+    },
+    "Graph" : {
+      "@id" : "http://www.w3.org/2004/03/trix/rdfg-1/Graph"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "backwardCompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Aggregation" : {
+      "@id" : "http://www.openarchives.org/ore/terms/Aggregation"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "isAggregatedBy" : {
+      "@id" : "http://www.openarchives.org/ore/terms/isAggregatedBy",
+      "@type" : "@id"
+    },
+    "proxyIn" : {
+      "@id" : "http://www.openarchives.org/ore/terms/proxyIn",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "aggregates" : {
+      "@id" : "http://www.openarchives.org/ore/terms/aggregates",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "isDescribedBy" : {
+      "@id" : "http://www.openarchives.org/ore/terms/isDescribedBy",
+      "@type" : "@id"
+    },
+    "Collection" : {
+      "@id" : "http://purl.org/dc/dcmitype/Collection"
+    }
+  }
+}

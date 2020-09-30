@@ -1,0 +1,127 @@
+[ {
+  "@id" : "http://purl.org/wf4ever/roevo-wf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology extends roevo with a detailed taxonomy of changes for workflows. This taxonomy has been created based on an analysis of workflows in myExperiment."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf/0.1"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#AddControlFlowBetweenProcessors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#AddDataFlowBetweenProcessorPorts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#AddProcessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#AddProcessorPort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessor"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#AddWorkflowPort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteControlFlowBetweenProcessors",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteDataFlowBetweenProcessorPorts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteProcessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteProcessorPort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessor"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#DeleteWorkflowPort",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#ParameterChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowInstanceChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessorAnnotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessor"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessorConfiguration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#UpdateProcessor"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowInstanceChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo#Modification"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo#Modification"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#newValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#ParameterChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#objectId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#WorkflowTemplateChange"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/roevo-wf#oldValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/roevo-wf#ParameterChange"
+  } ]
+} ]

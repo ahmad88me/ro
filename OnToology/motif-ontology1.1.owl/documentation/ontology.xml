@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/net/wf-motifs#"
      xml:base="http://purl.org/net/wf-motifs"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.org/net/wf-motifs">
         <rdfs:comment xml:lang="en">Workflow Motif Ontology, created by Daniel Garijo, Pinar Alper and Khalid Belhajjame</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology is based on the paper: Common Motifs in Scientific Workflows:An Empirical Analysis, by Daniel Garijo, Pinar Alper, Khalid Belhajjame, Oscar Corcho, Yolanda Gil and Carole Goble</rdfs:comment>
+        <rdfs:comment>This ontology is based on the paper: Common Motifs in Scientific Workflows:An Empirical Analysis, by Daniel Garijo, Pinar Alper, Khalid Belhajjame, Oscar Corcho, Yolanda Gil and Carole Goble</rdfs:comment>
         <rdfs:label xml:lang="en">Workflow Motif Ontology</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.01</owl:versionInfo>
+        <owl:versionInfo>Version 1.01</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -32,7 +32,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/net/wf-motifs#implementsMotif">
         <rdfs:range rdf:resource="http://purl.org/net/wf-motifs#Motif"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This object property is used to annotate a step in the workflow, a group of steps, a subworkflow, or a workflow with a motif.</rdfs:comment>
+        <rdfs:comment>This object property is used to annotate a step in the workflow, a group of steps, a subworkflow, or a workflow with a motif.</rdfs:comment>
         <rdfs:label xml:lang="en">implements motif</rdfs:label>
     </owl:ObjectProperty>
     
@@ -90,7 +90,7 @@
 
     <owl:Class rdf:about="http://purl.org/net/wf-motifs#AtomicWorkflow">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/wf-motifs#InterWorkflowMotif"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Motif used to characetrize the workflows that perform an atomic unit of functionality, which effectively requires no sub-workflow usage. Typically these workflows are designed to be included in other work- flows. Atomic workflows are the main mechanism of modularizing functionality wthin scientific workflows.</rdfs:comment>
+        <rdfs:comment>Motif used to characetrize the workflows that perform an atomic unit of functionality, which effectively requires no sub-workflow usage. Typically these workflows are designed to be included in other work- flows. Atomic workflows are the main mechanism of modularizing functionality wthin scientific workflows.</rdfs:comment>
         <rdfs:label xml:lang="en">Atomic workflow</rdfs:label>
     </owl:Class>
     
@@ -112,7 +112,7 @@
 
     <owl:Class rdf:about="http://purl.org/net/wf-motifs#ComputationalStep">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/wf-motifs#IntraWorkflowMotif"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This motif is used to refer to activities that do not require human inputs during their execution.</rdfs:comment>
+        <rdfs:comment>This motif is used to refer to activities that do not require human inputs during their execution.</rdfs:comment>
         <rdfs:label xml:lang="en">Computational step</rdfs:label>
     </owl:Class>
     
@@ -134,7 +134,7 @@
 
     <owl:Class rdf:about="http://purl.org/net/wf-motifs#DataCleaning">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/wf-motifs#OperationMotif"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steps for cleaning and curating data. Typically these steps are undertaken by sophisticated tooling/services, or by human interactions. A cleaning step essentially preserves and enriches the content of data (e.g., by a user’s annotation of a result with additional information, detecting and removing inconsistencies on the data, etc.).</rdfs:comment>
+        <rdfs:comment>Steps for cleaning and curating data. Typically these steps are undertaken by sophisticated tooling/services, or by human interactions. A cleaning step essentially preserves and enriches the content of data (e.g., by a user’s annotation of a result with additional information, detecting and removing inconsistencies on the data, etc.).</rdfs:comment>
         <rdfs:label xml:lang="en">Data cleaning</rdfs:label>
     </owl:Class>
     
@@ -167,7 +167,7 @@
 
     <owl:Class rdf:about="http://purl.org/net/wf-motifs#DataRetrieval">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/wf-motifsl#DataCreation"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Workflows exploit heterogeneous data sources, remote databases, repositories or other web resources mostly exposed via SOAP or REST services. Scientific data deposited in these repositories are retrieved through query and retrieval steps inside workflows. Certain tasks within the workflow are responsible for retrieving data from such exter- nal source into the workflow environment.</rdfs:comment>
+        <rdfs:comment>Workflows exploit heterogeneous data sources, remote databases, repositories or other web resources mostly exposed via SOAP or REST services. Scientific data deposited in these repositories are retrieved through query and retrieval steps inside workflows. Certain tasks within the workflow are responsible for retrieving data from such exter- nal source into the workflow environment.</rdfs:comment>
         <rdfs:label xml:lang="en">Data retrieval</rdfs:label>
     </owl:Class>
     
@@ -416,6 +416,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 

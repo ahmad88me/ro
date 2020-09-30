@@ -1,11 +1,11 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "wf4ever:FileParameter" "wf4ever:WebService" "wf4ever:File" "wf4ever:Script" "wf4ever:BeanshellScript" "wf4ever:CommandLineTool" "wf4ever:SOAPService" "wf4ever:RScript" "64420a07:15cf97f0d72:-7ff8" "wf4ever:PythonScript" "wf4ever:WorkflowResearchObject" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "wf4ever:FileParameter" "wf4ever:WebService" "wf4ever:File" "wf4ever:Script" "wf4ever:BeanshellScript" "wf4ever:CommandLineTool" "798e7736:174ddfa8bdc:-7ff8" "wf4ever:SOAPService" "wf4ever:RScript" "wf4ever:PythonScript" "wf4ever:WorkflowResearchObject" ; /*classes style*/
 	"wf4ever:RScript" -> "https://www.r-project.org/" [ label = "rdfs:seeAlso" ];
 	"wf4ever:BeanshellScript" -> "https://github.com/beanshell/beanshell" [ label = "rdfs:seeAlso" ];
 	"wf4ever:rootURI" -> "wf4ever:serviceURI" [ label = "rdfs:subPropertyOf" ];
-	"wf4ever:WorkflowResearchObject" -> "64420a07:15cf97f0d72:-7ff8" [ label = "owl:equivalentClass" ];
+	"wf4ever:WorkflowResearchObject" -> "798e7736:174ddfa8bdc:-7ff8" [ label = "owl:equivalentClass" ];
 	"wf4ever:filePath" -> "wf4ever:parameterFilePath" [ label = "rdfs:seeAlso" ];
 	"wf4ever:File" -> "wf4ever:filePath" [ label = "rdfs:seeAlso" ];
 	"wf4ever:PythonScript" -> "https://www.python.org/" [ label = "rdfs:seeAlso" ];
@@ -28,19 +28,19 @@ node [shape = rectangle, color="orange"]; "wf4ever:FileParameter" "wf4ever:WebSe
 	"http://purl.org/wf4ever/wf4ever" -> "https://rawgit.com/wf4ever/ro/master/metadata.owl" [ label = "owl:imports" ];
 	"http://purl.org/wf4ever/wf4ever" -> "https://rawgit.com/wf4ever/ro/master/ro.owl" [ label = "owl:imports" ];
 	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "64420a07:15cf97f0d72:-7ff5" [ label = "rdf:rest" ];
 	"NULL" -> "wfdesc:Workflow" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "798e7736:174ddfa8bdc:-7ff7" [ label = "owl:intersectionOf" ];
 	"NULL" -> "wf4ever:wsdlPortName" [ label = "rdf:first" ];
+	"NULL" -> "798e7736:174ddfa8bdc:-7ff5" [ label = "rdf:rest" ];
 	"NULL" -> "wf4ever:wsdlURI" [ label = "rdf:first" ];
 	"NULL" -> "ro:ResearchObject" [ label = "rdf:first" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "wf4ever:wsdlOperationName" [ label = "rdf:first" ];
-	"NULL" -> "64420a07:15cf97f0d72:-7ff7" [ label = "owl:intersectionOf" ];
 	"NULL" -> "http://www.openarchives.org/ore/terms/aggregates" [ label = "owl:onProperty" ];
 	"NULL" -> "wf4ever:parameterFilePath" [ label = "owl:onProperty" ];
-	"wf4ever:SOAPService" -> "64420a07:15cf97f0d72:-7ff9" [ label = "owl:hasKey" ];
-	"wf4ever:SOAPService" -> "64420a07:15cf97f0d72:-7ffa" [ label = "owl:hasKey" ];
-	"wf4ever:SOAPService" -> "64420a07:15cf97f0d72:-7ffb" [ label = "owl:hasKey" ];
+	"wf4ever:SOAPService" -> "798e7736:174ddfa8bdc:-7ff9" [ label = "owl:hasKey" ];
+	"wf4ever:SOAPService" -> "798e7736:174ddfa8bdc:-7ffa" [ label = "owl:hasKey" ];
+	"wf4ever:SOAPService" -> "798e7736:174ddfa8bdc:-7ffb" [ label = "owl:hasKey" ];
 	"wf4ever:wsdlURI" -> "wf4ever:serviceURI" [ label = "rdfs:subPropertyOf" ];
 	"wf4ever:SOAPService" -> "owl:Thing" [ label = "wf4ever:wsdlURI" ];
 	"wf4ever:Script" -> "xsd:string" [ label = "wf4ever:script" ];

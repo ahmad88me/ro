@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ro="http://purl.org/wf4ever/ro#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:terms="http://www.openarchives.org/ore/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:ro="http://purl.org/wf4ever/ro#">
+     xmlns:terms="http://www.openarchives.org/ore/terms/">
     <Ontology/>
     
 
@@ -139,93 +139,93 @@
     
 
 
-    <!-- ../file1.txt -->
+    <!-- file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/ -->
 
 
-    <NamedIndividual rdf:about="../file1.txt">
-        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
-        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <terms:isAggregatedBy rdf:resource="../."/>
-    </NamedIndividual>
-    
-
-
-    <!-- ../. -->
-
-
-    <NamedIndividual rdf:about="../.">
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/">
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#ResearchObject"/>
         <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <terms:isDescribedBy rdf:resource="../.ro/manifest.ttl"/>
+        <terms:isDescribedBy rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/manifest.ttl"/>
     </NamedIndividual>
     
 
 
-    <!-- ../.ro/root -->
+    <!-- file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/file1.txt -->
 
 
-    <NamedIndividual rdf:about="../.ro/root">
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/file1.txt">
+        <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
+        <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
+        <terms:isAggregatedBy rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/"/>
+    </NamedIndividual>
+    
+
+
+    <!-- file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root -->
+
+
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root">
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
         <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <terms:aggregates rdf:resource="../file1.txt"/>
-        <terms:aggregates rdf:resource="../a/"/>
-        <terms:aggregates rdf:resource="../b/"/>
-        <terms:isAggregatedBy rdf:resource="../."/>
-        <terms:isDescribedBy rdf:resource="../.ro/root.ttl"/>
+        <terms:aggregates rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/file1.txt"/>
+        <terms:aggregates rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/a/"/>
+        <terms:aggregates rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/"/>
+        <terms:isAggregatedBy rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/"/>
+        <terms:isDescribedBy rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root.ttl"/>
     </NamedIndividual>
     
 
 
-    <!-- ../a/ -->
+    <!-- file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/a/ -->
 
 
-    <NamedIndividual rdf:about="../a/">
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/a/">
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
         <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <terms:isAggregatedBy rdf:resource="../."/>
-        <terms:isDescribedBy rdf:resource="../.ro/root/a.ttl"/>
+        <terms:isAggregatedBy rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/"/>
+        <terms:isDescribedBy rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root/a.ttl"/>
     </NamedIndividual>
     
 
 
-    <!-- ../b/ -->
+    <!-- file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/ -->
 
 
-    <NamedIndividual rdf:about="../b/">
+    <NamedIndividual rdf:about="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/">
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Folder"/>
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#Resource"/>
         <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <terms:isAggregatedBy rdf:resource="../."/>
-        <terms:isDescribedBy rdf:resource="../.ro/root/b.ttl"/>
+        <terms:isAggregatedBy rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/"/>
+        <terms:isDescribedBy rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root/b.ttl"/>
     </NamedIndividual>
-    <rdf:Description rdf:nodeID="_:genid2">
+    <rdf:Description rdf:nodeID="genid2">
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
         <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-        <ro:entryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">file1.txt</ro:entryName>
-        <terms:proxyFor rdf:resource="../file1.txt"/>
-        <terms:proxyIn rdf:resource="../.ro/root"/>
+        <ro:entryName>file1.txt</ro:entryName>
+        <terms:proxyFor rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/file1.txt"/>
+        <terms:proxyIn rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="_:genid3">
+    <rdf:Description rdf:nodeID="genid3">
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
         <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-        <ro:entryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</ro:entryName>
-        <terms:proxyFor rdf:resource="../a/"/>
-        <terms:proxyIn rdf:resource="../.ro/root"/>
+        <ro:entryName>a</ro:entryName>
+        <terms:proxyFor rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/a/"/>
+        <terms:proxyIn rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="_:genid4">
+    <rdf:Description rdf:nodeID="genid4">
         <rdf:type rdf:resource="http://purl.org/wf4ever/ro#FolderEntry"/>
         <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-        <ro:entryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b</ro:entryName>
-        <terms:proxyFor rdf:resource="../b/"/>
-        <terms:proxyIn rdf:resource="../.ro/root"/>
+        <ro:entryName>b</ro:entryName>
+        <terms:proxyFor rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/"/>
+        <terms:proxyIn rdf:resource="file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root"/>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 

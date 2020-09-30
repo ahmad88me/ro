@@ -1,12 +1,12 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "wfdesc:Workflow" "wfdesc:Artifact" "wfdesc:DataLink" "wfdesc:Input" "wfdesc:Parameter" "wfdesc:Output" "wfdesc:Process" "wfdesc:WorkflowDefinition" "-7f871804:15cf97f4f5c:-7ffc" "wfdesc:ProcessImplementation" "wfdesc:Configuration" ; /*classes style*/
-	"NULL" -> "-7f871804:15cf97f4f5c:-7ff9" [ label = "rdf:rest" ];
+node [shape = rectangle, color="orange"]; "wfdesc:Workflow" "wfdesc:Artifact" "7cf7b5ff:174ddfad14d:-7ffc" "wfdesc:DataLink" "wfdesc:Input" "wfdesc:Parameter" "wfdesc:Output" "wfdesc:Process" "wfdesc:WorkflowDefinition" "wfdesc:ProcessImplementation" "wfdesc:Configuration" ; /*classes style*/
+	"NULL" -> "7cf7b5ff:174ddfad14d:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "wfdesc:Input" [ label = "rdf:first" ];
-	"NULL" -> "-7f871804:15cf97f4f5c:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "7cf7b5ff:174ddfad14d:-7ffa" [ label = "rdf:rest" ];
 	"NULL" -> "wfdesc:Configuration" [ label = "rdf:first" ];
-	"NULL" -> "-7f871804:15cf97f4f5c:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "7cf7b5ff:174ddfad14d:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "wfdesc:Output" [ label = "rdf:first" ];
 	"wfdesc:Configuration" -> "wfdesc:Output" [ label = "owl:disjointWith" ];
@@ -14,7 +14,7 @@ node [shape = rectangle, color="orange"]; "wfdesc:Workflow" "wfdesc:Artifact" "w
 	"wfdesc:Workflow" -> "wfdesc:WorkflowDefinition" [ label = "rdfs:seeAlso" ];
 	"wfdesc:WorkflowDefinition" -> "wfdesc:hasWorkflowDefinition" [ label = "rdfs:seeAlso" ];
 	"wfdesc:hasSubWorkflow" -> "wfdesc:hasSubProcess" [ label = "rdfs:subPropertyOf" ];
-	"wfdesc:Parameter" -> "-7f871804:15cf97f4f5c:-7ffc" [ label = "owl:equivalentClass" ];
+	"wfdesc:Parameter" -> "7cf7b5ff:174ddfad14d:-7ffc" [ label = "owl:equivalentClass" ];
 	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0003-0454-7145" [ label = "dct:creator" ];
 	"http://purl.org/wf4ever/wfdesc" -> "http://orcid.org/0000-0001-9842-9718" [ label = "dct:creator" ];
 	"http://purl.org/wf4ever/wfdesc" -> "https://rawgit.com/wf4ever/ro/master/wfdesc.owl" [ label = "owl:versionIRI" ];

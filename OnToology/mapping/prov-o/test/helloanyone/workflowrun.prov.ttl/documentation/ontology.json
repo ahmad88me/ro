@@ -1,0 +1,386 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/ns/prov#Generation" ],
+  "http://www.w3.org/ns/prov#activity" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"
+  } ],
+  "http://www.w3.org/ns/prov#hadRole" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/ns/prov#Association" ],
+  "http://www.w3.org/ns/prov#agent" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/ns/prov#hadPlan" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/ns/prov#Usage" ],
+  "http://www.w3.org/ns/prov#entity" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"
+  } ],
+  "http://www.w3.org/ns/prov#hadRole" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/ns/prov#Usage" ],
+  "http://www.w3.org/ns/prov#entity" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3"
+  } ],
+  "http://www.w3.org/ns/prov#hadRole" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/ns/prov#Association" ],
+  "http://www.w3.org/ns/prov#agent" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/ns/prov#hadPlan" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/ns/prov#Generation" ],
+  "http://www.w3.org/ns/prov#activity" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"
+  } ],
+  "http://www.w3.org/ns/prov#hadRole" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/ns/prov#Generation" ],
+  "http://www.w3.org/ns/prov#activity" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/"
+  } ],
+  "http://www.w3.org/ns/prov#hadRole" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/ns/prov#Activity" ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2012-07-16T10:34:05.718+01:00"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"
+  } ],
+  "http://www.w3.org/ns/prov#influenced" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle"
+  } ],
+  "http://www.w3.org/ns/prov#qualifiedAssociation" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2012-07-16T10:34:05.181+01:00"
+  } ],
+  "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/ns/prov#wasInformedBy" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/ns/prov#Association" ],
+  "http://www.w3.org/ns/prov#agent" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/ns/prov#hadPlan" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/software/taverna-2.4.0"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/ns/prov#Agent" ],
+  "http://www.w3.org/ns/prov#influenced" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/ns/prov#Association" ],
+  "http://www.w3.org/ns/prov#agent" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/ns/prov#hadPlan" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/ns/prov#Usage" ],
+  "http://www.w3.org/ns/prov#entity" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"
+  } ],
+  "http://www.w3.org/ns/prov#hadRole" : [ {
+    "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/ns/prov#Entity" ],
+  "http://www.w3.org/ns/prov#alternateOf" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"
+  } ],
+  "http://www.w3.org/ns/prov#qualifiedGeneration" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"
+  } ]
+}, {
+  "@id" : "file:/home/stain/src/ro/mapping/prov-o/test/2/greeting.txt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"
+  } ]
+}, {
+  "@id" : "file:/home/stain/src/ro/mapping/prov-o/test/2/name.txt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"
+  } ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Plan" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/in/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Role" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/out/greeting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Role" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Plan" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Role" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/in/string2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Role" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/Concatenate_two_strings/out/output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Role" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Plan" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2010/workflowBundle/01348671-5aaa-4cc2-84cc-477329b70b0d/workflow/Hello_Anyone/processor/hello/out/value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Role" ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Entity" ],
+  "http://www.w3.org/ns/prov#influenced" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"
+  } ],
+  "http://www.w3.org/ns/prov#qualifiedGeneration" : [ {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/"
+  } ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Entity" ],
+  "http://www.w3.org/ns/prov#qualifiedGeneration" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"
+  } ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Entity" ],
+  "http://www.w3.org/ns/prov#influenced" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"
+  }, {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"
+  } ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Activity" ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2012-07-16T10:33:45.435+01:00"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"
+  } ],
+  "http://www.w3.org/ns/prov#influenced" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/b38e88dd-80d3-44a9-9c49-a33eceb6888b"
+  }, {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/"
+  }, {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/"
+  }, {
+    "@id" : "_:genid4"
+  } ],
+  "http://www.w3.org/ns/prov#qualifiedAssociation" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/ns/prov#qualifiedUsage" : [ {
+    "@id" : "_:genid8"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2012-07-16T10:33:41.608+01:00"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"
+  } ],
+  "http://www.w3.org/ns/prov#wasAssociatedWith" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/bundle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Bundle", "http://www.w3.org/ns/prov#Entity" ],
+  "http://www.w3.org/ns/prov#wasGeneratedBy" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/2f15c2a2-c649-4af5-82e6-e9bf9bcec44d/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Activity" ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2012-07-16T10:33:45.380+01:00"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/ns/prov#influenced" : [ {
+    "@id" : "_:genid9"
+  } ],
+  "http://www.w3.org/ns/prov#qualifiedAssociation" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/ns/prov#qualifiedUsage" : [ {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2012-07-16T10:33:45.236+01:00"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/f1c1e9b8-8710-404f-a8ca-a35fa6277027"
+  }, {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3"
+  } ],
+  "http://www.w3.org/ns/prov#wasInformedBy" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"
+  } ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/process/cf1ae0a9-7783-4d03-9cbf-56b9365e8b84/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Activity" ],
+  "http://www.w3.org/ns/prov#endedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2012-07-16T10:33:45.152+01:00"
+  } ],
+  "http://www.w3.org/ns/prov#generated" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3"
+  } ],
+  "http://www.w3.org/ns/prov#influenced" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/data/9c213c58-4898-49b7-a901-4f39482769af/ref/0416fc4b-40fd-4b5f-98bb-2bceba5f19d3"
+  } ],
+  "http://www.w3.org/ns/prov#qualifiedAssociation" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/ns/prov#startedAtTime" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2012-07-16T10:33:42.463+01:00"
+  } ],
+  "http://www.w3.org/ns/prov#wasInformedBy" : [ {
+    "@id" : "http://ns.taverna.org.uk/2011/run/9c213c58-4898-49b7-a901-4f39482769af/"
+  } ]
+}, {
+  "@id" : "http://ns.taverna.org.uk/2011/software/taverna-2.4.0",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/prov#Plan" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Association",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Bundle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Generation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Plan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Usage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#alternateOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#endedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#entity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#generated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#hadPlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#hadRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#influenced",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#qualifiedAssociation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#qualifiedGeneration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#qualifiedUsage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#startedAtTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#used",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasInformedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

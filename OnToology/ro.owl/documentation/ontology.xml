@@ -1,36 +1,36 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/wf4ever/ro#"
      xml:base="http://purl.org/wf4ever/ro"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/wf4ever/ro">
         <owl:versionIRI rdf:resource="https://rawgit.com/wf4ever/ro/master/ro.owl"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/metadata.owl"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/ore-owl.owl"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel Garijo</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esteban García Cuesta</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graham Klyne</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khalid Belhajjame</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raul Palma</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sean Bechhofer</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stian Soiland-Reyes</dc:creator>
+        <dc:creator>Daniel Garijo</dc:creator>
+        <dc:creator>Esteban García Cuesta</dc:creator>
+        <dc:creator>Graham Klyne</dc:creator>
+        <dc:creator>Khalid Belhajjame</dc:creator>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator>Raul Palma</dc:creator>
+        <dc:creator>Sean Bechhofer</dc:creator>
+        <dc:creator>Stian Soiland-Reyes</dc:creator>
         <dc:description xml:lang="en">This ontology shows how OA and ORE ontologies can be used together to define a ResearchObject.</dc:description>
         <dc:rights xml:lang="en">This ontology is distributed under Creative Commons Attribution 4.0 License - http://creativecommons.org/licenses/by/4.0</dc:rights>
         <dc:title xml:lang="en">Research Object ontology</dc:title>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ro</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/wf4ever/ro#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>ro</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/wf4ever/ro#</vann:preferredNamespaceUri>
         <vann:usageNote rdf:resource="https://w3id.org/ro/primer"/>
         <rdfs:label xml:lang="en">Research Object ontology</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://w3id.org/ro/"/>
         <owl:backwardCompatibleWith rdf:resource="https://raw.github.com/wf4ever/ro/0.1.1/ro.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0-SNAPSHOT</owl:versionInfo>
+        <owl:versionInfo>1.0.0-SNAPSHOT</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -52,7 +52,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ao/annotatesResource">
         <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property is deprecated. Use oa:hasTarget instead.</rdfs:comment>
+        <rdfs:comment>This property is deprecated. Use oa:hasTarget instead.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ao/"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
@@ -64,7 +64,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ao/body">
         <owl:equivalentProperty rdf:resource="http://www.w3.org/ns/oa#hasBody"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property is deprecated. Use oa:hasBody instead.</rdfs:comment>
+        <rdfs:comment>This property is deprecated. Use oa:hasBody instead.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/ao/"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
@@ -85,7 +85,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/wf4ever/ro#annotatesAggregatedResource">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/oa#hasTarget"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property is deprecated. Use oa:hasTarget instead.</rdfs:comment>
+        <rdfs:comment>This property is deprecated. Use oa:hasTarget instead.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/wf4ever/ro"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
@@ -407,6 +407,6 @@ Aggregated resources MAY also be organised in (potentially nested) ro:Folders to
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 

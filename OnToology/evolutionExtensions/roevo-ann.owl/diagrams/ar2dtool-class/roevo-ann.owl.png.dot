@@ -1,30 +1,30 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "roevo-ann:AnnotationChange" "-61f0c01e:15cf97a7536:-7ffb" "prov:Agent" "roevo:VersionableResource" "ro:Resource" "roevo:LiveRO" "roevo:ChangeSpecification" "-61f0c01e:15cf97a7536:-7ff7" "roevo:SnapshotRO" "roevo:Change" "roevo:ArchivedRO" "ro:AggregatedAnnotation" "prov:Entity" "prov:Activity" ; /*classes style*/
-	"NULL" -> "-61f0c01e:15cf97a7536:-7ff3" [ label = "rdf:rest" ];
-	"NULL" -> "-61f0c01e:15cf97a7536:-7ff9" [ label = "rdf:rest" ];
-	"NULL" -> "-61f0c01e:15cf97a7536:-7ffa" [ label = "owl:unionOf" ];
+node [shape = rectangle, color="orange"]; "roevo-ann:AnnotationChange" "prov:Agent" "roevo:VersionableResource" "ro:Resource" "roevo:LiveRO" "roevo:ChangeSpecification" "roevo:SnapshotRO" "-61e9d131:174ddf79af9:-7ffb" "roevo:Change" "roevo:ArchivedRO" "ro:AggregatedAnnotation" "prov:Entity" "prov:Activity" "-61e9d131:174ddf79af9:-7ff7" ; /*classes style*/
+	"NULL" -> "-61e9d131:174ddf79af9:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "ro:Resource" [ label = "rdf:first" ];
 	"NULL" -> "ro:AggregatedAnnotation" [ label = "rdf:first" ];
 	"NULL" -> "roevo:ArchivedRO" [ label = "rdf:first" ];
+	"NULL" -> "-61e9d131:174ddf79af9:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "-61e9d131:174ddf79af9:-7ff8" [ label = "rdf:rest" ];
 	"NULL" -> "roevo:SnapshotRO" [ label = "rdf:first" ];
 	"NULL" -> "roevo:Change" [ label = "rdf:first" ];
-	"NULL" -> "-61f0c01e:15cf97a7536:-7ff5" [ label = "rdf:rest" ];
-	"NULL" -> "-61f0c01e:15cf97a7536:-7ff8" [ label = "rdf:rest" ];
 	"NULL" -> "roevo:ChangeSpecification" [ label = "rdf:first" ];
 	"NULL" -> "rdfs:Literal" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "-61e9d131:174ddf79af9:-7ffa" [ label = "owl:unionOf" ];
 	"NULL" -> "roevo:VersionableResource" [ label = "rdf:first" ];
-	"NULL" -> "-61f0c01e:15cf97a7536:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "-61e9d131:174ddf79af9:-7ff4" [ label = "rdf:rest" ];
 	"NULL" -> "dcterms:identifier" [ label = "owl:onProperty" ];
-	"NULL" -> "-61f0c01e:15cf97a7536:-7ff6" [ label = "owl:unionOf" ];
 	"NULL" -> "ao:annotatesResource" [ label = "owl:onProperty" ];
-	"NULL" -> "-61f0c01e:15cf97a7536:-7ffb" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-61e9d131:174ddf79af9:-7ff6" [ label = "owl:unionOf" ];
+	"NULL" -> "-61e9d131:174ddf79af9:-7ffb" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-61e9d131:174ddf79af9:-7ff3" [ label = "rdf:rest" ];
 	"http://purl.org/wf4ever/roevo-ann" -> "http://purl.org/wf4ever/roevo-ann/0.1" [ label = "owl:versionIRI" ];
 	"http://purl.org/wf4ever/roevo-ann" -> "http://purl.org/wf4ever/roevo" [ label = "owl:imports" ];
 	"roevo:snapshotedAtTime" -> "prov:generatedAtTime" [ label = "rdfs:subPropertyOf" ];
-	"roevo:VersionableResource" -> "-61f0c01e:15cf97a7536:-7ff7" [ label = "owl:equivalentClass" ];
+	"roevo:VersionableResource" -> "-61e9d131:174ddf79af9:-7ff7" [ label = "owl:equivalentClass" ];
 	"roevo:toVersion" -> "prov:generated" [ label = "rdfs:subPropertyOf" ];
 	"http://purl.org/wf4ever/roevo" -> "http://www.wf4ever-project.org/wiki/download/attachments/2065027/ROevo_v0.4%2823%29.png" [ label = "dc:description" ];
 	"http://purl.org/wf4ever/roevo" -> "http://purl.org/wf4ever/roevo/0.6.1" [ label = "owl:versionIRI" ];

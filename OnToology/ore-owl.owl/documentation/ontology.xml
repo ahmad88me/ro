@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/wf4ever/ore-owl#"
      xml:base="http://purl.org/wf4ever/ore-owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/wf4ever/ore-owl">
         <owl:versionIRI rdf:resource="https://rawgit.com/wf4ever/ro/master/ore-owl.owl"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/metadata.owl"/>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ore</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.openarchives.org/ore/terms/</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>ore</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://www.openarchives.org/ore/terms/</vann:preferredNamespaceUri>
         <vann:usageNote rdf:resource="http://www.openarchives.org/ore/1.0/primer"/>
         <rdfs:comment xml:lang="en">This is an OWL-ified version of the OAI-ORE 1.0 ontology. It was downloaded as application/rdf+xml from http://www.openarchives.org/ore/terms/ on 2011-11-17, converted with cwm 1.197 to N3, then edited with vim and Protege to:
   Make all properties Object Properties instead of rdf:Properties (avoids them becoming Annotation Properties in OWL)
@@ -21,12 +21,12 @@
   These properties are made functional: ore:describes, ore:proxyFor, ore:proxyIn
   Only one of the owl:inverseOf directions stated for ore:aggregates--ore:isAggregatedBy and ore:describes--ore:isDescribedBy
   &lt;http://purl.org/wf4ever/ore-owl&gt; is an owl:Ontology and has a owl:priorVersion &lt;http://www.openarchives.org/ore/terms/&gt; </rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The set of terms provided by the OAI ORE initiative</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The OAI ORE terms vocabulary</rdfs:label>
+        <rdfs:comment>The set of terms provided by the OAI ORE initiative</rdfs:comment>
+        <rdfs:label>The OAI ORE terms vocabulary</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.openarchives.org/ore/toc"/>
         <owl:backwardCompatibleWith rdf:resource="http://www.openarchives.org/ore/terms/"/>
         <owl:priorVersion rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0-owl</owl:versionInfo>
+        <owl:versionInfo>1.0.0-owl</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -69,9 +69,9 @@
         <owl:inverseOf rdf:resource="http://www.openarchives.org/ore/terms/isAggregatedBy"/>
         <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aggregations, by definition, aggregate resources. The ore:aggregates relationship expresses that the object resource is a member of the set of Aggregated Resources of the subject (the Aggregation). This relationship between the Aggregation and its Aggregated Resources is thus more specific than a simple part/whole relationship, as expressed by dcterms:hasPart for example.</rdfs:comment>
+        <rdfs:comment>Aggregations, by definition, aggregate resources. The ore:aggregates relationship expresses that the object resource is a member of the set of Aggregated Resources of the subject (the Aggregation). This relationship between the Aggregation and its Aggregated Resources is thus more specific than a simple part/whole relationship, as expressed by dcterms:hasPart for example.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aggregates</rdfs:label>
+        <rdfs:label>Aggregates</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -84,9 +84,9 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
         <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This relationship asserts that the subject (a Resource Map) describes the object (an Aggregation).</rdfs:comment>
+        <rdfs:comment>This relationship asserts that the subject (a Resource Map) describes the object (an Aggregation).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes</rdfs:label>
+        <rdfs:label>Describes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -98,9 +98,9 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
         <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
         <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The inverse relationship of ore:aggregates, ore:isAggregatedBy asserts that an Aggregated Resource is aggregated by an Aggregation.</rdfs:comment>
+        <rdfs:comment>The inverse relationship of ore:aggregates, ore:isAggregatedBy asserts that an Aggregated Resource is aggregated by an Aggregation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is Aggregated By</rdfs:label>
+        <rdfs:label>Is Aggregated By</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -111,9 +111,9 @@
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/isDescribedBy">
         <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/ResourceMap"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The inverse relationship of ore:describes, in this case the object of the relationship is the Resource Map and the subject is the Aggregation which it describes.</rdfs:comment>
+        <rdfs:comment>The inverse relationship of ore:describes, in this case the object of the relationship is the Resource Map and the subject is the Aggregation which it describes.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is Described By</rdfs:label>
+        <rdfs:label>Is Described By</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -124,9 +124,9 @@
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/lineage">
         <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
         <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ore:lineage is a relationship between two Proxy objects, both of which MUST have the same Resource for which they are proxies. The meaning is that the Resource for which the subject of the relationship is a Proxy was discovered in the Aggregation in which the object Proxy&apos;s resource is aggregated.</rdfs:comment>
+        <rdfs:comment>ore:lineage is a relationship between two Proxy objects, both of which MUST have the same Resource for which they are proxies. The meaning is that the Resource for which the subject of the relationship is a Proxy was discovered in the Aggregation in which the object Proxy&apos;s resource is aggregated.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lineage</rdfs:label>
+        <rdfs:label>Lineage</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -138,9 +138,9 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
         <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/AggregatedResource"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proxy objects are used to represent a Resource as it is aggregated in a particular Aggregation. The ore:proxyFor relationship is used to link the proxy to the Aggregated Resource it is a proxy for. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregated Resource.</rdfs:comment>
+        <rdfs:comment>Proxy objects are used to represent a Resource as it is aggregated in a particular Aggregation. The ore:proxyFor relationship is used to link the proxy to the Aggregated Resource it is a proxy for. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregated Resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proxy For</rdfs:label>
+        <rdfs:label>Proxy For</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -152,9 +152,9 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Proxy"/>
         <rdfs:range rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proxy objects must link to the Aggregation in which the resource being proxied is aggregated. The ore:proxyIn relationship is used for this purpose. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregation.</rdfs:comment>
+        <rdfs:comment>Proxy objects must link to the Aggregation in which the resource being proxied is aggregated. The ore:proxyIn relationship is used for this purpose. The subject of the relationship is a Proxy object, and the object of the relationship is the Aggregation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proxy In</rdfs:label>
+        <rdfs:label>Proxy In</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -164,9 +164,9 @@
 
     <owl:ObjectProperty rdf:about="http://www.openarchives.org/ore/terms/similarTo">
         <rdfs:domain rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The subject of this relationship MUST be an Aggregation.  This Aggregation should be considered an expression within the ORE context of the object of the relationship, as it is broadly equivalent to the resource. For example, the Aggregation may consist of the resources which, together, make up a journal article which has a DOI assigned to it. The Aggregation is not the article to which the DOI was assigned, but is a representation of it in some manner.</rdfs:comment>
+        <rdfs:comment>The subject of this relationship MUST be an Aggregation.  This Aggregation should be considered an expression within the ORE context of the object of the relationship, as it is broadly equivalent to the resource. For example, the Aggregation may consist of the resources which, together, make up a journal article which has a DOI assigned to it. The Aggregation is not the article to which the DOI was assigned, but is a representation of it in some manner.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Similar To</rdfs:label>
+        <rdfs:label>Similar To</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -196,9 +196,9 @@
 
 
     <owl:Class rdf:about="http://www.openarchives.org/ore/terms/AggregatedResource">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A resource which is included in an Aggregation. Note that asserting that a resource is a member of the class of Aggregated Resources does not imply anything other than that it is aggregated by at least one Aggregation.</rdfs:comment>
+        <rdfs:comment>A resource which is included in an Aggregation. Note that asserting that a resource is a member of the class of Aggregated Resources does not imply anything other than that it is aggregated by at least one Aggregation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aggregated Resource</rdfs:label>
+        <rdfs:label>Aggregated Resource</rdfs:label>
     </owl:Class>
     
 
@@ -208,9 +208,9 @@
 
     <owl:Class rdf:about="http://www.openarchives.org/ore/terms/Aggregation">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of related resources (Aggregated Resources), grouped together such that the set can be treated as a single resource. This is the entity described within the ORE interoperability framework by a Resource Map.</rdfs:comment>
+        <rdfs:comment>A set of related resources (Aggregated Resources), grouped together such that the set can be treated as a single resource. This is the entity described within the ORE interoperability framework by a Resource Map.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aggregation</rdfs:label>
+        <rdfs:label>Aggregation</rdfs:label>
     </owl:Class>
     
 
@@ -219,9 +219,9 @@
 
 
     <owl:Class rdf:about="http://www.openarchives.org/ore/terms/Proxy">
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Proxy represents an Aggregated Resource as it exists in a specific Aggregation. All assertions made about an entity are globally true, not only within the context of the Aggregation. As such, in order to make assertions which are only true of a resource as it exists in an Aggregation, a Proxy object is required. For example, one might want to cite an article as it appears in a specific journal, or assign aggregation-specific metadata to a Resource.</rdfs:comment>
+        <rdfs:comment>A Proxy represents an Aggregated Resource as it exists in a specific Aggregation. All assertions made about an entity are globally true, not only within the context of the Aggregation. As such, in order to make assertions which are only true of a resource as it exists in an Aggregation, a Proxy object is required. For example, one might want to cite an article as it appears in a specific journal, or assign aggregation-specific metadata to a Resource.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proxy</rdfs:label>
+        <rdfs:label>Proxy</rdfs:label>
     </owl:Class>
     
 
@@ -231,9 +231,9 @@
 
     <owl:Class rdf:about="http://www.openarchives.org/ore/terms/ResourceMap">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/03/trix/rdfg-1/Graph"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A description of an Aggregation according to the OAI-ORE data model. Resource Maps are serialised to a machine readable format according to the implementation guidelines.</rdfs:comment>
+        <rdfs:comment>A description of an Aggregation according to the OAI-ORE data model. Resource Maps are serialised to a machine readable format according to the implementation guidelines.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.openarchives.org/ore/terms/"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resource Map</rdfs:label>
+        <rdfs:label>Resource Map</rdfs:label>
     </owl:Class>
     
 
@@ -269,12 +269,12 @@
         <terms:publisher rdf:resource="http://researchobject.org/"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-28T13:35:00Z</terms:issued>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-01-28T13:35:00Z</terms:modified>
-        <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The OAI ORE terms vocabulary in OWL</terms:title>
+        <terms:title>The OAI ORE terms vocabulary in OWL</terms:title>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 

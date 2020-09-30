@@ -1,7 +1,7 @@
-<h2  id="crossreference" class="list">Cross reference for Research Object ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<h2 id="crossreference" class="list">Cross reference for Research Object ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Research Object ontology.
 <div id="classes">
-   <h3 id="classes" class="list">Classes</h3>
+   <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">
@@ -73,43 +73,10 @@ For semantic annotations, the oa:hasBody SHOULD point to an trig:Graph which con
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/AggregatedResource">aggregated resource</span>
-         </dd>
-         <dd>
-            <a href="#http://www.w3.org/ns/oa#Annotation" title="http://www.w3.org/ns/oa#Annotation">annotation</a>
+            <a href="http://www.openarchives.org/ore/terms/AggregatedResource"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/AggregatedResource">aggregated resource</a>, <a href="#http://www.w3.org/ns/oa#Annotation" title="http://www.w3.org/ns/oa#Annotation">annotation</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">some</span> 
-            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">agent</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/isAggregatedBy">is aggregated by</span> 
-            <span class="logic">some</span> 
-            <a href="#ResearchObject" title="http://purl.org/wf4ever/ro#ResearchObject">research object</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <a href="#http://www.w3.org/ns/oa#hasTarget" title="http://www.w3.org/ns/oa#hasTarget">has target</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">some</span> 
-            <a href="#ResearchObject" title="http://purl.org/wf4ever/ro#ResearchObject">research object</a>
-            <sup class="type-c" title="class">c</sup> 
-            <span class="logic">or</span> 
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/AggregatedResource">aggregated resource</span> 
-            <span class="logic">or</span> 
-            <span class="dotted" title="http://www.openarchives.org/ore/terms/Proxy">proxy</span>
-         </dd>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/terms/created">created</span> 
-            <span class="logic">some</span> 
-            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
          </dd>
       </dl>
    </div>
@@ -159,11 +126,9 @@ Such folders can be nested and (optionally) used to organize the resources of th
          <dt>has super-classes</dt>
          <dd>
             <a href="#Resource" title="http://purl.org/wf4ever/ro#Resource">Resource</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/Aggregation">aggregation</span>
+            <sup class="type-c" title="class">c</sup>, <a href="http://www.openarchives.org/ore/terms/Aggregation"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/Aggregation">aggregation</a>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -191,7 +156,9 @@ Such folders can be nested and (optionally) used to organize the resources of th
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <span class="dotted" title="http://www.openarchives.org/ore/terms/proxyIn">proxy in</span> 
+            <a href="http://www.openarchives.org/ore/terms/proxyIn"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/proxyIn">proxy in</a> 
             <span class="logic">some</span> 
             <a href="#Folder" title="http://purl.org/wf4ever/ro#Folder">Folder</a>
             <sup class="type-c" title="class">c</sup>
@@ -200,11 +167,15 @@ Such folders can be nested and (optionally) used to organize the resources of th
             <a href="#entryName" title="http://purl.org/wf4ever/ro#entryName">entry name</a>
             <sup class="type-dp" title="data property">dp</sup> 
             <span class="logic">some</span> 
-            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            <a href="http://www.w3.org/2001/XMLSchema#string"
+               target="_blank"
+               title="http://www.w3.org/2001/XMLSchema#string">string</a>
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted" title="http://www.openarchives.org/ore/terms/Proxy">proxy</span>
+            <a href="http://www.openarchives.org/ore/terms/Proxy"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/Proxy">proxy</a>
          </dd>
          <dt>is in domain of</dt>
          <dd>
@@ -213,7 +184,9 @@ Such folders can be nested and (optionally) used to organize the resources of th
          </dd>
          <dt>has keys</dt>
          <dd>
-            <span class="dotted" title="http://www.openarchives.org/ore/terms/proxyIn">proxy in</span> , <a href="#entryName" title="http://purl.org/wf4ever/ro#entryName">entry name</a>
+            <a href="http://www.openarchives.org/ore/terms/proxyIn"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/proxyIn">proxy in</a> , <a href="#entryName" title="http://purl.org/wf4ever/ro#entryName">entry name</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -237,15 +210,18 @@ Such folders can be nested and (optionally) used to organize the resources of th
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <span class="dotted" title="http://www.openarchives.org/ore/terms/describes">describes</span> 
+            <a href="http://www.openarchives.org/ore/terms/describes"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/describes">describes</a> 
             <span class="logic">some</span> 
             <a href="#ResearchObject" title="http://purl.org/wf4ever/ro#ResearchObject">research object</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/ResourceMap">resource map</span>
+            <a href="http://www.openarchives.org/ore/terms/ResourceMap"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/ResourceMap">resource map</a>
          </dd>
       </dl>
    </div>
@@ -268,28 +244,18 @@ Such folders can be nested and (optionally) used to organize the resources of th
       <dl class="description">
          <dt>is equivalent to</dt>
          <dd>
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/isDescribedBy">is described by</span> 
+            <a href="http://www.openarchives.org/ore/terms/isDescribedBy"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/isDescribedBy">is described by</a> 
             <span class="logic">some</span> 
             <a href="#Manifest" title="http://purl.org/wf4ever/ro#Manifest">Manifest</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/Aggregation">aggregation</span>
-         </dd>
-         <dd>
-            <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">creator</a>
-            <sup class="type-op" title="object property">op</sup> 
-            <span class="logic">some</span> 
-            <a href="#http://xmlns.com/foaf/0.1/Agent" title="http://xmlns.com/foaf/0.1/Agent">agent</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <span class="dotted" title="http://purl.org/dc/terms/created">created</span> 
-            <span class="logic">some</span> 
-            <span class="dotted" title="http://www.w3.org/2001/XMLSchema#dateTime">date time</span>
+            <a href="http://www.openarchives.org/ore/terms/Aggregation"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/Aggregation">aggregation</a>
          </dd>
          <dt>is in domain of</dt>
          <dd>
@@ -326,24 +292,9 @@ Aggregated resources MAY also be organised in (potentially nested) ro:Folders to
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/AggregatedResource">aggregated resource</span>
-         </dd>
-         <dd>
-            <span class="dotted"
-                  title="http://www.openarchives.org/ore/terms/isAggregatedBy">is aggregated by</span> 
-            <span class="logic">some</span> 
-            <a href="#ResearchObject" title="http://purl.org/wf4ever/ro#ResearchObject">research object</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dd>
-            <span class="logic">inverse</span> 
-            <span class="dotted" title="http://www.openarchives.org/ore/terms/proxyFor">proxy for</span> 
-            <span class="logic">some</span> 
-            <span class="dotted" title="http://www.openarchives.org/ore/terms/proxyIn">proxy in</span> 
-            <span class="logic">some</span> 
-            <a href="#ResearchObject" title="http://purl.org/wf4ever/ro#ResearchObject">research object</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="http://www.openarchives.org/ore/terms/AggregatedResource"
+               target="_blank"
+               title="http://www.openarchives.org/ore/terms/AggregatedResource">aggregated resource</a>
          </dd>
          <dt>has sub-classes</dt>
          <dd>
@@ -572,7 +523,9 @@ This folder structure, if stated, is the RO creator's preferred view of organizi
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.openarchives.org/ore/terms/aggregates">aggregates</span>
+               <a href="http://www.openarchives.org/ore/terms/aggregates"
+                  target="_blank"
+                  title="http://www.openarchives.org/ore/terms/aggregates">aggregates</a>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -588,7 +541,7 @@ This folder structure, if stated, is the RO creator's preferred view of organizi
       </div>
    </div>
 </div><div id="dataproperties">
-   <h3 id="dataproperties" class="list">Data Properties</h3>
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#entryName" title="http://purl.org/wf4ever/ro#entryName">
@@ -628,7 +581,9 @@ TODO: Need a functional property to specify the top level folder structure of an
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
             </dd>
          </dl>
       </div>

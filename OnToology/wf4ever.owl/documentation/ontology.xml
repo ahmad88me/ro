@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/wf4ever/wf4ever#"
      xml:base="http://purl.org/wf4ever/wf4ever"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/wf4ever/wf4ever">
         <owl:versionIRI rdf:resource="https://raw.github.com/wf4ever/ro/master/wf4ever.owl"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/metadata.owl"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/ro.owl"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/wfdesc.owl"/>
         <owl:imports rdf:resource="https://rawgit.com/wf4ever/ro/master/wfprov.owl"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel Garijo</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esteban García Cuesta</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graham Klyne</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khalid Belhajjame</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raul Palma</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sean Bechhofer</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stian Soiland-Reyes</dc:creator>
+        <dc:creator>Daniel Garijo</dc:creator>
+        <dc:creator>Esteban García Cuesta</dc:creator>
+        <dc:creator>Graham Klyne</dc:creator>
+        <dc:creator>Khalid Belhajjame</dc:creator>
+        <dc:creator>Oscar Corcho</dc:creator>
+        <dc:creator>Raul Palma</dc:creator>
+        <dc:creator>Sean Bechhofer</dc:creator>
+        <dc:creator>Stian Soiland-Reyes</dc:creator>
         <dc:rights xml:lang="en">This ontology is distributed under Creative Commons Attribution 4.0 License - http://creativecommons.org/licenses/by/4.0</dc:rights>
         <dc:title xml:lang="en">wf4ever ontology</dc:title>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wf4ever</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/wf4ever/wf4ever#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>wf4ever</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/wf4ever/wf4ever#</vann:preferredNamespaceUri>
         <vann:usageNote rdf:resource="https://w3id.org/ro/primer"/>
         <rdfs:comment xml:lang="en">This ontology defines more specific subclasses of terms from the wf4ever
 ontologies ro, wfdesc and wfprov, e.g. wf4ever:Image, wf4ever:WebServiceProcess in addition to
@@ -40,7 +40,7 @@ a Research Object that contains at least one workflow.
         <rdfs:label xml:lang="en">wf4ever ontology</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://w3id.org/ro/"/>
         <owl:backwardCompatibleWith rdf:resource="https://raw.github.com/wf4ever/ro/0.1.1/wf4ever.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.0.0-SNAPSHOT</owl:versionInfo>
+        <owl:versionInfo>1.0.0-SNAPSHOT</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -380,7 +380,7 @@ TODO: Do we need to distinguish between WSDL and SOAP? WSDL 1.1 and WSDL 2.0? RP
 
     <owl:Class rdf:about="http://purl.org/wf4ever/wf4ever#WebService">
         <rdfs:subClassOf rdf:resource="http://purl.org/wf4ever/wfdesc#ProcessImplementation"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A (typically remote) Web Service, like REST or SOAP. For the purpose of being a wfdesc:ProcessImplementation of a wfdesc:Process, a &apos;service&apos; is considered more like a specific method then an endpoint.</rdfs:comment>
+        <rdfs:comment>A (typically remote) Web Service, like REST or SOAP. For the purpose of being a wfdesc:ProcessImplementation of a wfdesc:Process, a &apos;service&apos; is considered more like a specific method then an endpoint.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/wf4ever/wf4ever"/>
         <rdfs:label xml:lang="en">Web Service</rdfs:label>
     </owl:Class>
@@ -444,6 +444,6 @@ Such research objects have characteristics that are of particular interest for t
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 
