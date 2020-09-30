@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/ro/metadata#"
      xml:base="https://w3id.org/ro/metadata"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/ro/metadata">
         <owl:versionIRI rdf:resource="https://rawgit.com/wf4ever/ro/master/metadata.owl"/>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stian Soiland-Reyes</dc:creator>
+        <dc:creator>Stian Soiland-Reyes</dc:creator>
         <dc:description xml:lang="en">The provenance and attributions of the Research Object ontologies</dc:description>
         <rdfs:label xml:lang="en">Metadata and provenance of the Research Object ontologies</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://w3id.org/ro/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.2015-01-28</owl:versionInfo>
+        <owl:versionInfo>0.0.2015-01-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -44,18 +44,14 @@
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
 
 
@@ -270,7 +266,7 @@
 
     <owl:NamedIndividual rdf:about="http://data.semanticweb.org/person/esteban-garcia-cuesta">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esteban García Cuesta</rdfs:label>
+        <rdfs:label>Esteban García Cuesta</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -280,7 +276,7 @@
 
     <owl:NamedIndividual rdf:about="http://orcid.org/0000-0001-6938-0820">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khalid Belhajjame</rdfs:label>
+        <rdfs:label>Khalid Belhajjame</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -290,7 +286,7 @@
 
     <owl:NamedIndividual rdf:about="http://orcid.org/0000-0001-9842-9718">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stian Soiland-Reyes</rdfs:label>
+        <rdfs:label>Stian Soiland-Reyes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -300,7 +296,7 @@
 
     <owl:NamedIndividual rdf:about="http://orcid.org/0000-0002-0323-0093">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graham Klyne</rdfs:label>
+        <rdfs:label>Graham Klyne</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -310,7 +306,7 @@
 
     <owl:NamedIndividual rdf:about="http://orcid.org/0000-0002-5872-3573">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sean Bechhoffer</rdfs:label>
+        <rdfs:label>Sean Bechhoffer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -320,7 +316,7 @@
 
     <owl:NamedIndividual rdf:about="http://orcid.org/0000-0002-9260-0753">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho</rdfs:label>
+        <rdfs:label>Oscar Corcho</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -330,7 +326,7 @@
 
     <owl:NamedIndividual rdf:about="http://orcid.org/0000-0003-0454-7145">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel Garijo</rdfs:label>
+        <rdfs:label>Daniel Garijo</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -340,7 +336,7 @@
 
     <owl:NamedIndividual rdf:about="http://orcid.org/0000-0003-4289-4922">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raul Palma</rdfs:label>
+        <rdfs:label>Raul Palma</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -364,7 +360,7 @@
 
     <owl:NamedIndividual rdf:about="http://researchobject.org/">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">researchobject.org</rdfs:label>
+        <rdfs:label>researchobject.org</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -394,12 +390,30 @@
 
     <owl:NamedIndividual rdf:about="https://www.openarchives.org/ore/">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Open Archives Initiative ORE Project</rdfs:label>
+        <rdfs:label>The Open Archives Initiative ORE Project</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 

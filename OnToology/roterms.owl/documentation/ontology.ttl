@@ -1,4 +1,4 @@
-@prefix : <http://purl.org/wf4ever/roterms##> .
+@prefix : <http://purl.org/wf4ever/roterms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -16,8 +16,8 @@
                                     <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
                                     <http://purl.org/dc/terms/modified> "2015-07-30T14:55:00Z"^^xsd:dateTime ;
                                     <http://purl.org/dc/terms/publisher> <http://researchobject.org/> ;
-                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "roterms"^^xsd:string ;
-                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/wf4ever/roterms#"^^xsd:string ;
+                                    <http://purl.org/vocab/vann/preferredNamespacePrefix> "roterms" ;
+                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/wf4ever/roterms#" ;
                                     <http://purl.org/vocab/vann/usageNote> <https://w3id.org/ro/primer> ;
                                     rdfs:comment """The Research Object vocabularies are built on existing popular vocabularies and standards, such as ORE, DC terms, PROV, to cite a few. In addition to terms that we borrowed and adapted from such vocabularies, we defined new terms under the name space roterms.
 
@@ -27,20 +27,50 @@ These new terms serve two main purposes. They are used to specify annotations th
                                     owl:backwardCompatibleWith <https://cdn.rawgit.com/wf4ever/ro/roterms-0.2.0/roterms.owl> ,
                                                                <https://cdn.rawgit.com/wf4ever/ro/roterms-0.3.0/roterms.owl> ,
                                                                <https://cdn.rawgit.com/wf4ever/ro/roterms-0.3.1/roterms.owl> ;
-                                    owl:versionInfo "0.3.2-SNAPSHOT"^^xsd:string .
+                                    owl:versionInfo "0.3.2-SNAPSHOT" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
 ###  http://purl.org/dc/elements/1.1/contributor
-<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty ;
-                                              rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/creator
-<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty ;
-                                          rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> .
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/usageNote
+<http://purl.org/vocab/vann/usageNote> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -63,120 +93,120 @@ These new terms serve two main purposes. They are used to specify annotations th
 
 
 ###  http://purl.org/wf4ever/roterms#defaultValue
-<http://purl.org/wf4ever/roterms#defaultValue> rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf owl:topObjectProperty ;
-                                               rdfs:domain <http://purl.org/wf4ever/wfdesc#Parameter> ;
-                                               rdfs:range <http://purl.org/wf4ever/roterms#WorkflowValue> ;
-                                               rdfs:comment """The default value for a wfdesc:Input or wfdesc:Configuration.
+:defaultValue rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain <http://purl.org/wf4ever/wfdesc#Parameter> ;
+              rdfs:range :WorkflowValue ;
+              rdfs:comment """The default value for a wfdesc:Input or wfdesc:Configuration.
 
 The default value is not a suggested value (see roterms:exampleValue), it is the value that is inherently assumed if no value is provided by the workflow run.
 
 The value is given as an roterms:WorkflowValue instance, which allows specification of the value typically as text (cnt:chars), Base64 encoded bytes (cnt:bytes) or a collection of these (co:element)."""@en ;
-                                               rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                               rdfs:label "default value"@en .
+              rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+              rdfs:label "default value"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#exampleValue
-<http://purl.org/wf4ever/roterms#exampleValue> rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf owl:topObjectProperty ;
-                                               rdfs:domain <http://purl.org/wf4ever/wfdesc#Parameter> ;
-                                               rdfs:range <http://purl.org/wf4ever/roterms#WorkflowValue> ;
-                                               rdfs:comment """An example value for a given input or output parameter. The value is given as an roterms:WorkflowValue instance, which allows specification of the value typically as text (cnt:chars), Base64 encoded bytes (cnt:bytes) or a collection of these (co:element).
+:exampleValue rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain <http://purl.org/wf4ever/wfdesc#Parameter> ;
+              rdfs:range :WorkflowValue ;
+              rdfs:comment """An example value for a given input or output parameter. The value is given as an roterms:WorkflowValue instance, which allows specification of the value typically as text (cnt:chars), Base64 encoded bytes (cnt:bytes) or a collection of these (co:element).
 
-"""^^xsd:string ;
-                                               rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                               rdfs:label "example value"@en .
+""" ;
+              rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+              rdfs:label "example value"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#ofSemanticType
-<http://purl.org/wf4ever/roterms#ofSemanticType> rdf:type owl:ObjectProperty ;
-                                                 rdfs:domain <http://purl.org/wf4ever/wfdesc#Artifact> ;
-                                                 rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                                 rdfs:comment """The wfdesc:Artifact describes a potential wfdesc:WorkflowValue which is of the given semantic type.
+:ofSemanticType rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://purl.org/wf4ever/wfdesc#Artifact> ;
+                rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+                rdfs:comment """The wfdesc:Artifact describes a potential wfdesc:WorkflowValue which is of the given semantic type.
 
 The range of this property is given as skos:Concept, because it is envisioned that URIs from any existing (general and domain-specific) vocabularies could be used. It MAY be used with URIs identifying owl:Class-es; indicating that when a workflow is run, its wfprov:Artifact's would be instances of that type.
 
 Unlike the structural type (see roterms:ofStructuralType), the semantic type defines the domain-specific meaning or role of the expected value, for instance Genome Sequence or X-ray image."""@en ;
-                                                 rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                 rdfs:label "of semantic type"@en .
+                rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                rdfs:label "of semantic type"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#ofStructuralType
-<http://purl.org/wf4ever/roterms#ofStructuralType> rdf:type owl:ObjectProperty ;
-                                                   rdfs:comment """The wfdesc:Artifact describes a potential wfdesc:WorkflowValue which is of the given structural type.
+:ofStructuralType rdf:type owl:ObjectProperty ;
+                  rdfs:comment """The wfdesc:Artifact describes a potential wfdesc:WorkflowValue which is of the given structural type.
 
 The format (media type) of the value SHOULD be specified using dct:format. This property MAY be used when the format is not specific enough, for instance dct:format [ rdv:value \"application/xml\" ] specifies the serialization as XML, while roterms:ofStructuralType might point to the XML schema.
 
 The range of this property is undefined, it is expected that format-specific classes would define how to define the structural requirements."""@en ;
-                                                   rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                   rdfs:label "of structural type"@en .
+                  rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                  rdfs:label "of structural type"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#performsTask
-<http://purl.org/wf4ever/roterms#performsTask> rdf:type owl:ObjectProperty ;
-                                               rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                               rdfs:comment """The resource is intended to functionally perform the given task.
+:performsTask rdf:type owl:ObjectProperty ;
+              rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> ;
+              rdfs:comment """The resource is intended to functionally perform the given task.
 
 This property does not specify a domain, but SHOULD generally have a subject like software, workflows and services. It MAY however also be used with agents, such as an foaf:Organization or crowd sourcing.
 
 This property does not specify the task (beyond being a skos:Concept), as it is intended to reuse existing vocabularies. A task might be for general purposes like copying a file and calculating a numeric average, or domain-specific tasks like aligning genome sequences and identifying galaxies."""@en ;
-                                               rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                               rdfs:label "performs task"@en .
+              rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+              rdfs:label "performs task"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#previousWorkflow
-<http://purl.org/wf4ever/roterms#previousWorkflow> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain <http://purl.org/wf4ever/wfdesc#Workflow> ;
-                                                   rdfs:range <http://purl.org/wf4ever/wfdesc#Workflow> ;
-                                                   rdfs:comment "Previous workflow that is or should be execute"^^xsd:string ;
-                                                   rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                   rdfs:label "previous workflow"@en .
+:previousWorkflow rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://purl.org/wf4ever/wfdesc#Workflow> ;
+                  rdfs:range <http://purl.org/wf4ever/wfdesc#Workflow> ;
+                  rdfs:comment "Previous workflow that is or should be execute" ;
+                  rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                  rdfs:label "previous workflow"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#requiresDataset
-<http://purl.org/wf4ever/roterms#requiresDataset> rdf:type owl:ObjectProperty ;
-                                                  rdfs:subPropertyOf <http://purl.org/dc/terms/requires> ;
-                                                  rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
-                                                  rdfs:comment "The resource requires the given dataset to function. Although the range is dcat:Dataset, this property does not specify how to detail the dataset, it might be a general requirement (any reference genome) or a particular dataset (an XML file located at a specific URI). "@en ;
-                                                  rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                  rdfs:label "requires dataset"@en .
+:requiresDataset rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://purl.org/dc/terms/requires> ;
+                 rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+                 rdfs:comment "The resource requires the given dataset to function. Although the range is dcat:Dataset, this property does not specify how to detail the dataset, it might be a general requirement (any reference genome) or a particular dataset (an XML file located at a specific URI). "@en ;
+                 rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                 rdfs:label "requires dataset"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#requiresHardware
-<http://purl.org/wf4ever/roterms#requiresHardware> rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf <http://purl.org/dc/terms/requires> ;
-                                                   rdfs:comment "The resource requires the given hardware to function. This property has no particular requirements on how to specify the hardware, it might be a general requirement (x86 Intel architecture) or a particular machine (the super computer Blue Gene)."@en ;
-                                                   rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                   rdfs:label "requires hardware"@en .
+:requiresHardware rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://purl.org/dc/terms/requires> ;
+                  rdfs:comment "The resource requires the given hardware to function. This property has no particular requirements on how to specify the hardware, it might be a general requirement (x86 Intel architecture) or a particular machine (the super computer Blue Gene)."@en ;
+                  rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                  rdfs:label "requires hardware"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#requiresSoftware
-<http://purl.org/wf4ever/roterms#requiresSoftware> rdf:type owl:ObjectProperty ;
-                                                   rdfs:subPropertyOf <http://purl.org/dc/terms/requires> ;
-                                                   rdfs:comment "The resource requires the given software to function. This property has no particular requirements on how to specify the software, it might be a general requirement (Linux), or a particular software installation (python-minimal 2.6.5-0ubuntu1)."@en ;
-                                                   rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                   rdfs:label "requires software"@en .
+:requiresSoftware rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf <http://purl.org/dc/terms/requires> ;
+                  rdfs:comment "The resource requires the given software to function. This property has no particular requirements on how to specify the software, it might be a general requirement (Linux), or a particular software installation (python-minimal 2.6.5-0ubuntu1)."@en ;
+                  rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                  rdfs:label "requires software"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#subsequentWorkflow
-<http://purl.org/wf4ever/roterms#subsequentWorkflow> rdf:type owl:ObjectProperty ;
-                                                     rdfs:domain <http://purl.org/wf4ever/wfdesc#Workflow> ;
-                                                     rdfs:range <http://purl.org/wf4ever/wfdesc#Workflow> ;
-                                                     rdfs:comment "Subsequent workflow is or should be execute"^^xsd:string ;
-                                                     rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                     rdfs:label "subsequent workflow"@en .
+:subsequentWorkflow rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://purl.org/wf4ever/wfdesc#Workflow> ;
+                    rdfs:range <http://purl.org/wf4ever/wfdesc#Workflow> ;
+                    rdfs:comment "Subsequent workflow is or should be execute" ;
+                    rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                    rdfs:label "subsequent workflow"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#technicalContact
-<http://purl.org/wf4ever/roterms#technicalContact> rdf:type owl:ObjectProperty ;
-                                                   rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
-                                                   rdfs:comment """The technical support contact for the  resource, given as a foaf:Agent.
+:technicalContact rdf:type owl:ObjectProperty ;
+                  rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+                  rdfs:comment """The technical support contact for the  resource, given as a foaf:Agent.
 
 This property does not specify a domain, but could be used on resources like software, workflows, services, vocabularies, datasets, etc.
 
 The agent SHOULD have a foaf:name. It SHOULD have one of foaf:mbox, foaf:phone or foaf:homepage. The agent may be a foaf:Person (e.g. technical contact),  foaf:Group (e.g. mailing lists) or other kind of agent (like automated support)."""@en ;
-                                                   rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                   rdfs:label "technical contact"@en .
+                  rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                  rdfs:label "technical contact"@en .
 
 
 #################################################################
@@ -184,12 +214,12 @@ The agent SHOULD have a foaf:name. It SHOULD have one of foaf:mbox, foaf:phone o
 #################################################################
 
 ###  http://purl.org/wf4ever/roterms#sampleSize
-<http://purl.org/wf4ever/roterms#sampleSize> rdf:type owl:DatatypeProperty ;
-                                             rdfs:domain <http://purl.org/wf4ever/wfprov#Artifact> ;
-                                             rdfs:range rdfs:Literal ;
-                                             rdfs:comment "e.g., 500 patients  or 500000 lines"^^xsd:string ;
-                                             rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                             rdfs:label "sample size"@en .
+:sampleSize rdf:type owl:DatatypeProperty ;
+            rdfs:domain <http://purl.org/wf4ever/wfprov#Artifact> ;
+            rdfs:range rdfs:Literal ;
+            rdfs:comment "e.g., 500 patients  or 500000 lines" ;
+            rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+            rdfs:label "sample size"@en .
 
 
 #################################################################
@@ -198,98 +228,98 @@ The agent SHOULD have a foaf:name. It SHOULD have one of foaf:mbox, foaf:phone o
 
 ###  http://purl.org/co/Collection
 <http://purl.org/co/Collection> rdf:type owl:Class ;
-                                rdfs:subClassOf <http://purl.org/wf4ever/roterms#WorkflowValue> ;
+                                rdfs:subClassOf :WorkflowValue ;
                                 rdfs:isDefinedBy <http://purl.org/co> .
 
 
 ###  http://purl.org/wf4ever/roterms#Conclusion
-<http://purl.org/wf4ever/roterms#Conclusion> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                             rdfs:comment "A proposition reached from given premises"@en ;
-                                             rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                             rdfs:label "Conclusions"@en .
+:Conclusion rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+            rdfs:comment "A proposition reached from given premises"@en ;
+            rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+            rdfs:label "Conclusions"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#ExampleRun
-<http://purl.org/wf4ever/roterms#ExampleRun> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
-                                             rdfs:comment "A workflow run that serves as an example of how to use this workflow. Example runs typically take only a small subset of inputs and have short execution time."@en ;
-                                             rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                             rdfs:label "Example Workflow Run"@en .
+:ExampleRun rdf:type owl:Class ;
+            rdfs:subClassOf <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
+            rdfs:comment "A workflow run that serves as an example of how to use this workflow. Example runs typically take only a small subset of inputs and have short execution time."@en ;
+            rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+            rdfs:label "Example Workflow Run"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#Hypothesis
-<http://purl.org/wf4ever/roterms#Hypothesis> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                             rdfs:comment "A supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation"@en ;
-                                             rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                             rdfs:label "Hypothesis"@en .
+:Hypothesis rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+            rdfs:comment "A supposition or proposed explanation made on the basis of limited evidence as a starting point for further investigation"@en ;
+            rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+            rdfs:label "Hypothesis"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#OptionalInput
-<http://purl.org/wf4ever/roterms#OptionalInput> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://purl.org/wf4ever/wfdesc#Input> ;
-                                                rdfs:comment """An input parameter that is optional, meaning a value is not (always) neccessary for executing the associated process (workflow). An optional parameter may receive no value.
+:OptionalInput rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.org/wf4ever/wfdesc#Input> ;
+               rdfs:comment """An input parameter that is optional, meaning a value is not (always) neccessary for executing the associated process (workflow). An optional parameter may receive no value.
 
 When the value of the optional parameter is not provided, the execution of the associated process may internally assume a value, which can be explicitly described using roterms:defaultParameter.
 """@en ;
-                                                rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                rdfs:label "Optional input"@en ;
-                                                rdfs:seeAlso <http://purl.org/wf4ever/roterms#defaultValue> .
+               rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+               rdfs:label "Optional input"@en ;
+               rdfs:seeAlso :defaultValue .
 
 
 ###  http://purl.org/wf4ever/roterms#Paper
-<http://purl.org/wf4ever/roterms#Paper> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                        rdfs:comment "A bibliographic resource about an experiment/investigation (to be replaced by dct:BibliographicResource)"@en ;
-                                        rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                        rdfs:label "Paper"@en .
+:Paper rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+       rdfs:comment "A bibliographic resource about an experiment/investigation (to be replaced by dct:BibliographicResource)"@en ;
+       rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+       rdfs:label "Paper"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#ProspectiveRun
-<http://purl.org/wf4ever/roterms#ProspectiveRun> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
-                                                 rdfs:comment "A workflow run that is ready to start executing, e.g. all workflow inputs and configuration options have been provided, but no outputs are available yet."@en ;
-                                                 rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                 rdfs:label "Prospective Workflow Run"@en .
+:ProspectiveRun rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
+                rdfs:comment "A workflow run that is ready to start executing, e.g. all workflow inputs and configuration options have been provided, but no outputs are available yet."@en ;
+                rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                rdfs:label "Prospective Workflow Run"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#ResearchQuestion
-<http://purl.org/wf4ever/roterms#ResearchQuestion> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                                   rdfs:comment "The methodological point of departure of scholarly research in both the natural and social sciences. It determines (i) where and what kind of research the writer will be looking for and (ii) the specific objectives the study or paper will address"@en ;
-                                                   rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                   rdfs:label "Research Question"@en .
+:ResearchQuestion rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                  rdfs:comment "The methodological point of departure of scholarly research in both the natural and social sciences. It determines (i) where and what kind of research the writer will be looking for and (ii) the specific objectives the study or paper will address"@en ;
+                  rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                  rdfs:label "Research Question"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#Result
-<http://purl.org/wf4ever/roterms#Result> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                         rdfs:comment "An item of information obtained by experiment or some other scientific method; a quantity or formula obtained by calculation"@en ;
-                                         rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                         rdfs:label "Result"@en .
+:Result rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+        rdfs:comment "An item of information obtained by experiment or some other scientific method; a quantity or formula obtained by calculation"@en ;
+        rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+        rdfs:label "Result"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#ResultGenerationRun
-<http://purl.org/wf4ever/roterms#ResultGenerationRun> rdf:type owl:Class ;
-                                                      rdfs:subClassOf <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
-                                                      rdfs:comment "A workflow run that generated scientific results. Such workflow runs typically take complete data sets as inputs and may take longer to execute."@en ;
-                                                      rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                      rdfs:label "Results Generating Workflow Run"@en .
+:ResultGenerationRun rdf:type owl:Class ;
+                     rdfs:subClassOf <http://purl.org/wf4ever/wfprov#WorkflowRun> ;
+                     rdfs:comment "A workflow run that generated scientific results. Such workflow runs typically take complete data sets as inputs and may take longer to execute."@en ;
+                     rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+                     rdfs:label "Results Generating Workflow Run"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#Sketch
-<http://purl.org/wf4ever/roterms#Sketch> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                         rdfs:comment "A graphical representation of an experiment/investigation"@en ;
-                                         rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                         rdfs:label "Sketch"@en .
+:Sketch rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+        rdfs:comment "A graphical representation of an experiment/investigation"@en ;
+        rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+        rdfs:label "Sketch"@en .
 
 
 ###  http://purl.org/wf4ever/roterms#WorkflowValue
-<http://purl.org/wf4ever/roterms#WorkflowValue> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                                rdfs:comment """A (potential) workflow value. The value is a piece of data that was used or generated by a wfdesc:WorkflowRun (as a wfprov:Artifact). It can also be used to specify a value that is suggested for a wfdesc:Parameter given by roterms:exampleValue or roterms:defaultValue.
+:WorkflowValue rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+               rdfs:comment """A (potential) workflow value. The value is a piece of data that was used or generated by a wfdesc:WorkflowRun (as a wfprov:Artifact). It can also be used to specify a value that is suggested for a wfdesc:Parameter given by roterms:exampleValue or roterms:defaultValue.
 
 A value can be provided in different forms, indicated as a subclass of roterms:WorkflowValue:
 
@@ -301,14 +331,14 @@ cnt:ContentAsBase64 - inlining the bytes in base64-encoding using cnt:bytes.
 
 
 co:Collection / co:List listing nested roterms:WorkflowValue instances."""@en ;
-                                                rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
-                                                rdfs:label "Workflow Value"@en ;
-                                                rdfs:seeAlso <http://purl.org/co> ,
-                                                             <http://purl.org/co/Collection> ,
-                                                             <http://purl.org/wf4ever/wfprov#Artifact> ,
-                                                             <http://www.w3.org/2011/content#Content> ,
-                                                             <http://www.w3.org/TR/Content-in-RDF10/#bytesProperty> ,
-                                                             <http://www.w3.org/TR/Content-in-RDF10/#charsProperty> .
+               rdfs:isDefinedBy <http://purl.org/wf4ever/roterms#> ;
+               rdfs:label "Workflow Value"@en ;
+               rdfs:seeAlso <http://purl.org/co> ,
+                            <http://purl.org/co/Collection> ,
+                            <http://purl.org/wf4ever/wfprov#Artifact> ,
+                            <http://www.w3.org/2011/content#Content> ,
+                            <http://www.w3.org/TR/Content-in-RDF10/#bytesProperty> ,
+                            <http://www.w3.org/TR/Content-in-RDF10/#charsProperty> .
 
 
 ###  http://purl.org/wf4ever/wfdesc#Artifact
@@ -339,7 +369,7 @@ co:Collection / co:List listing nested roterms:WorkflowValue instances."""@en ;
 
 ###  http://purl.org/wf4ever/wfprov#Artifact
 <http://purl.org/wf4ever/wfprov#Artifact> rdf:type owl:Class ;
-                                          rdfs:subClassOf <http://purl.org/wf4ever/roterms#WorkflowValue> ;
+                                          rdfs:subClassOf :WorkflowValue ;
                                           rdfs:isDefinedBy <http://purl.org/wf4ever/wfprov> .
 
 
@@ -355,7 +385,7 @@ co:Collection / co:List listing nested roterms:WorkflowValue instances."""@en ;
 
 ###  http://www.w3.org/2011/content#Content
 <http://www.w3.org/2011/content#Content> rdf:type owl:Class ;
-                                         rdfs:subClassOf <http://purl.org/wf4ever/roterms#WorkflowValue> ;
+                                         rdfs:subClassOf :WorkflowValue ;
                                          rdfs:isDefinedBy <http://www.w3.org/2011/content> .
 
 
@@ -397,4 +427,14 @@ co:Collection / co:List listing nested roterms:WorkflowValue instances."""@en ;
                                    <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0001-9842-9718> .
 
 
-###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/elements/1.1/contributor> rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> .
+
+
+<http://purl.org/dc/elements/1.1/creator> rdfs:isDefinedBy <http://purl.org/dc/elements/1.1/> .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

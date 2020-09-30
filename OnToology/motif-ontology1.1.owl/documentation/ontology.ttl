@@ -8,9 +8,9 @@
 
 <http://purl.org/net/wf-motifs> rdf:type owl:Ontology ;
                                  rdfs:comment "Workflow Motif Ontology, created by Daniel Garijo, Pinar Alper and Khalid Belhajjame"@en ,
-                                              "This ontology is based on the paper: Common Motifs in Scientific Workflows:An Empirical Analysis, by Daniel Garijo, Pinar Alper, Khalid Belhajjame, Oscar Corcho, Yolanda Gil and Carole Goble"^^xsd:string ;
+                                              "This ontology is based on the paper: Common Motifs in Scientific Workflows:An Empirical Analysis, by Daniel Garijo, Pinar Alper, Khalid Belhajjame, Oscar Corcho, Yolanda Gil and Carole Goble" ;
                                  rdfs:label "Workflow Motif Ontology"@en ;
-                                 owl:versionInfo "Version 1.01"^^xsd:string .
+                                 owl:versionInfo "Version 1.01" .
 
 #################################################################
 #    Object Properties
@@ -19,7 +19,7 @@
 ###  http://purl.org/net/wf-motifs#implementsMotif
 :implementsMotif rdf:type owl:ObjectProperty ;
                  rdfs:range :Motif ;
-                 rdfs:comment "This object property is used to annotate a step in the workflow, a group of steps, a subworkflow, or a workflow with a motif."^^xsd:string ;
+                 rdfs:comment "This object property is used to annotate a step in the workflow, a group of steps, a subworkflow, or a workflow with a motif." ;
                  rdfs:label "implements motif"@en .
 
 
@@ -53,7 +53,7 @@
 ###  http://purl.org/net/wf-motifs#AtomicWorkflow
 :AtomicWorkflow rdf:type owl:Class ;
                 rdfs:subClassOf :InterWorkflowMotif ;
-                rdfs:comment "Motif used to characetrize the workflows that perform an atomic unit of functionality, which effectively requires no sub-workflow usage. Typically these workflows are designed to be included in other work- flows. Atomic workflows are the main mechanism of modularizing functionality wthin scientific workflows."^^xsd:string ;
+                rdfs:comment "Motif used to characetrize the workflows that perform an atomic unit of functionality, which effectively requires no sub-workflow usage. Typically these workflows are designed to be included in other work- flows. Atomic workflows are the main mechanism of modularizing functionality wthin scientific workflows." ;
                 rdfs:label "Atomic workflow"@en .
 
 
@@ -67,7 +67,7 @@
 ###  http://purl.org/net/wf-motifs#ComputationalStep
 :ComputationalStep rdf:type owl:Class ;
                    rdfs:subClassOf :IntraWorkflowMotif ;
-                   rdfs:comment "This motif is used to refer to activities that do not require human inputs during their execution."^^xsd:string ;
+                   rdfs:comment "This motif is used to refer to activities that do not require human inputs during their execution." ;
                    rdfs:label "Computational step"@en .
 
 
@@ -81,7 +81,7 @@
 ###  http://purl.org/net/wf-motifs#DataCleaning
 :DataCleaning rdf:type owl:Class ;
               rdfs:subClassOf :OperationMotif ;
-              rdfs:comment "Steps for cleaning and curating data. Typically these steps are undertaken by sophisticated tooling/services, or by human interactions. A cleaning step essentially preserves and enriches the content of data (e.g., by a user’s annotation of a result with additional information, detecting and removing inconsistencies on the data, etc.)."^^xsd:string ;
+              rdfs:comment "Steps for cleaning and curating data. Typically these steps are undertaken by sophisticated tooling/services, or by human interactions. A cleaning step essentially preserves and enriches the content of data (e.g., by a user’s annotation of a result with additional information, detecting and removing inconsistencies on the data, etc.)." ;
               rdfs:label "Data cleaning"@en .
 
 
@@ -102,7 +102,7 @@
 ###  http://purl.org/net/wf-motifs#DataRetrieval
 :DataRetrieval rdf:type owl:Class ;
                rdfs:subClassOf <http://purl.org/net/wf-motifsl#DataCreation> ;
-               rdfs:comment "Workflows exploit heterogeneous data sources, remote databases, repositories or other web resources mostly exposed via SOAP or REST services. Scientific data deposited in these repositories are retrieved through query and retrieval steps inside workflows. Certain tasks within the workflow are responsible for retrieving data from such exter- nal source into the workflow environment."^^xsd:string ;
+               rdfs:comment "Workflows exploit heterogeneous data sources, remote databases, repositories or other web resources mostly exposed via SOAP or REST services. Scientific data deposited in these repositories are retrieved through query and retrieval steps inside workflows. Certain tasks within the workflow are responsible for retrieving data from such exter- nal source into the workflow environment." ;
                rdfs:label "Data retrieval"@en .
 
 
@@ -260,4 +260,4 @@
                                        rdfs:label "Split"@en .
 
 
-###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

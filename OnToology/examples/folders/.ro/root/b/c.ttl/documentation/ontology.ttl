@@ -72,43 +72,43 @@
 #    Individuals
 #################################################################
 
-###  ../../../.
-<../../../.> rdf:type owl:NamedIndividual ,
-                      <http://purl.org/wf4ever/ro#ResearchObject> ,
-                      <http://www.openarchives.org/ore/terms/Aggregation> ;
-             <http://www.openarchives.org/ore/terms/isDescribedBy> <../../../.ro/manifest.ttl> .
+###  file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/
+<file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/> rdf:type owl:NamedIndividual ,
+                                                                        <http://purl.org/wf4ever/ro#ResearchObject> ,
+                                                                        <http://www.openarchives.org/ore/terms/Aggregation> ;
+                                                               <http://www.openarchives.org/ore/terms/isDescribedBy> <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/manifest.ttl> .
 
 
-###  ../../../b/
-<../../../b/> rdf:type owl:NamedIndividual ,
-                       <http://purl.org/wf4ever/ro#Folder> ,
-                       <http://www.openarchives.org/ore/terms/Aggregation> ;
-              <http://www.openarchives.org/ore/terms/isDescribedBy> <../../../.ro/root/b.ttl> .
+###  file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/
+<file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/> rdf:type owl:NamedIndividual ,
+                                                                          <http://purl.org/wf4ever/ro#Folder> ,
+                                                                          <http://www.openarchives.org/ore/terms/Aggregation> ;
+                                                                 <http://www.openarchives.org/ore/terms/isDescribedBy> <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root/b.ttl> .
 
 
-###  ../../../b/file4.txt
-<../../../b/file4.txt> rdf:type owl:NamedIndividual ,
-                                <http://purl.org/wf4ever/ro#Resource> ,
-                                <http://www.openarchives.org/ore/terms/AggregatedResource> ;
-                       <http://www.openarchives.org/ore/terms/isAggregatedBy> <../../../.> .
+###  file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/file4.txt
+<file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/file4.txt> rdf:type owl:NamedIndividual ,
+                                                                                   <http://purl.org/wf4ever/ro#Resource> ,
+                                                                                   <http://www.openarchives.org/ore/terms/AggregatedResource> ;
+                                                                          <http://www.openarchives.org/ore/terms/isAggregatedBy> <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/> .
 
 
-###  ../../../b/c/
-<../../../b/c/> rdf:type owl:NamedIndividual ,
-                         <http://purl.org/wf4ever/ro#Folder> ,
-                         <http://purl.org/wf4ever/ro#Resource> ,
-                         <http://www.openarchives.org/ore/terms/AggregatedResource> ,
-                         <http://www.openarchives.org/ore/terms/Aggregation> ;
-                <http://www.openarchives.org/ore/terms/aggregates> <../../../b/c/file4.txt> ;
-                <http://www.openarchives.org/ore/terms/isAggregatedBy> <../../../.> ,
-                                                                       <../../../b/> ;
-                <http://www.openarchives.org/ore/terms/isDescribedBy> <../../../.ro/root/b/c.ttl> .
+###  file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/c/
+<file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/c/> rdf:type owl:NamedIndividual ,
+                                                                            <http://purl.org/wf4ever/ro#Folder> ,
+                                                                            <http://purl.org/wf4ever/ro#Resource> ,
+                                                                            <http://www.openarchives.org/ore/terms/AggregatedResource> ,
+                                                                            <http://www.openarchives.org/ore/terms/Aggregation> ;
+                                                                   <http://www.openarchives.org/ore/terms/aggregates> <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/c/file4.txt> ;
+                                                                   <http://www.openarchives.org/ore/terms/isAggregatedBy> <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/> ,
+                                                                                                                          <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/> ;
+                                                                   <http://www.openarchives.org/ore/terms/isDescribedBy> <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root/b/c.ttl> .
 
 
 _:genid2 rdf:type <http://purl.org/wf4ever/ro#FolderEntry> ,
                   <http://www.openarchives.org/ore/terms/Proxy> ;
-         <http://purl.org/wf4ever/ro#entryName> "file4.txt"^^xsd:string ;
-         <http://www.openarchives.org/ore/terms/proxyFor> <../../../b/c/file4.txt> ;
-         <http://www.openarchives.org/ore/terms/proxyIn> <../../../b/> .
+         <http://purl.org/wf4ever/ro#entryName> "file4.txt" ;
+         <http://www.openarchives.org/ore/terms/proxyFor> <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/c/file4.txt> ;
+         <http://www.openarchives.org/ore/terms/proxyIn> <file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/> .
 
-###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

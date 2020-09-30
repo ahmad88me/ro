@@ -1,28 +1,28 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "roevo-wf:WorkflowTemplateChange" "roevo-wf:ParameterChange" "prov:Agent" "roevo:VersionableResource" "2955faa0:15cf97ad1ed:-7ffb" "ro:Resource" "roevo:LiveRO" "roevo:ChangeSpecification" "roevo:SnapshotRO" "roevo:Change" "roevo:ArchivedRO" "ro:AggregatedAnnotation" "prov:Entity" "2955faa0:15cf97ad1ed:-7ff7" "prov:Activity" ; /*classes style*/
-	"NULL" -> "2955faa0:15cf97ad1ed:-7ff9" [ label = "rdf:rest" ];
-	"NULL" -> "2955faa0:15cf97ad1ed:-7ff3" [ label = "rdf:rest" ];
+node [shape = rectangle, color="orange"]; "roevo-wf:WorkflowTemplateChange" "roevo-wf:ParameterChange" "prov:Agent" "roevo:VersionableResource" "ro:Resource" "roevo:LiveRO" "roevo:ChangeSpecification" "roevo:SnapshotRO" "roevo:Change" "roevo:ArchivedRO" "ro:AggregatedAnnotation" "prov:Entity" "prov:Activity" "24285b8c:174ddf31f19:-7ffb" "24285b8c:174ddf31f19:-7ff7" ; /*classes style*/
+	"NULL" -> "24285b8c:174ddf31f19:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "24285b8c:174ddf31f19:-7ffa" [ label = "owl:unionOf" ];
+	"NULL" -> "24285b8c:174ddf31f19:-7ff6" [ label = "owl:unionOf" ];
+	"NULL" -> "24285b8c:174ddf31f19:-7ffb" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "24285b8c:174ddf31f19:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "ro:Resource" [ label = "rdf:first" ];
 	"NULL" -> "ro:AggregatedAnnotation" [ label = "rdf:first" ];
 	"NULL" -> "roevo:ArchivedRO" [ label = "rdf:first" ];
-	"NULL" -> "2955faa0:15cf97ad1ed:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "24285b8c:174ddf31f19:-7ff3" [ label = "rdf:rest" ];
 	"NULL" -> "roevo:SnapshotRO" [ label = "rdf:first" ];
 	"NULL" -> "roevo:Change" [ label = "rdf:first" ];
-	"NULL" -> "2955faa0:15cf97ad1ed:-7ff5" [ label = "rdf:rest" ];
-	"NULL" -> "2955faa0:15cf97ad1ed:-7ff6" [ label = "owl:unionOf" ];
-	"NULL" -> "2955faa0:15cf97ad1ed:-7ffa" [ label = "owl:unionOf" ];
 	"NULL" -> "roevo:ChangeSpecification" [ label = "rdf:first" ];
-	"NULL" -> "2955faa0:15cf97ad1ed:-7ffb" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "24285b8c:174ddf31f19:-7ff8" [ label = "rdf:rest" ];
 	"NULL" -> "rdfs:Literal" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "roevo:VersionableResource" [ label = "rdf:first" ];
-	"NULL" -> "2955faa0:15cf97ad1ed:-7ff4" [ label = "rdf:rest" ];
+	"NULL" -> "24285b8c:174ddf31f19:-7ff5" [ label = "rdf:rest" ];
 	"NULL" -> "dcterms:identifier" [ label = "owl:onProperty" ];
 	"NULL" -> "ao:annotatesResource" [ label = "owl:onProperty" ];
 	"roevo:snapshotedAtTime" -> "prov:generatedAtTime" [ label = "rdfs:subPropertyOf" ];
-	"roevo:VersionableResource" -> "2955faa0:15cf97ad1ed:-7ff7" [ label = "owl:equivalentClass" ];
+	"roevo:VersionableResource" -> "24285b8c:174ddf31f19:-7ff7" [ label = "owl:equivalentClass" ];
 	"http://purl.org/wf4ever/roevo-wf" -> "http://purl.org/wf4ever/roevo-wf/0.1" [ label = "owl:versionIRI" ];
 	"http://purl.org/wf4ever/roevo-wf" -> "http://purl.org/wf4ever/roevo" [ label = "owl:imports" ];
 	"roevo:toVersion" -> "prov:generated" [ label = "rdfs:subPropertyOf" ];

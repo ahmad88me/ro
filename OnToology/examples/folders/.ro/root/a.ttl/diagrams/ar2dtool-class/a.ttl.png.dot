@@ -1,17 +1,17 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-	"file:///.ro/root" -> "file:///.ro/root.ttl" [ label = "ore:isDescribedBy" ];
-	"file:///a/" -> "http://www.example.com/external.txt" [ label = "ore:aggregates" ];
-	"file:///a/" -> "file:///a/file2.txt" [ label = "ore:aggregates" ];
-	"file:///a/" -> "file:///.ro/root/a.ttl" [ label = "ore:isDescribedBy" ];
-	"file:///a/" -> "file:///.ro/root" [ label = "ore:isAggregatedBy" ];
-	"file:///a/" -> "file:///" [ label = "ore:isAggregatedBy" ];
-	"http://www.example.com/external.txt" -> "file:///" [ label = "ore:isAggregatedBy" ];
-	"file:///a/file2.txt" -> "file:///" [ label = "ore:isAggregatedBy" ];
-	"NULL" -> "file:///a/file2.txt" [ label = "ore:proxyFor" ];
-	"NULL" -> "file:///a/" [ label = "ore:proxyIn" ];
+	"http://www.example.com/external.txt" -> "file:///home/" [ label = "ore:isAggregatedBy" ];
+	"file:///home/" -> "file:///home/.ro/manifest.ttl" [ label = "ore:isDescribedBy" ];
+	"file:///home/.ro/root" -> "file:///home/.ro/root.ttl" [ label = "ore:isDescribedBy" ];
+	"file:///home/a/" -> "http://www.example.com/external.txt" [ label = "ore:aggregates" ];
+	"file:///home/a/" -> "file:///home/a/file2.txt" [ label = "ore:aggregates" ];
+	"file:///home/a/" -> "file:///home/.ro/root/a.ttl" [ label = "ore:isDescribedBy" ];
+	"file:///home/a/" -> "file:///home/.ro/root" [ label = "ore:isAggregatedBy" ];
+	"file:///home/a/" -> "file:///home/" [ label = "ore:isAggregatedBy" ];
 	"NULL" -> "http://www.example.com/external.txt" [ label = "ore:proxyFor" ];
-	"file:///" -> "file:///.ro/manifest.ttl" [ label = "ore:isDescribedBy" ];
+	"NULL" -> "file:///home/a/" [ label = "ore:proxyIn" ];
+	"NULL" -> "file:///home/a/file2.txt" [ label = "ore:proxyFor" ];
+	"file:///home/a/file2.txt" -> "file:///home/" [ label = "ore:isAggregatedBy" ];
 
 }

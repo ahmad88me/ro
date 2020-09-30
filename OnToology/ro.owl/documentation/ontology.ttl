@@ -10,24 +10,24 @@
                               owl:versionIRI <https://rawgit.com/wf4ever/ro/master/ro.owl> ;
                               owl:imports <https://rawgit.com/wf4ever/ro/master/metadata.owl> ,
                                           <https://rawgit.com/wf4ever/ro/master/ore-owl.owl> ;
-                              <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo"^^xsd:string ,
-                                                                        "Esteban García Cuesta"^^xsd:string ,
-                                                                        "Graham Klyne"^^xsd:string ,
-                                                                        "Khalid Belhajjame"^^xsd:string ,
-                                                                        "Oscar Corcho"^^xsd:string ,
-                                                                        "Raul Palma"^^xsd:string ,
-                                                                        "Sean Bechhofer"^^xsd:string ,
-                                                                        "Stian Soiland-Reyes"^^xsd:string ;
+                              <http://purl.org/dc/elements/1.1/creator> "Daniel Garijo" ,
+                                                                        "Esteban García Cuesta" ,
+                                                                        "Graham Klyne" ,
+                                                                        "Khalid Belhajjame" ,
+                                                                        "Oscar Corcho" ,
+                                                                        "Raul Palma" ,
+                                                                        "Sean Bechhofer" ,
+                                                                        "Stian Soiland-Reyes" ;
                               <http://purl.org/dc/elements/1.1/description> "This ontology shows how OA and ORE ontologies can be used together to define a ResearchObject."@en ;
                               <http://purl.org/dc/elements/1.1/rights> "This ontology is distributed under Creative Commons Attribution 4.0 License - http://creativecommons.org/licenses/by/4.0"@en ;
                               <http://purl.org/dc/elements/1.1/title> "Research Object ontology"@en ;
-                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "ro"^^xsd:string ;
-                              <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/wf4ever/ro#"^^xsd:string ;
+                              <http://purl.org/vocab/vann/preferredNamespacePrefix> "ro" ;
+                              <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/wf4ever/ro#" ;
                               <http://purl.org/vocab/vann/usageNote> <https://w3id.org/ro/primer> ;
                               rdfs:label "Research Object ontology"@en ;
                               rdfs:seeAlso <http://w3id.org/ro/> ;
                               owl:backwardCompatibleWith <https://raw.github.com/wf4ever/ro/0.1.1/ro.owl> ;
-                              owl:versionInfo "1.0.0-SNAPSHOT"^^xsd:string .
+                              owl:versionInfo "1.0.0-SNAPSHOT" .
 
 #################################################################
 #    Object Properties
@@ -36,7 +36,7 @@
 ###  http://purl.org/ao/annotatesResource
 <http://purl.org/ao/annotatesResource> rdf:type owl:ObjectProperty ;
                                        owl:equivalentProperty <http://www.w3.org/ns/oa#hasTarget> ;
-                                       rdfs:comment "This property is deprecated. Use oa:hasTarget instead."^^xsd:string ;
+                                       rdfs:comment "This property is deprecated. Use oa:hasTarget instead." ;
                                        rdfs:isDefinedBy <http://purl.org/ao/> ;
                                        owl:deprecated "true"^^xsd:boolean .
 
@@ -44,7 +44,7 @@
 ###  http://purl.org/ao/body
 <http://purl.org/ao/body> rdf:type owl:ObjectProperty ;
                           owl:equivalentProperty <http://www.w3.org/ns/oa#hasBody> ;
-                          rdfs:comment "This property is deprecated. Use oa:hasBody instead."^^xsd:string ;
+                          rdfs:comment "This property is deprecated. Use oa:hasBody instead." ;
                           rdfs:isDefinedBy <http://purl.org/ao/> ;
                           owl:deprecated "true"^^xsd:boolean .
 
@@ -57,7 +57,7 @@
 ###  http://purl.org/wf4ever/ro#annotatesAggregatedResource
 :annotatesAggregatedResource rdf:type owl:ObjectProperty ;
                              rdfs:subPropertyOf <http://www.w3.org/ns/oa#hasTarget> ;
-                             rdfs:comment "This property is deprecated. Use oa:hasTarget instead."^^xsd:string ;
+                             rdfs:comment "This property is deprecated. Use oa:hasTarget instead." ;
                              rdfs:isDefinedBy <http://purl.org/wf4ever/ro> ;
                              owl:deprecated "true"^^xsd:boolean .
 
@@ -266,4 +266,4 @@ Aggregated resources MAY also be organised in (potentially nested) ro:Folders to
                              <http://purl.org/dc/terms/modified> "2016-01-28T15:46:00Z"^^xsd:dateTime .
 
 
-###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

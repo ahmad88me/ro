@@ -1,0 +1,547 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#parameterFilePath"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/wf4ever/ro#ResearchObject"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.openarchives.org/ore/terms/aggregates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/wf4ever/wfdesc#Workflow"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Daniel Garijo"
+  }, {
+    "@value" : "Esteban García Cuesta"
+  }, {
+    "@value" : "Graham Klyne"
+  }, {
+    "@value" : "Khalid Belhajjame"
+  }, {
+    "@value" : "Oscar Corcho"
+  }, {
+    "@value" : "Raul Palma"
+  }, {
+    "@value" : "Sean Bechhofer"
+  }, {
+    "@value" : "Stian Soiland-Reyes"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@language" : "en",
+    "@value" : "This ontology is distributed under Creative Commons Attribution 4.0 License - http://creativecommons.org/licenses/by/4.0"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "wf4ever ontology"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://data.semanticweb.org/person/esteban-garcia-cuesta"
+  }, {
+    "@id" : "http://orcid.org/0000-0001-6938-0820"
+  }, {
+    "@id" : "http://orcid.org/0000-0001-9842-9718"
+  }, {
+    "@id" : "http://orcid.org/0000-0002-0323-0093"
+  }, {
+    "@id" : "http://orcid.org/0000-0002-5872-3573"
+  }, {
+    "@id" : "http://orcid.org/0000-0002-9260-0753"
+  }, {
+    "@id" : "http://orcid.org/0000-0003-0454-7145"
+  }, {
+    "@id" : "http://orcid.org/0000-0003-4289-4922"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2016-01-28T15:35:00Z"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2016-01-28T15:35:00Z"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://researchobject.org/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "wf4ever"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://purl.org/wf4ever/wf4ever#"
+  } ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@id" : "https://w3id.org/ro/primer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This ontology defines more specific subclasses of terms from the wf4ever\nontologies ro, wfdesc and wfprov, e.g. wf4ever:Image, wf4ever:WebServiceProcess in addition to\nassociated properties for describing services and tools, e.g.\nwf4ever:command and wf4ever:script.\n\nThis ontology can be used as part of annotations in an `wf4ever:WorkflowResearchObject`,\na Research Object that contains at least one workflow.\n          "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "wf4ever ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://w3id.org/ro/"
+  } ],
+  "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
+    "@id" : "https://raw.github.com/wf4ever/ro/0.1.1/wf4ever.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://rawgit.com/wf4ever/ro/master/metadata.owl"
+  }, {
+    "@id" : "https://rawgit.com/wf4ever/ro/master/ro.owl"
+  }, {
+    "@id" : "https://rawgit.com/wf4ever/ro/master/wfdesc.owl"
+  }, {
+    "@id" : "https://rawgit.com/wf4ever/ro/master/wfprov.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://raw.github.com/wf4ever/ro/master/wf4ever.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0-SNAPSHOT"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#BeanshellScript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A script written in the BeanShell language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BeanShell Script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://github.com/beanshell/beanshell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#Script"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#CommandLineTool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A command line tool, typically executed locally, through SSH or a job submission system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Command line Tool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wfdesc#ProcessImplementation"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset or reference database."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wfprov#Artifact"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A human readable document, like a HTML page, a PDF, plain text file or a LibreOffice document."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wfprov#Artifact"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#File",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A file wfprov:Artifact that was used or generated by a wfprov:WorkflowRun.\n\nA wf4ever:File can specify a (possibly relative) wf4ever:filePath.\n\nNote that this file path is not uniquely identifying the artifact as different workflow runs might be writing to the same file path. Hence a wf4ever:File  should generally not be identified using a <file:///absolute/path> URI, unless the RDF serialization is using a relative URI reference to a resource  <some/path> which is also aggregated as a child resource within a RO, so resolving <some/path> within <file:///some/ro/> would generate <file:///some/ro/some/path> identifying the wf4ever:File locally.\n\nIn some cases, file URIs with hostname can be used to uniquely identify a file, say <file://server.example.com/home/user/file.txt> - such a identification scheme should only be used if the server hostname is considered fixed and the paths are considered immutable.\n\nTo specify fixed file paths of a workflow wfdesc:Parameter, use wf4ever:parameterFilePath."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "File"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#filePath"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wfprov#Artifact"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#FileParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A wfdesc:Parameter (typically an Input or Output) which is read/written from a fixed (possibly relative) file path, specified with wf4ever:parameterFilePath\n\nFor instance, some workflows might always read the file \"relative/in.txt\" and always generate the output \"/tmp/output.txt\".\n\nNote that this path is not in anyway identifying the wfdesc:Parameter, as workflows could be reading/writing the same file paths.\n\nTo indicate that a particular value from a wfprov:WorkflowRun was a file, use wf4ever:File and wf4ever:filePath."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "File Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wfdesc#Parameter"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#Image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A visual image or photograph, formats like JPEG, PNG, TIFF"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Image"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wfprov#Artifact"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#PythonScript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A script written in the Python language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Python Script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.python.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#Script"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#RESTService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A RESTful web service, accessed using HTTP or HTTPS.\n\nThe wf4ever:serviceURI should somewhat identify the endpoint, but would often not be uniquely identifying the RESTService as the exact URI accessed could depend on the input values.\n\nTODO: Should a URI template be specified?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "REST Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#WebService"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#RScript",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A script written in the R language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "R Script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.r-project.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#Script"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#SOAPService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A SOAP service is a method described in a WSDL 1.1 or WSDL 2.0 specification.\n\nA SOAP service method is considered unique given a wf4ever:wsdlURI, wf4ever:wsdlOperationName and wf4ever:wsdlPortName.\n\nTODO: Do we need to distinguish between WSDL and SOAP? WSDL 1.1 and WSDL 2.0? RPC/Encoded vs.Wrapped Document/Literal?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SOAP Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#WebService"
+  } ],
+  "http://www.w3.org/2002/07/owl#hasKey" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/wf4ever/wf4ever#wsdlOperationName"
+    } ]
+  }, {
+    "@list" : [ {
+      "@id" : "http://purl.org/wf4ever/wf4ever#wsdlPortName"
+    } ]
+  }, {
+    "@list" : [ {
+      "@id" : "http://purl.org/wf4ever/wf4ever#wsdlURI"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#Script",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "A script which can be evaluated. Scripts of reasonable small sizes can be embedded in this description using wf4ever:script."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wfdesc#ProcessImplementation"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#WebService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A (typically remote) Web Service, like REST or SOAP. For the purpose of being a wfdesc:ProcessImplementation of a wfdesc:Process, a 'service' is considered more like a specific method then an endpoint."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Web Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wfdesc#ProcessImplementation"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#WorkflowResearchObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A workflow research object is a research object that aggregates at least one workflow description. It might of course aggregates any other kind of resources, but MUST aggregate at least one wfdesc:Workflow.\n\nSuch research objects have characteristics that are of particular interest for the Wf4Ever infrastructure, because workflows can be run, are composed of processes, and are subject to decay and repair."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Workflow Research Object"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#command",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#CommandLineTool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "command"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "en",
+    "@value" : "The executed command, for instance \"cp /tmp/file1 /tmp/file2\",  \"/usr/local/bin/analyzestuff\" or \"C:\\Program.exe\".\n\nThis ontology does not describe the syntax or format of the command line (for instance splitting into argv arguments or escaping), although reasonable effort should be made to reflect the executed command line on a typical command line shell."
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#filePath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The (possibly) relative filepath of a wf4ever:File artifact that was used or generated by a wfprov:WorkflowRun.\n\nNote that this file path is not uniquely identifying the artifact as different workflow runs might be writing to the same file path.\n\nTo specify fixed file paths of a workflow wfdesc:Parameter, use wf4ever:parameterFilePath."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#File"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "file path"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#parameterFilePath"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#parameterFilePath",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A (possibly relative) filepath used as a fixed input or output parameter for a workflow.\n\nFor instance, some workflows might always read the file \"relative/in.txt\" and always generate the output \"/tmp/output.txt\".\n\nTo indicate that a particular wfprov:Artifact from a wfprov:WorkflowRun was a file, use wf4ever:File and wf4ever:filePath - this would typically be the case for workflow runs involving this parameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#FileParameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "parameter file path"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#rootURI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The root URI of a web service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Root URI"
+  }, {
+    "@language" : "en",
+    "@value" : "root URI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#serviceURI"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#script",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#Script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "script"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#serviceURI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#WebService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "service URI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#wsdlOperationName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#SOAPService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WSDL operation name"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#wsdlPortName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#SOAPService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WSDL port name"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/wf4ever#wsdlURI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#SOAPService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WSDL URI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/wf4ever/wf4ever#serviceURI"
+  } ]
+} ]

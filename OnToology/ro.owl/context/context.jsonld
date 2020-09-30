@@ -1,0 +1,152 @@
+{
+  "@context" : {
+    "Annotation" : {
+      "@id" : "http://www.w3.org/ns/oa#Annotation"
+    },
+    "Proxy" : {
+      "@id" : "http://www.openarchives.org/ore/terms/Proxy"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "proxyFor" : {
+      "@id" : "http://www.openarchives.org/ore/terms/proxyFor",
+      "@type" : "@id"
+    },
+    "annotatesAggregatedResource" : {
+      "@id" : "http://purl.org/wf4ever/ro#annotatesAggregatedResource",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "describes" : {
+      "@id" : "http://www.openarchives.org/ore/terms/describes",
+      "@type" : "@id"
+    },
+    "rootFolder" : {
+      "@id" : "http://purl.org/wf4ever/ro#rootFolder",
+      "@type" : "@id"
+    },
+    "body" : {
+      "@id" : "http://purl.org/ao/body",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "usageNote" : {
+      "@id" : "http://purl.org/vocab/vann/usageNote"
+    },
+    "Folder" : {
+      "@id" : "http://purl.org/wf4ever/ro#Folder"
+    },
+    "AggregatedResource" : {
+      "@id" : "http://www.openarchives.org/ore/terms/AggregatedResource"
+    },
+    "FolderEntry" : {
+      "@id" : "http://purl.org/wf4ever/ro#FolderEntry"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "ResourceMap" : {
+      "@id" : "http://www.openarchives.org/ore/terms/ResourceMap"
+    },
+    "Manifest" : {
+      "@id" : "http://purl.org/wf4ever/ro#Manifest"
+    },
+    "annotatesResource" : {
+      "@id" : "http://purl.org/ao/annotatesResource",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "ResearchObject" : {
+      "@id" : "http://purl.org/wf4ever/ro#ResearchObject"
+    },
+    "hasTarget" : {
+      "@id" : "http://www.w3.org/ns/oa#hasTarget",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "hasBody" : {
+      "@id" : "http://www.w3.org/ns/oa#hasBody",
+      "@type" : "@id"
+    },
+    "entryName" : {
+      "@id" : "http://purl.org/wf4ever/ro#entryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AggregatedAnnotation" : {
+      "@id" : "http://purl.org/wf4ever/ro#AggregatedAnnotation"
+    },
+    "backwardCompatibleWith" : {
+      "@id" : "http://www.w3.org/2002/07/owl#backwardCompatibleWith"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Aggregation" : {
+      "@id" : "http://www.openarchives.org/ore/terms/Aggregation"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "isAggregatedBy" : {
+      "@id" : "http://www.openarchives.org/ore/terms/isAggregatedBy",
+      "@type" : "@id"
+    },
+    "proxyIn" : {
+      "@id" : "http://www.openarchives.org/ore/terms/proxyIn",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "aggregates" : {
+      "@id" : "http://www.openarchives.org/ore/terms/aggregates",
+      "@type" : "@id"
+    },
+    "Resource" : {
+      "@id" : "http://purl.org/wf4ever/ro#Resource"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "isDescribedBy" : {
+      "@id" : "http://www.openarchives.org/ore/terms/isDescribedBy",
+      "@type" : "@id"
+    }
+  }
+}

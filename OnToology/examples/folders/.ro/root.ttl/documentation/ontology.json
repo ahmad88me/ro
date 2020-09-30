@@ -1,0 +1,125 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://purl.org/wf4ever/ro#FolderEntry", "http://www.openarchives.org/ore/terms/Proxy" ],
+  "http://purl.org/wf4ever/ro#entryName" : [ {
+    "@value" : "file1.txt"
+  } ],
+  "http://www.openarchives.org/ore/terms/proxyFor" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/file1.txt"
+  } ],
+  "http://www.openarchives.org/ore/terms/proxyIn" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://purl.org/wf4ever/ro#FolderEntry", "http://www.openarchives.org/ore/terms/Proxy" ],
+  "http://purl.org/wf4ever/ro#entryName" : [ {
+    "@value" : "a"
+  } ],
+  "http://www.openarchives.org/ore/terms/proxyFor" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/a/"
+  } ],
+  "http://www.openarchives.org/ore/terms/proxyIn" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://purl.org/wf4ever/ro#FolderEntry", "http://www.openarchives.org/ore/terms/Proxy" ],
+  "http://purl.org/wf4ever/ro#entryName" : [ {
+    "@value" : "b"
+  } ],
+  "http://www.openarchives.org/ore/terms/proxyFor" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/"
+  } ],
+  "http://www.openarchives.org/ore/terms/proxyIn" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root"
+  } ]
+}, {
+  "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/wf4ever/ro#ResearchObject", "http://www.openarchives.org/ore/terms/Aggregation" ],
+  "http://www.openarchives.org/ore/terms/isDescribedBy" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/manifest.ttl"
+  } ]
+}, {
+  "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/wf4ever/ro#Folder", "http://purl.org/wf4ever/ro#Resource", "http://www.openarchives.org/ore/terms/AggregatedResource", "http://www.openarchives.org/ore/terms/Aggregation" ],
+  "http://www.openarchives.org/ore/terms/aggregates" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/file1.txt"
+  }, {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/a/"
+  }, {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/"
+  } ],
+  "http://www.openarchives.org/ore/terms/isAggregatedBy" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/"
+  } ],
+  "http://www.openarchives.org/ore/terms/isDescribedBy" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root.ttl"
+  } ]
+}, {
+  "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/a/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/wf4ever/ro#Folder", "http://purl.org/wf4ever/ro#Resource", "http://www.openarchives.org/ore/terms/AggregatedResource" ],
+  "http://www.openarchives.org/ore/terms/isAggregatedBy" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/"
+  } ],
+  "http://www.openarchives.org/ore/terms/isDescribedBy" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root/a.ttl"
+  } ]
+}, {
+  "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/b/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/wf4ever/ro#Folder", "http://purl.org/wf4ever/ro#Resource", "http://www.openarchives.org/ore/terms/AggregatedResource" ],
+  "http://www.openarchives.org/ore/terms/isAggregatedBy" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/"
+  } ],
+  "http://www.openarchives.org/ore/terms/isDescribedBy" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/.ro/root/b.ttl"
+  } ]
+}, {
+  "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/file1.txt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/wf4ever/ro#Resource", "http://www.openarchives.org/ore/terms/AggregatedResource" ],
+  "http://www.openarchives.org/ore/terms/isAggregatedBy" : [ {
+    "@id" : "file:/home/ahmad/repos/ahmad88me@gmail.com/examples/folders/"
+  } ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#Folder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#FolderEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#ResearchObject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#Resource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/wf4ever/ro#entryName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.openarchives.org/ore/terms/AggregatedResource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.openarchives.org/ore/terms/Aggregation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.openarchives.org/ore/terms/Proxy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.openarchives.org/ore/terms/aggregates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.openarchives.org/ore/terms/isAggregatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.openarchives.org/ore/terms/isDescribedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.openarchives.org/ore/terms/proxyFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.openarchives.org/ore/terms/proxyIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

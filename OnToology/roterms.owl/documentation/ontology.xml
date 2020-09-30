@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/wf4ever/roterms#"
      xml:base="http://purl.org/wf4ever/roterms"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/wf4ever/roterms#">
         <owl:versionIRI rdf:resource="https://rawgit.com/wf4ever/ro/master/roterms.owl"/>
         <dc:contributor xml:lang="en">Graham Klyne</dc:contributor>
@@ -19,8 +19,8 @@
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-30T14:55:00Z</terms:modified>
         <terms:publisher rdf:resource="http://researchobject.org/"/>
-        <vann:preferredNamespacePrefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string">roterms</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/wf4ever/roterms#</vann:preferredNamespaceUri>
+        <vann:preferredNamespacePrefix>roterms</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://purl.org/wf4ever/roterms#</vann:preferredNamespaceUri>
         <vann:usageNote rdf:resource="https://w3id.org/ro/primer"/>
         <rdfs:comment xml:lang="en">The Research Object vocabularies are built on existing popular vocabularies and standards, such as ORE, DC terms, PROV, to cite a few. In addition to terms that we borrowed and adapted from such vocabularies, we defined new terms under the name space roterms.
 
@@ -30,7 +30,7 @@ These new terms serve two main purposes. They are used to specify annotations th
         <owl:backwardCompatibleWith rdf:resource="https://cdn.rawgit.com/wf4ever/ro/roterms-0.2.0/roterms.owl"/>
         <owl:backwardCompatibleWith rdf:resource="https://cdn.rawgit.com/wf4ever/ro/roterms-0.3.0/roterms.owl"/>
         <owl:backwardCompatibleWith rdf:resource="https://cdn.rawgit.com/wf4ever/ro/roterms-0.3.1/roterms.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3.2-SNAPSHOT</owl:versionInfo>
+        <owl:versionInfo>0.3.2-SNAPSHOT</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -50,18 +50,70 @@ These new terms serve two main purposes. They are used to specify annotations th
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
     
 
 
@@ -129,7 +181,7 @@ The value is given as an roterms:WorkflowValue instance, which allows specificat
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/wf4ever/wfdesc#Parameter"/>
         <rdfs:range rdf:resource="http://purl.org/wf4ever/roterms#WorkflowValue"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An example value for a given input or output parameter. The value is given as an roterms:WorkflowValue instance, which allows specification of the value typically as text (cnt:chars), Base64 encoded bytes (cnt:bytes) or a collection of these (co:element).
+        <rdfs:comment>An example value for a given input or output parameter. The value is given as an roterms:WorkflowValue instance, which allows specification of the value typically as text (cnt:chars), Base64 encoded bytes (cnt:bytes) or a collection of these (co:element).
 
 </rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/wf4ever/roterms#"/>
@@ -192,7 +244,7 @@ This property does not specify the task (beyond being a skos:Concept), as it is 
     <owl:ObjectProperty rdf:about="http://purl.org/wf4ever/roterms#previousWorkflow">
         <rdfs:domain rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
         <rdfs:range rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Previous workflow that is or should be execute</rdfs:comment>
+        <rdfs:comment>Previous workflow that is or should be execute</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/wf4ever/roterms#"/>
         <rdfs:label xml:lang="en">previous workflow</rdfs:label>
     </owl:ObjectProperty>
@@ -242,7 +294,7 @@ This property does not specify the task (beyond being a skos:Concept), as it is 
     <owl:ObjectProperty rdf:about="http://purl.org/wf4ever/roterms#subsequentWorkflow">
         <rdfs:domain rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
         <rdfs:range rdf:resource="http://purl.org/wf4ever/wfdesc#Workflow"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subsequent workflow is or should be execute</rdfs:comment>
+        <rdfs:comment>Subsequent workflow is or should be execute</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/wf4ever/roterms#"/>
         <rdfs:label xml:lang="en">subsequent workflow</rdfs:label>
     </owl:ObjectProperty>
@@ -283,7 +335,7 @@ The agent SHOULD have a foaf:name. It SHOULD have one of foaf:mbox, foaf:phone o
     <owl:DatatypeProperty rdf:about="http://purl.org/wf4ever/roterms#sampleSize">
         <rdfs:domain rdf:resource="http://purl.org/wf4ever/wfprov#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e.g., 500 patients  or 500000 lines</rdfs:comment>
+        <rdfs:comment>e.g., 500 patients  or 500000 lines</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/wf4ever/roterms#"/>
         <rdfs:label xml:lang="en">sample size</rdfs:label>
     </owl:DatatypeProperty>
@@ -617,10 +669,28 @@ co:Collection / co:List listing nested roterms:WorkflowValue instances.</rdfs:co
         <terms:contributor rdf:resource="http://orcid.org/0000-0002-0323-0093"/>
         <terms:creator rdf:resource="http://orcid.org/0000-0001-9842-9718"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 
